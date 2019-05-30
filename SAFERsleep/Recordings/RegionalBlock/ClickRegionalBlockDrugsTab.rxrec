@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="cbb0e43e-ab71-49d3-b5a6-cee10f76512a"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ClickRegionalBlockDrugsTab
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClickRegionalBlockDrugsTab"
+	namespace="SAFERsleep.Recordings.RegionalBlock">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="4b1a1e4c-df1b-4c8a-8a5e-64b036086f5b"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="079db2a3-fcd9-4ac4-9ee7-8cc71459e2bb"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@name='frmEditRegional']/?/?/tabpage[@name='tabDrugs']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClickRegionalBlockDrugsTab.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="1aafd4da-1651-4bca-9ac0-b3918c078398"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ClickAddButton_Other
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClickAddButton_Other"
+	namespace="SAFERSleep_AP.Recordings.Modalities.Other">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="3b3c69f5-30c3-4de9-aed9-a3f5af3a8f53"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8ac46107-abf4-4f05-92b9-4ba930c0ccfb"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//text[@caption='Oral Modality']/..//text[@caption='Add']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="74af8252-1843-4d76-9a8c-e91bc2e3aebe"
+	name="SAFERSleep_APRepository"
+	relativepath="..\..\..\SAFERSleep_APRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERSleep_APRepository"
+		namespace="SAFERSleep_AP">
+		</codegen>
+		<rootfolder
+		id="c3c47bee-94a9-426b-a8de-43196bca6868"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClickAddButton_Other.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

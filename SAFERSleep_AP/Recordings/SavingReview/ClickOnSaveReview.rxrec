@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="6334ce07-c60b-4e36-871e-1bd18c1b0729"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ClickOnSaveReview
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClickOnSaveReview"
+	namespace="SAFERSleep_AP.Recordings.SavingReview">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="f1108dc9-166c-4f6c-9aa2-c031bb33d90e"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+				Click on Save button to save the Review
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0ed041fe-b92e-4c92-9c58-b9ace1bd17cd"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@wpfnative='True' and @name='MainWindow']/element[@classname='PatientSummary']/element[4]/button[@classname='Button']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="74af8252-1843-4d76-9a8c-e91bc2e3aebe"
+	name="SAFERSleep_APRepository"
+	relativepath="..\..\SAFERSleep_APRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERSleep_APRepository"
+		namespace="SAFERSleep_AP">
+		</codegen>
+		<rootfolder
+		id="c3c47bee-94a9-426b-a8de-43196bca6868"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClickOnSaveReview.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

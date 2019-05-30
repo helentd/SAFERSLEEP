@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="5da6e58c-f59f-45cf-a571-013eb1f26cbb"
+mode="Global"
+rxversion="8.2">
+	<name>
+		DeletePrintedReports
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="DeletePrintedReports"
+	namespace="SAFERSleep_AP.Recordings.Application">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="DeletePrintedReports"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="DeleteReports"
+		namespace="SAFERSleep_AP.Recordings.Application"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="1aae9415-86ce-49c0-b6fa-348ff2a1cb9c">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="74af8252-1843-4d76-9a8c-e91bc2e3aebe"
+	name="SAFERSleep_APRepository"
+	relativepath="..\..\SAFERSleep_APRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERSleep_APRepository"
+		namespace="SAFERSleep_AP">
+		</codegen>
+		<rootfolder
+		id="c3c47bee-94a9-426b-a8de-43196bca6868"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		DeletePrintedReports.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

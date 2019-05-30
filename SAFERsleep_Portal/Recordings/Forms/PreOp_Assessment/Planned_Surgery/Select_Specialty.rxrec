@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e0151476-7798-4e1a-8da4-b9be4d854237"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Select_Specialty
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Select_Specialty"
+	namespace="SAFERsleep_Portal.Recordings.Forms.PreOp_Assessment.Planned_Surgery">
+	</codegen>
+	<variables>
+		<var
+		id="efd2a9f0-1755-493e-a3d3-2fc458665db3"
+		name="Specialty">
+			Urology
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Select_Specialty"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Select_Specialty_Method"
+		namespace="SAFERsleep_Portal.Recordings.Forms.PreOp_Assessment.Planned_Surgery"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f3f19d02-b8a5-4c7a-ab42-c05554e6a738">
+				<argument
+				argname="spec"
+				id="b51f8b0c-771d-4835-b951-51125585a8d0"
+				variable="Specialty">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="8b6da581-29b7-4008-acee-aa5289a51147"
+	name="SAFERsleep_PortalRepository"
+	relativepath="..\..\..\..\SAFERsleep_PortalRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleep_PortalRepository"
+		namespace="SAFERsleep_Portal">
+		</codegen>
+		<rootfolder
+		id="219f0845-3470-46f6-a731-fca5a231d466"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Select_Specialty.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

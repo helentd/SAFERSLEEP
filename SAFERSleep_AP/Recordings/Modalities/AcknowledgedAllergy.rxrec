@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="0ab65c34-1047-42cd-a252-f6fe81495131"
+mode="Global"
+rxversion="8.2">
+	<name>
+		AcknowledgedAllergy
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="AcknowledgedAllergy"
+	namespace="SAFERSleep_AP.Recordings.Modalities">
+	</codegen>
+	<variables>
+		<var
+		id="2549d180-19a3-4b46-a73a-96d353c11322"
+		name="ReasonAckldge">
+			Test Acknowledged
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="7829beda-8cc9-43d2-ab21-5fc71f855f0d">
+			<comment>
+				Check if the Acknowledge button exist
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="35c8b8be-f1e1-4060-805a-008ba132ca6f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//list/?/?/?/container[1]//checkbox[@text='Acknowledge Drug Allergy CI']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="35f5b7e8-83a1-486c-8d71-999dbf73beae"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+				Click on Acknowledge button
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="35c8b8be-f1e1-4060-805a-008ba132ca6f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//list/?/?/?/container[1]//checkbox[@text='Acknowledge Drug Allergy CI']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="64236601-c296-44f4-89e0-aa6d45bdd9c4"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+				Enter reason
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="9707bb56-0af2-46fd-a306-ca55083bc0d1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//container[@title='Please enter your reason for acknowledging drug allergy']/following-sibling::container//text[@caption='Reason']/following-sibling::text
+				</path>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence=""
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="d5649fe4-1a25-4c4d-bbb0-b5f1a8e195ab">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ReasonAckldge">
+				</binding>
+			</bindings>
+		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="77873a44-3845-4e0e-a092-1b2ad033bdee"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+				Click on Save
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b010e09d-de67-43d0-b470-86f2c6be5a63"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//container[@name='PART_HeaderGrid']/following-sibling::container//container/?//container[1]//container[@automationid='IconLeftButtonUserControl']//text[@caption='Save']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="74af8252-1843-4d76-9a8c-e91bc2e3aebe"
+	name="SAFERSleep_APRepository"
+	relativepath="..\..\SAFERSleep_APRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERSleep_APRepository"
+		namespace="SAFERSleep_AP">
+		</codegen>
+		<rootfolder
+		id="c3c47bee-94a9-426b-a8de-43196bca6868"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		AcknowledgedAllergy.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

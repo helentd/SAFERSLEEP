@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="cfad9fc0-1982-4f13-b921-e1f493d536fd"
+mode="Global"
+rxversion="8.2">
+	<name>
+		OpenPatientAssessmentTab
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenPatientAssessmentTab"
+	namespace="SAFERSleep_AP.Recordings.ActiveProblems">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="03d020c7-9ed6-46fe-96e3-737c6d7bf2f1"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+				Click on +Add on Active Problem
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c037609e-5f96-48fe-94a3-8ab8988a0822"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@name~'^SAFERsleep\ Acute\ Pain\ Cli' and @classname='Window']/?/?/element[@classname='ActiveProblemPanel']/element[@automationid='ContentPanelUserControl']/element[@automationid='IconLeftButtonUserControl']/button[@classname='Button']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="18494e1b-2b2b-4894-bcfa-c2ccd8803aa2"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8358c43f-9183-4a51-b67d-b930b285843d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpage[@title='Patient Assessment']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="74af8252-1843-4d76-9a8c-e91bc2e3aebe"
+	name="SAFERSleep_APRepository"
+	relativepath="..\..\SAFERSleep_APRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERSleep_APRepository"
+		namespace="SAFERSleep_AP">
+		</codegen>
+		<rootfolder
+		id="c3c47bee-94a9-426b-a8de-43196bca6868"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenPatientAssessmentTab.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

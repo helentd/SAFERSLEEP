@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="8.2">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="SAFERsleep_MedRec"
+      id="a47ee9ca-7a84-42a7-aafa-8395abb3550a"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="SAFERsleep_MedRec"
+      id="a47ee9ca-7a84-42a7-aafa-8395abb3550a"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

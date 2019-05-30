@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d30173e5-568d-4920-8578-63a986462b94"
+mode="Desktop"
+rxversion="8.2">
+	<name>
+		CloseBrowser
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseBrowser"
+	namespace="SAFERsleep_ClinicManagement.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="21;3"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="de7507fc-353c-4ab7-b124-db84751eb4c5"
+		sx="1894"
+		sy="2"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7762ed48-9cd3-49af-b467-23f714626707"
+			sourcename="Recorder">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="1"
+				prefcap="button"
+				rect="1873,-1,23,23"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Restore
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Press
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Puts a minimized or maximized window back to normal
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Restore
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PushButton
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+				</element>
+				<path>
+					/form[@title='New Tab - Google Chrome']/?/?/button[@accessiblename='Restore']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="289f5fdf-47ae-46a0-9fb7-a860c43b9d26">
+				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
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="0e897a8c-761f-43a7-8560-5a95da3077db"
+	name="SAFERsleep_ClinicManagementRepository"
+	relativepath="..\SAFERsleep_ClinicManagementRepository.rxrep"
+	rxversion="8.1">
+		<codegen
+		classname="SAFERsleep_ClinicManagementRepository"
+		namespace="SAFERsleep_ClinicManagement">
+		</codegen>
+		<rootfolder
+		id="8ac50317-db92-43ad-bd4e-e2bddb6fc229"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

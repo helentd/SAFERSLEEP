@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b2995100-b428-49a9-a845-86805936ca95"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Select_Surgeon
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Select_Surgeon"
+	namespace="SAFERsleep_Portal.Recordings.Forms.PreOp_Assessment.Planned_Surgery">
+	</codegen>
+	<variables>
+		<var
+		id="b42aef96-00ef-4778-a09b-332aa02b0ada"
+		name="Surgeon">
+			Martinez, Mark
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Select_Surgeon"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Select_Surgeon_Method"
+		namespace="SAFERsleep_Portal.Recordings.Forms.PreOp_Assessment.Planned_Surgery"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="678905da-a3f0-41a8-946e-c571598e946b">
+				<argument
+				argname="surg"
+				id="0e766b88-c5d6-40f4-814c-8c9c5ec02ee1"
+				variable="Surgeon">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="8b6da581-29b7-4008-acee-aa5289a51147"
+	name="SAFERsleep_PortalRepository"
+	relativepath="..\..\..\..\SAFERsleep_PortalRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleep_PortalRepository"
+		namespace="SAFERsleep_Portal">
+		</codegen>
+		<rootfolder
+		id="219f0845-3470-46f6-a731-fca5a231d466"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Select_Surgeon.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

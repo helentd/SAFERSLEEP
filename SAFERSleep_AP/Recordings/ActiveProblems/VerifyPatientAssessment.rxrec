@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="fa14c40f-1a19-41b6-8550-cc134ecf956f"
+mode="Global"
+rxversion="8.2">
+	<name>
+		VerifyPatientAssessment
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="VerifyPatientAssessment"
+	namespace="SAFERSleep_AP.Recordings.ActiveProblems">
+	</codegen>
+	<variables>
+		<var
+		id="b45062b7-0b3e-4819-bf73-14ecee5471bf"
+		name="Description">
+			this is a patient assessment testing
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="VerifyPatientAssessment"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="ValidateAddedAssessment"
+		namespace="SAFERSleep_AP.Recordings.ActiveProblems"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9331fcf2-c75f-41e0-aca5-9c64c76452d5">
+				<argument
+				argname="Description"
+				id="b4d9a800-0887-4ee0-b44b-71738c6a99fd"
+				variable="Description">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="74af8252-1843-4d76-9a8c-e91bc2e3aebe"
+	name="SAFERSleep_APRepository"
+	relativepath="..\..\SAFERSleep_APRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERSleep_APRepository"
+		namespace="SAFERSleep_AP">
+		</codegen>
+		<rootfolder
+		id="c3c47bee-94a9-426b-a8de-43196bca6868"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		VerifyPatientAssessment.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

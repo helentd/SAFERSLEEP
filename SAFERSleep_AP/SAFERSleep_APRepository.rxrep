@@ -1,0 +1,2476 @@
+﻿<repository
+id="74af8252-1843-4d76-9a8c-e91bc2e3aebe"
+name="SAFERSleep_APRepository"
+rxversion="8.2">
+	<codegen
+	classname="SAFERSleep_APRepository"
+	namespace="SAFERSleep_AP">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="c3c47bee-94a9-426b-a8de-43196bca6868"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,uiautomation,nativewindow"
+		capname="form"
+		id="126eda91-2cc1-4888-ae86-0b6a9cb43a63"
+		isrooted="True"
+		name="MainWindow"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="button,wpfelement"
+			capname="text"
+			id="806eccb8-fb2f-4045-9e10-e0a594733f51"
+			name="AddPatient"
+			refimgid="d2cefeda-af43-4acf-9319-cf0cd63f45b3"
+			searchtimeout="30000ms">
+				/form[@wpfnative='True' and @name='MainWindow']//text[@caption='Add Patient']
+			</item>
+			<item
+			addcaps="grip,wpfelement"
+			capname="grip"
+			id="d124d60d-a0f9-4af4-b6d1-8cd180f356c7"
+			name="SomeGrip"
+			refimgid="a7f45092-e215-4d1a-ac06-a5b602b9b043"
+			refpath="/form[@automationid='MainWindow' and @wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[3]/container[2]/container/container/container[2]/table/scrollbar/slider/grip"
+			searchtimeout="30000ms">
+				/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container/container[1]/element/container/container/container[3]/container[2]/container[@automationid='ContentPanelUserControl']//table/scrollbar[@automationid='PART_VerticalScrollBar']/slider[@automationid='PART_Track']/grip
+			</item>
+			<folder
+			capname="unknown"
+			id="664a4b29-1adb-4494-9f04-b3933aab40c6"
+			isrooted="True"
+			name="UserLogin"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="text"
+				id="477c10c0-f711-4f50-ba4a-e2ca88ac7b08"
+				name="Login"
+				refimgid="14d54e0d-8dcb-4ea1-8646-1be6312b0266"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']//text[@caption='Login']
+				</item>
+				<item
+				addcaps="unknown,wpfelement"
+				capname="text"
+				id="e4789021-3be1-41e5-952f-268862e6f1bc"
+				name="UserName"
+				refimgid="98771940-61e2-48ba-9923-d5f5718430af"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']//text[@automationid='TxtUsername']
+				</item>
+				<item
+				addcaps="unknown,wpfelement"
+				capname="text"
+				id="238797b7-98ad-45de-974f-9c85e78c75aa"
+				name="Password"
+				refimgid="302e453c-1778-4f99-acd9-ef76ddf8df4f"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']//text[@automationid='TextBoxControl']
+				</item>
+				<item
+				addcaps="button,wpfelement"
+				capname="text"
+				id="71ac9d9c-ea07-4b56-8656-abdd38420fe6"
+				name="Exit"
+				refimgid="6b493b93-9547-4ac8-bcbc-9d3336a75aee"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']//text[@caption='Exit']
+				</item>
+				<basepath>
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']
+				</basepath>
+			</folder>
+			<folder
+			capname="unknown"
+			id="386050ab-58cb-4301-a637-2dbbde8a5e3b"
+			isrooted="False"
+			name="RoundTeam"
+			searchtimeout="0ms">
+				<item
+				addcaps="combobox,uiautomation"
+				capname="combobox"
+				id="19759141-6a9c-466a-ad46-95a50edeb001"
+				name="ListMemberName"
+				refimgid="fdce09af-2b05-4221-92c8-60cdcbf882da"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//list[@classname='ListView']/listitem[@name~'^SaferSleep\.AcutePain\.Clie']/combobox[@classname='ComboBox']
+				</item>
+				<item
+				addcaps="button,wpfelement"
+				capname="text"
+				id="768602d3-4973-4446-8e8d-1448bd01007f"
+				name="Save"
+				refimgid="a891c68a-cfe1-4e8b-9d24-e608028f73b7"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/?/?/element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[3]/button/?/?/text[@caption='Save']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="67dbef73-92ca-4226-a0bf-bf2d39d1b294"
+				name="AddTeamMember"
+				refimgid="b512d8d6-c6fd-4189-957b-e460cb6d672e"
+				refpath="/form[@automationid='MainWindow' and @wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/element/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container[2]/container[1]/button/container/text[@caption='Add Team Member']"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='IconLeftButtonUserControl']/button/?/?/text[@caption='Add Team Member']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="3337ded8-33e7-40ec-888b-ee3fd8938385"
+			isrooted="False"
+			name="PainReviewHeader"
+			searchtimeout="0ms">
+				<folder
+				capname="container"
+				id="79da09be-ce2a-463a-92f6-eeaa627fdead"
+				isrooted="True"
+				name="PatientRibbon"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					capname="text"
+					id="330e06f6-f9cd-4c21-ab88-d73f302d9736"
+					name="NHI"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[2]/container/container[1]//text[@caption='NHI: '+$NHI]
+					</item>
+					<item
+					capname="text"
+					id="6792e2f7-f216-4b31-8a3d-1b9fdddb7554"
+					name="Location"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[2]/container/container[1]//text[@caption='Location:  '+$Ward+' ('+$Room+')']
+					</item>
+					<item
+					addcaps="container,wpfelement"
+					capname="container"
+					id="f0bc71c4-157b-44ac-84b9-99e9cb578570"
+					name="SomeContainer"
+					refimgid="1a0972a2-0a49-4857-8a4f-c3b08f255d8f"
+					refpath="/form[@automationid='MainWindow' and @wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[2]/container/container[1]/container/container"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[2]/container/container[1]/?/?/container
+					</item>
+					<item
+					addcaps="text,wpfelement"
+					capname="list"
+					id="c9caeb89-d6eb-42d8-bd5c-815d3447eeeb"
+					name="ProcedureLink"
+					refimgid="514ddba6-d7bb-4eba-8d3f-944a151f7499"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[2]/container/container[1]/?/?/container/list
+					</item>
+					<item
+					capname="text"
+					id="b3ae103a-acb2-4f48-ad42-9488d8e95d2b"
+					name="NewProcedureDetail"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[2]/container/container[1]/?/?/container/list//text[@caption~$ProcedureDetails]
+					</item>
+					<basepath>
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[2]/container/container[1]
+					</basepath>
+				</folder>
+				<folder
+				capname="container"
+				id="4d747942-45d5-4add-91fd-b37c3f771604"
+				isrooted="True"
+				name="PatientDetails"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					capname="text"
+					id="7fc0a2fb-9c13-4f07-88c6-ed7edcf80964"
+					name="Age"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[2]/container/container[5]/?/?/text[@caption=$Age+' years']
+					</item>
+					<item
+					addcaps="text,wpfelement"
+					capname="text"
+					id="608d28e9-1e52-4bf7-95be-5f667be3e92e"
+					name="DateOfBirth"
+					refimgid="05c5de48-b7f6-4ecc-8dfb-317fbeffe503"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[2]/container/container[2]/?/?/text[@caption=$DOB]
+					</item>
+					<item
+					addcaps="text,wpfelement"
+					capname="text"
+					id="1a6106b7-996d-4a33-8011-7e24e3bbfe24"
+					name="Gender"
+					refimgid="39751dd3-b313-40d3-a1a7-93dceb2b941e"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[2]/container/container[3]/?/?/text[@caption=$Gender]
+					</item>
+					<item
+					addcaps="text,wpfelement"
+					capname="text"
+					id="8d2345dd-3130-454a-b9d1-60638ac2ba42"
+					name="ASA"
+					refimgid="100cca47-de62-4305-92aa-4489160e366b"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[2]/container/container[7]/?/?/text[@caption=$ASA]
+					</item>
+					<item
+					addcaps="text,wpfelement"
+					capname="text"
+					id="f5bd2131-0f6a-4e08-a8c2-d4f236a7a266"
+					name="BMI"
+					refimgid="82ca475e-561b-452b-a0f7-15cab43ea1bb"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[2]/container/container[6]/?/?/text[@caption=$BMI+' kg/m&#178;']
+					</item>
+					<item
+					addcaps="text,wpfelement"
+					capname="text"
+					id="7ba5ef6c-459e-453e-bee0-9caa5fc635a5"
+					name="Weight"
+					refimgid="a272d267-6c98-4f20-8462-1e24cce9c61a"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[2]/container/container[4]/?/?/text[@caption=$Weight+' kg']
+					</item>
+					<item
+					addcaps="text,wpfelement"
+					capname="text"
+					id="60818a33-8c13-40e1-a56c-388e33587057"
+					name="ReferralDate"
+					refimgid="345ce680-15eb-46e2-b612-ca81b060d80d"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[2]/container/container[8]/?/?/container/text[@caption=$ReferralDate]
+					</item>
+					<item
+					addcaps="text,wpfelement"
+					capname="text"
+					id="3eda13c9-ef2f-4894-8e10-ce53898481f8"
+					name="ReferralDuration"
+					refimgid="aeb00740-c180-4a35-8910-d1e57f8af4b6"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[2]/container/container[8]/?/?/container/text[@caption=' ('+$RefDays+')']
+					</item>
+					<basepath>
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[2]/container
+					</basepath>
+				</folder>
+			</folder>
+			<folder
+			capname="unknown"
+			id="8d4feabf-850a-40b5-b37c-73ebe10dc092"
+			isrooted="True"
+			name="ProcedureDetails"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="text"
+				id="ab0e5db0-098a-4029-ab53-d0a27f17b26a"
+				name="AddNewProcedure"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']//text[@caption='Add New Procedure']
+				</item>
+				<item
+				capname="text"
+				id="1362facb-7e4d-4daf-a29f-c06370d24f51"
+				name="Save"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']//text[@caption='Save']
+				</item>
+				<item
+				capname="text"
+				id="4254977c-1511-4a2e-92e9-52ee0634a435"
+				name="Last_ProcedureDetails"
+				refimgid="dca28a0e-5685-4839-a441-23b71990112b"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[2]/list/container/container[last()='True']/container/container[1]/?/?/text[@caption='']
+				</item>
+				<item
+				capname="radiobutton"
+				id="ed6b7ba1-c7fc-4f38-b859-2f144e15dbde"
+				name="Last_IsSurgical"
+				refimgid="1e48485e-63d7-42f3-9f90-9006b0dc923d"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[2]/list/container/container[last()='True']//text[@caption='Is procedure surgical?']/following-sibling::container/radiobutton[@text=$IsSurgical and @visible='True']
+				</item>
+				<item
+				capname="combobox"
+				id="ecb50fce-0017-4e8a-ab22-3bc5c86e10bf"
+				name="Last_SurgicalSpecialty"
+				refimgid="62dfc4b7-1b27-4e26-9b69-e5d60de426a0"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[2]/list/container/container[last()='True']//text[@caption='Surgical Specialty:']/following-sibling::combobox
+				</item>
+				<basepath>
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']
+				</basepath>
+			</folder>
+			<folder
+			capname="container"
+			id="640e5c4c-dc08-442a-86a4-f242a19b715f"
+			isrooted="True"
+			name="AddingPatient"
+			searchtimeout="30000ms"
+			usecache="True">
+				<item
+				addcaps="container,uiautomation"
+				capname="text"
+				id="f6e0e103-85d8-4db3-a1a7-58fd5c564b4b"
+				name="NHI"
+				refimgid="a4577858-c528-4958-bea0-c7c12da4036d"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container//text[@caption='_______']
+				</item>
+				<item
+				addcaps="container,uiautomation"
+				capname="text"
+				id="d932aba4-bae9-4662-8c6c-569beec0d6a3"
+				name="LastName"
+				refimgid="587f347a-0d23-4669-a968-c066aadf2a75"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container//text[@caption='Last Name:']/following-sibling::text/following-sibling::text
+				</item>
+				<item
+				addcaps="container,uiautomation"
+				capname="text"
+				id="adcb0586-afc8-4d50-ab18-1ca558a22ed1"
+				name="FirstName"
+				refimgid="4094ab84-2e98-4443-a9cc-9f6e3e46a039"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container//text[@caption='First Name:']/following-sibling::text/following-sibling::text
+				</item>
+				<item
+				addcaps="combobox,uiautomation"
+				capname="combobox"
+				id="56dc10df-c5f8-4e7e-abb8-75aad7c38ba6"
+				name="Gender"
+				refimgid="218989f5-3384-4c9d-bd78-1a71048a8683"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container//text[@caption='Gender:']/following-sibling::combobox
+				</item>
+				<item
+				addcaps="unknown,uiautomation"
+				capname="combobox"
+				id="0ac44c8b-3a0d-467e-a207-0ba51051bc13"
+				name="ASA"
+				refimgid="4b9a02ea-edd1-4292-9940-06c8c5c53822"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container//text[@caption='ASA:']/following-sibling::combobox
+				</item>
+				<item
+				addcaps="container,uiautomation"
+				capname="unknown"
+				id="8d36bea0-81cb-4e1b-af5c-efbb11de2d2b"
+				name="Weight"
+				refimgid="450b996b-1270-4dbf-a425-1581bdc859f9"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container//text[@caption='Weight(kg):']/following-sibling::element
+				</item>
+				<item
+				addcaps="container,uiautomation"
+				capname="unknown"
+				id="cb663074-6310-4108-8c8d-55ec39b25e4b"
+				name="Height"
+				refimgid="76a0625d-4746-46dd-92a7-a660f4a931ed"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container//text[@caption='Height(cm):']/following-sibling::element
+				</item>
+				<item
+				addcaps="combobox,uiautomation"
+				capname="combobox"
+				id="830aa7df-bda2-4b85-badf-18faa33d1052"
+				name="Ward"
+				refimgid="604e8bbd-3f52-41a2-bb42-9493a0f42c3a"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container//text[@caption='Ward:']/following-sibling::combobox
+				</item>
+				<item
+				addcaps="combobox,uiautomation"
+				capname="combobox"
+				id="3348c3ad-0118-451e-a5ff-c09925a1e6a9"
+				name="Room"
+				refimgid="07678580-7e83-4da9-a9bb-02f65a655daa"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container//text[@caption='Room:']/following-sibling::combobox
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="text"
+				id="1e47ec05-e143-4886-93cf-0980ddd12d59"
+				name="Save"
+				refimgid="939b7df0-bd74-4bec-8bb2-5dc36664a544"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[1]/container[2]//text[@caption='Save']
+				</item>
+				<item
+				addcaps="unknown,uiautomation,uiautomationvalue"
+				capname="text"
+				id="b03ceaca-090f-47ed-9faa-a6945d0d5b14"
+				name="DOB"
+				refimgid="15516c0b-4844-4476-8333-5ab8490cc168"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container//datetime/text[@automationid='PART_TextBox']
+				</item>
+				<item
+				capname="text"
+				id="e34897ac-b2c9-46ad-b368-3bdc756cacd4"
+				name="Cancel"
+				refimgid="2b4e7e9a-e948-4277-a41f-e4a96902c2c7"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[1]/container[1]//text[@caption='Cancel']
+				</item>
+				<folder
+				capname="container"
+				id="2816e2c7-07b2-4e04-86de-a1c78c368f04"
+				isrooted="True"
+				name="AddProcedure"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="container,uiautomation"
+					capname="text"
+					id="4068d12a-6e21-456e-90d3-d4b031726e3c"
+					name="ProcedureName"
+					refimgid="f6ddf6ce-4b65-4751-adb8-04dce47cef31"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[2]/container[2]//text[@caption='Procedure / presenting complaint:']/following-sibling::text/following-sibling::text
+					</item>
+					<item
+					addcaps="combobox,uiautomation"
+					capname="combobox"
+					id="0716c63a-47b7-4d28-adf8-40c3932eddf4"
+					name="SurgicalSpecialty"
+					refimgid="4a3ab31f-8c7d-4700-8cde-f277a60003ae"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[2]/container[2]//text[@caption='Surgical Specialty:']/following-sibling::combobox
+					</item>
+					<basepath>
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[2]/container[2]
+					</basepath>
+				</folder>
+				<basepath>
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container
+				</basepath>
+			</folder>
+			<folder
+			capname="container"
+			id="dbef81eb-a060-46c6-854b-f229e088060f"
+			isrooted="True"
+			name="PatientPainReview"
+			searchtimeout="30000ms"
+			usecache="True">
+				<item
+				addcaps="combobox,uiautomation"
+				capname="combobox"
+				id="44311920-fc72-45e6-8d7d-f1ca57c3dae2"
+				name="PainScoreAtRest"
+				refimgid="b09d76f2-cb4c-4efa-bc76-88ce87344efa"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container//container[@title='Patient Pain Review']/container/container[2]//text[@caption='Pain Score - at rest:']/following-sibling::container/combobox
+				</item>
+				<item
+				addcaps="combobox,uiautomation"
+				capname="combobox"
+				id="12706efd-1a4f-41e1-ab27-6950e96539c2"
+				name="PainScroreAcctivity"
+				refimgid="f7f6e775-9cb5-4a3f-ac31-afcbe3a15f90"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container//container[@title='Patient Pain Review']/container/container[2]//text[@caption='Pain Score - with activity:']/following-sibling::container/combobox
+				</item>
+				<item
+				addcaps="combobox,uiautomation"
+				capname="combobox"
+				id="8fd55d4d-0ccc-4452-9e35-bfa3688d7429"
+				name="Cough"
+				refimgid="0cb63b7f-b98f-4f26-9790-0b194b2070c9"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container//container[@title='Patient Pain Review']/container/container[2]//text[@caption='Cough:']/following-sibling::container/combobox
+				</item>
+				<item
+				addcaps="combobox,uiautomation"
+				capname="combobox"
+				id="cde2801d-fe16-4a96-8d11-7d7251252da6"
+				name="RespirationRate"
+				refimgid="41d8a7b6-c4bd-45e8-9b70-2c20c72f553e"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container//container[@title='Patient Pain Review']/container/container[2]//text[@caption='Respiratory Rate:']/following-sibling::container/combobox
+				</item>
+				<item
+				addcaps="combobox,uiautomation"
+				capname="combobox"
+				id="17638b22-9447-4be9-9b1c-84b596e8212a"
+				name="SedationScore"
+				refimgid="980c1da5-15ab-4e61-8c05-6353a14ed4d1"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container//container[@title='Patient Pain Review']/container/container[2]//text[@caption='Sedation Score:']/following-sibling::container/combobox
+				</item>
+				<item
+				addcaps="combobox,uiautomation"
+				capname="combobox"
+				id="34c2749d-008b-4a11-b6ac-5901e05b668b"
+				name="Pruritus"
+				refimgid="cec6972b-d9cd-451f-a555-d9c146da4b8c"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container//container[@title='Patient Pain Review']/container/container[2]//text[@caption='Pruritus:']/following-sibling::container/combobox
+				</item>
+				<item
+				addcaps="combobox,uiautomation"
+				capname="combobox"
+				id="93dfe172-c0ca-4036-ad52-7ddf69044596"
+				name="Nausea"
+				refimgid="41271437-78cf-4908-aaec-1462782b1545"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container//container[@title='Patient Pain Review']/container/container[2]//text[@caption='Nausea:']/following-sibling::container/combobox
+				</item>
+				<item
+				addcaps="combobox,uiautomation"
+				capname="combobox"
+				id="bee6feb5-8af1-43b9-a860-3e99c6067002"
+				name="BowelLastOpen"
+				refimgid="75f01e7f-e2c4-4a30-a682-3b4aaa534cf2"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container//container[@title='Patient Pain Review']/container/container[2]//text[@caption='Number of days since bowels last opened:']/following-sibling::container/combobox
+				</item>
+				<item
+				addcaps="combobox,uiautomation"
+				capname="combobox"
+				id="a22bb6b8-535b-473c-b8f2-14708b7a888f"
+				name="UrinaryRetension"
+				refimgid="a1f59890-3772-4fec-928c-cd109e79cc63"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container//container[@title='Patient Pain Review']/container/container[2]//text[@caption='Urinary retention:']/following-sibling::container/combobox
+				</item>
+				<item
+				addcaps="combobox,uiautomation"
+				capname="combobox"
+				id="7441421f-0873-451b-a54a-e66b356af02e"
+				name="OralIntake"
+				refimgid="31173d87-aa2e-4d6e-8d91-38d049ff0688"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container//container[@title='Patient Pain Review']/container/container[2]//text[@caption='Oral Intake:']/following-sibling::container/combobox
+				</item>
+				<item
+				addcaps="combobox,uiautomation"
+				capname="combobox"
+				id="bb0f45e2-0c50-4102-8a5a-1cf433598f7a"
+				name="PainReviewAnswer_SelectOption"
+				refimgid="54463472-b845-49ed-8634-86ae0bfd684f"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container//container[@title='Patient Pain Review']/container/container[2]//text[@caption=$ReviewQuestion]/following-sibling::container/combobox
+				</item>
+				<item
+				addcaps="radiobutton,uiautomation"
+				capname="radiobutton"
+				id="58513354-13a4-4196-a9d7-4f0cbaf58a26"
+				name="PainReviewAnswer_YesNo"
+				refimgid="ba05dd42-e286-4d8f-ba7d-201d47190111"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container//container[@title='Patient Pain Review']/container/container[2]//text[@caption=$ReviewQuestion]/following-sibling::container//radiobutton[@text=$ReviewAnswer]
+				</item>
+				<basepath>
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container//container[@title='Patient Pain Review']/container/container[2]
+				</basepath>
+			</folder>
+			<folder
+			capname="unknown"
+			id="5b74158d-f54f-4dc9-89d7-ab4d912d8b94"
+			isrooted="False"
+			name="Modalities"
+			searchtimeout="0ms">
+				<folder
+				capname="unknown"
+				id="a7569e3b-adf6-4ca8-b61f-580d7afa8f45"
+				isrooted="True"
+				name="SimpleModalities"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="button,wpfelement"
+					capname="text"
+					id="8ac46107-abf4-4f05-92b9-4ba930c0ccfb"
+					name="Add"
+					refimgid="64e5cb12-1010-4318-94e2-536ff84ace95"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//text[@caption='Simple Analgesia']/..//text[@caption='Add']
+					</item>
+					<item
+					addcaps="text,wpfelement"
+					capname="text"
+					id="04ee1cc5-9b6f-4de5-a865-6264e964a73f"
+					name="AddedOtherModality"
+					refimgid="70456440-268d-45e6-ba42-8374207319f8"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//text[@caption='Simple Analgesia']/../..//container[@automationid='PART_RowsPresenter']//text[@caption~$ExistingMedication and @caption~$Route]
+					</item>
+					<item
+					capname="row"
+					id="ff303f7a-0c40-4d19-8958-d644459d6c9c"
+					name="OtherModalityRow"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//text[@caption='Simple Analgesia']/../..//container[@automationid='PART_RowsPresenter']/row
+					</item>
+					<basepath>
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//text[@caption='Simple Analgesia']/..
+					</basepath>
+				</folder>
+				<folder
+				capname="unknown"
+				id="820b9b91-11b3-4c71-a1c8-4bde33763872"
+				isrooted="True"
+				name="AdvancedModalities"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="menuitem,wpfelement"
+					capname="text"
+					id="71467c4e-2ee9-4137-85e9-051b50630ee5"
+					name="Add"
+					refimgid="5f70e41a-c06e-4ff4-be13-7a859e37cce0"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//text[@caption='Advanced Analgesia']/..//text[@caption='Add']
+					</item>
+					<item
+					addcaps="text,wpfelement"
+					capname="text"
+					id="60b5fa85-258a-438c-901d-61800445cb7c"
+					name="AddedOtherModality"
+					refimgid="06102c98-4a94-4698-8153-25c427c754b4"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//text[@caption='Advanced Analgesia']/../..//container[@automationid='PART_RowsPresenter']//text[@caption='Other']/following-sibling::text[@caption~$Medication]
+					</item>
+					<item
+					capname="text"
+					id="a447befe-a47f-420e-9cf7-c2d9ceef18cf"
+					name="AddedCoAnalgesia"
+					refimgid="3ef0bf2d-6108-4d74-8cee-3162ac1bb9c5"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//text[@caption='Advanced Analgesia']/../..//container[@automationid='PART_RowsPresenter']//text[@caption='Co-Analgesia']/following-sibling::text[@caption~$Medication]
+					</item>
+					<item
+					capname="text"
+					id="eb814a65-8862-44a5-94dc-51999edb42d1"
+					name="AddedPCA"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//text[@caption='Advanced Analgesia']/../..//container[@automationid='PART_RowsPresenter']//text[@caption='PCA']/following-sibling::text[@caption~$Medication]
+					</item>
+					<basepath>
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//text[@caption='Advanced Analgesia']/..
+					</basepath>
+				</folder>
+				<folder
+				capname="container"
+				id="7a93debd-2518-418b-bbe8-cdaf5048030b"
+				isrooted="True"
+				name="AddModalityWindow"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					capname="text"
+					id="f9eba24e-a406-4293-85cb-8d1105f58dcb"
+					name="NewLine"
+					refimgid="dd6c8a06-770f-4714-9d30-8f0e262c1bf4"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//button//text[@caption='New Line']
+					</item>
+					<item
+					capname="text"
+					id="2ae89542-55ec-4b49-934b-02a495b0c9d6"
+					name="Cancel"
+					refimgid="ffa61792-0b85-48b7-b3b5-4b0d68b1d54d"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//button//text[@caption='Cancel']
+					</item>
+					<item
+					capname="text"
+					id="e90e5f09-e269-4bdc-8a6a-17b12329334a"
+					name="History"
+					refimgid="fbeb61be-0a4e-40b0-a5fc-e78cf76c3303"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//button//text[@caption='History']
+					</item>
+					<folder
+					capname="unknown"
+					id="b1b50440-62b0-4ea4-9f55-8510238b8869"
+					isrooted="False"
+					name="Other"
+					searchtimeout="0ms">
+						<item
+						addcaps="container,wpfelement"
+						capname="text"
+						id="33b1baba-3aa3-41fc-83a6-74ca7bcc551b"
+						name="TotalSinceLastReview"
+						refimgid="01d4bf66-7aba-4f35-a4c6-a999e7d37f8a"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//list/container/container[last()='True']//container[@automationid='UnitEntryUserControl']//element[@automationid='PART_Spinner']//text[@automationid='PART_TextBox']
+						</item>
+						<item
+						addcaps="checkbox,wpfelement"
+						capname="combobox"
+						id="e8c85ae7-ba63-4deb-9eba-cae7deb31a6e"
+						name="Unit"
+						refimgid="e349b590-6eba-4bde-9a68-8cfbb5c7252a"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//list/container/container[last()='True']//container[@automationid='UnitEntryUserControl']/?/combobox
+						</item>
+						<item
+						addcaps="checkbox,wpfelement"
+						capname="checkbox"
+						id="127613b1-3d17-4908-a02e-7ff808efe922"
+						name="StopOtherModality"
+						refimgid="53726c7f-c4a2-4682-8198-f6cf49737ec2"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//list/container/container[last()='True']//checkbox[@text='Stop Oral Modality']
+						</item>
+						<item
+						addcaps="button,wpfelement"
+						capname="text"
+						id="f7491d3c-52d9-4786-8d51-8db86ffe4efb"
+						name="ApplyTemplate"
+						refimgid="4b05e68f-19fc-4fbb-ab26-96a6f02eaf5b"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//text[@caption='Apply Template']
+						</item>
+						<item
+						addcaps="checkbox,wpfelement"
+						capname="combobox"
+						id="d86c7eb3-f754-4402-a67d-1b6e76a7e29d"
+						name="MedicationOther"
+						refimgid="f87e84d0-79e8-484c-baa6-21621d5d05d1"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//list/?/container[last()='True']//text[@caption='Medication:']/following-sibling::container//combobox
+						</item>
+						<item
+						capname="text"
+						id="12275e5a-15b9-4896-bcda-cf52b4fcd9bc"
+						name="ExistingMedicationOther"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//list/?/container//text[@caption='Medication:']/following-sibling::container//combobox//container/text[@caption=$ExistingMedicationDropdown]
+						</item>
+						<item
+						capname="combobox"
+						id="b3f5e14f-42b6-4f84-bfef-b3cdb0c5853b"
+						name="Route"
+						refimgid="407bddc3-8813-4ee8-ae4c-2189918ba22e"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//list/container/container[last()='True']//text[@caption='Route:']/following-sibling::combobox
+						</item>
+					</folder>
+					<folder
+					capname="unknown"
+					id="b47fc034-c9c8-4344-99eb-46bc22f724b1"
+					isrooted="False"
+					name="CoAnalgesia"
+					searchtimeout="0ms">
+						<item
+						addcaps="checkbox,wpfelement"
+						capname="combobox"
+						id="890f943c-5b23-45d6-8e56-7a43ec33a025"
+						name="MedicationCoAnalgesia"
+						refimgid="1fee1f84-cb39-4eb3-8f07-1e5c8f91cfec"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//list/?/container[last()='True']//text[@caption='Medication:']/following-sibling::container//combobox
+						</item>
+						<item
+						addcaps="text,wpfelement"
+						capname="combobox"
+						id="72e99bea-5977-4af7-a880-ec962202b955"
+						name="ModeCoAnalgesia"
+						refimgid="47785c04-830e-49e5-a53b-1166e621bdf4"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//list/?/container[last()='True']//text[@caption='Mode:']/following-sibling::combobox
+						</item>
+						<item
+						capname="unknown"
+						id="ab4688a9-3c52-4564-812a-7aecf8cf8074"
+						name="DoseCoAnalgesia"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//list/?/container[last()='True']//text[@caption='Loading Dose:']/following-sibling::container[@automationid='UnitEntryUserControl']//element[@automationid='PART_Spinner']
+						</item>
+						<item
+						capname="combobox"
+						id="3145cfa7-7df9-42ba-9361-1349ad8620c5"
+						name="DoseUnitCoAnalgesia"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//list/?/container[last()='True']//text[@caption='Loading Dose:']/following-sibling::container[@automationid='UnitEntryUserControl']//combobox
+						</item>
+						<item
+						capname="unknown"
+						id="0fff6aee-4ead-4c1d-afda-9014f6d52c22"
+						name="RateCoAnalgesia"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//list/?/container[last()='True']//text[@caption='Continuous Rate:']/following-sibling::container[@automationid='UnitEntryUserControl']//element[@automationid='PART_Spinner']
+						</item>
+						<item
+						capname="combobox"
+						id="7a110754-475c-4c7f-940d-5dffd528d027"
+						name="hrCoAnalgesia"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//list/?/container[last()='True']//text[@caption='hr Dose Limit:']/following-sibling::combobox
+						</item>
+						<item
+						capname="unknown"
+						id="0b0f002e-ad22-4f35-8a86-6eeb3ad304dc"
+						name="DoseLimitCoAnalgesia"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//list/?/container[last()='True']//text[@caption='hr Dose Limit:']/../following-sibling::container//element[@automationid='PART_Spinner']
+						</item>
+					</folder>
+					<folder
+					capname="unknown"
+					id="09c4a61e-c714-4c96-8042-f43582429343"
+					isrooted="False"
+					name="PCA"
+					searchtimeout="0ms">
+						<item
+						capname="combobox"
+						id="29ec40b6-92be-4ae2-adca-65e912bafde1"
+						name="MedicationPCA"
+						refimgid="01753942-4074-4ec9-9eda-437f0e720ce1"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//text[@caption='Medication:']/following-sibling::container//combobox
+						</item>
+						<item
+						capname="combobox"
+						id="796eec53-358d-4eed-86cc-7ca272830c90"
+						name="ModePCA"
+						refimgid="ca51c466-1830-4828-9340-5a11221d775f"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//text[@caption='Mode:']/following-sibling::combobox
+						</item>
+						<item
+						capname="unknown"
+						id="6e2f6533-e850-4175-b78d-096ecc19c629"
+						name="DosePCA"
+						refimgid="e83c2522-c57c-4e29-8248-6eb68d4c7cc3"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//text[@caption='Bolus Dose:']/following-sibling::container//element
+						</item>
+						<item
+						capname="combobox"
+						id="8385589a-1382-4ccc-85ee-f85ae7208fd9"
+						name="DoseUnitPCA"
+						refimgid="9c22acb8-d9d1-4839-9135-fc2233da51f7"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//text[@caption='Bolus Dose:']/following-sibling::container//combobox
+						</item>
+						<item
+						capname="unknown"
+						id="dd055404-9260-4367-8708-0be13c431c50"
+						name="LockoutPCA"
+						refimgid="766bc580-26aa-4de5-a9b1-db9808d57b1d"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//text[@caption='Lockout (minutes):']/following-sibling::element
+						</item>
+						<item
+						capname="unknown"
+						id="79667436-e1d9-47de-b416-6ee33fa1d4f5"
+						name="RatePCA"
+						refimgid="85509260-6d2b-4021-8aa5-cd00ea4b0b04"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//text[@caption='Continuous Rate:']/following-sibling::container//element
+						</item>
+						<item
+						capname="combobox"
+						id="db09043a-58dc-42cb-ba7b-3038104b8df8"
+						name="hrPCA"
+						refimgid="c95db39d-3942-4465-adfd-144d1067fbea"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//text[@caption='hr Dose Limit:']/following-sibling::combobox
+						</item>
+						<item
+						capname="unknown"
+						id="900577f0-07f3-4f61-bfc8-e1d2f5602fd9"
+						name="DoseLimitPCA"
+						refimgid="ce82c331-a784-415c-9fc7-0bc078e22a75"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//text[@caption='hr Dose Limit:']/../following-sibling::container//element
+						</item>
+						<item
+						capname="unknown"
+						id="ee8da8b0-a8b7-46e6-84b5-abcd54868235"
+						name="BolusesGiven"
+						refimgid="18cea6b0-8148-4eaf-b750-64854474b102"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//text[@caption~'Boluses given']/../../element
+						</item>
+						<item
+						capname="unknown"
+						id="c11904e4-d72d-482b-908a-bcf3c921d0e0"
+						name="BolusesAttempted"
+						refimgid="c25ff7af-0308-4d85-beef-d7c6d460c99d"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//text[@caption~'Boluses attempted']/../../element
+						</item>
+						<item
+						capname="combobox"
+						id="ea270196-1a48-4b53-bdd4-c65bc023ab2f"
+						name="hr2PCA"
+						refimgid="f5caf1a5-108b-4c1e-b921-fec1dc81040f"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//text[@caption='hr Total:']/following-sibling::combobox
+						</item>
+						<item
+						capname="unknown"
+						id="b3878433-e842-418a-99ea-e32205aaf22b"
+						name="Total"
+						refimgid="13469c07-3eae-4725-9686-f353b174200f"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//text[@caption='hr Total:']/../following-sibling::container//element[@automationid='PART_Spinner']
+						</item>
+					</folder>
+					<basepath>
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container
+					</basepath>
+				</folder>
+				<folder
+				capname="container"
+				id="ce7746d6-9b24-419c-9468-49d5a7bf3a1c"
+				isrooted="True"
+				name="AllergyChecking"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="checkbox,wpfelement"
+					capname="checkbox"
+					id="35c8b8be-f1e1-4060-805a-008ba132ca6f"
+					name="AcknowledgedButtonOther"
+					refimgid="457f506e-5d8e-422b-9d48-76da1ad25a1d"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[2]/list/container/container/container/container[1]/container[1]/container/container[1]/?/?/checkbox[@text='Acknowledge Drug Allergy CI' and @visible='True']
+					</item>
+					<item
+					capname="checkbox"
+					id="6431e05a-caf6-4def-9e81-976dd5dfbdd7"
+					name="AcknowledgedButtonPCA"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[2]/container[@automationid='MedicationControl']/container/container[1]/container/container[1]/?/?/checkbox[@text='Acknowledge Drug Allergy CI' and @visible='True']
+					</item>
+					<item
+					capname="checkbox"
+					id="119ecf0c-f897-46fa-98fa-82bb6e4a3b6d"
+					name="AcknowledgedButtonCoAnalgesia"
+					refimgid="5c8e6262-c3a1-43ef-9383-66d326a2dc2a"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[2]/list/container/container/?/?/container[@automationid='MedicationControl']/container/container[1]/container/container[1]/?/?/checkbox[@text='Acknowledge Drug Allergy CI' and @visible='True']
+					</item>
+					<basepath>
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container
+					</basepath>
+				</folder>
+				<folder
+				capname="container"
+				id="df6ccff4-7729-4c18-b2b8-ac873918ebdb"
+				isrooted="True"
+				name="OtherModalityTemplate"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					capname="text"
+					id="de621851-7c88-4eea-be05-68a1050a535a"
+					name="Standard"
+					refimgid="d1bbf068-6bf2-4d5b-b797-7029480000b3"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/element[2]/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container//text[@caption='Standard']
+					</item>
+					<item
+					capname="text"
+					id="78163d7d-7a70-4ef1-97d1-8eeb44511ab6"
+					name="Elderly"
+					refimgid="35f85f5c-8ee8-43cf-ad0e-3a6a0d1f4df0"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/element[2]/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container//text[@caption='Elderly']
+					</item>
+					<item
+					capname="checkbox"
+					id="14de0224-11b4-4f2d-93da-7ce9be6d2995"
+					name="OtherMed_Checkbox"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/element[2]/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container//text[@caption=$Medication]/following-sibling::checkbox
+					</item>
+					<item
+					addcaps="button,uiautomation,uiautomationinvoke"
+					capname="text"
+					id="4d18d939-8876-45b1-b193-a3c338564cd7"
+					name="Cancel"
+					refimgid="ae9dcf5e-e818-4da3-99bd-aee96fc9c1b9"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/element[2]/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container//text[@caption='Cancel']
+					</item>
+					<item
+					capname="text"
+					id="eae99136-3220-4d58-b942-66e721e32d40"
+					name="Apply"
+					refimgid="c430527e-8ea1-4506-92c9-4d5832cc092e"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/element[2]/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container//text[@caption='Apply']
+					</item>
+					<basepath>
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/element[2]/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container
+					</basepath>
+				</folder>
+				<folder
+				capname="unknown"
+				id="eaeb3c9f-4a4f-4a8e-bf3b-fc2c3f12cfd2"
+				isrooted="False"
+				name="ModalityHistory"
+				searchtimeout="0ms">
+					<folder
+					capname="container"
+					id="41dfdfdf-c030-43e6-abea-31229446a5ff"
+					isrooted="True"
+					name="CoAnalgesiaHistory"
+					searchtimeout="30000ms"
+					usecache="False">
+						<item
+						capname="button"
+						id="27994626-2a5c-404a-a97a-6a4431fe7b51"
+						name="Close"
+						refimgid="fecdec0d-5aa6-49f5-a7ca-afd25810cca6"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//button[@text='Close']
+						</item>
+						<folder
+						capname="unknown"
+						id="6ee2af29-f83c-463d-86cc-161cda38be58"
+						isrooted="True"
+						name="CoAnalgesiaHistoryColumn"
+						refimgid="66456194-92e7-4470-9881-2ed99ee2f81a"
+						searchtimeout="30000ms"
+						usecache="False">
+							<item
+							capname="text"
+							id="92fe7956-a4ee-46b1-9293-c87465d8a654"
+							name="Date"
+							searchtimeout="30000ms">
+								/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//container[@automationid='HorizontalGridUserControl']//text[@caption=$Medication]/../../container[1]/text[@caption~$Date]
+							</item>
+							<item
+							capname="text"
+							id="ba874de5-1d96-45b0-a808-6f483814f42c"
+							name="Mode"
+							searchtimeout="30000ms">
+								/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//container[@automationid='HorizontalGridUserControl']//text[@caption=$Medication]/../../container[3]/text[@caption=$Mode]
+							</item>
+							<item
+							capname="text"
+							id="a8841576-c5a3-4455-bacd-31419b9bbf24"
+							name="LoadingDose"
+							searchtimeout="30000ms">
+								/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//container[@automationid='HorizontalGridUserControl']//text[@caption=$Medication]/../../container[4]/text[@caption=$Dose]
+							</item>
+							<item
+							capname="text"
+							id="d81bbeeb-0756-4d59-bfb3-eb1cabc5cc46"
+							name="ContinuousRate"
+							searchtimeout="30000ms">
+								/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//container[@automationid='HorizontalGridUserControl']//text[@caption=$Medication]/../../container[5]/text[@caption=$Rate]
+							</item>
+							<item
+							capname="text"
+							id="2fd6adb2-ce04-4378-a6cf-d9b82443b09b"
+							name="Lockout"
+							searchtimeout="30000ms">
+								/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//container[@automationid='HorizontalGridUserControl']//text[@caption=$Medication]/../../container[6]/text[@caption=$Lockout]
+							</item>
+							<item
+							capname="text"
+							id="3b1584c5-9a3d-4b2f-aa17-7602b7d56c69"
+							name="UpdatedBy"
+							searchtimeout="30000ms">
+								/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//container[@automationid='HorizontalGridUserControl']//text[@caption=$Medication]/../../container[8]/text[@caption~$TeamMember]
+							</item>
+							<basepath>
+								/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//container[@automationid='HorizontalGridUserControl']//text[@caption=$Medication]/../..
+							</basepath>
+						</folder>
+						<basepath>
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']
+						</basepath>
+					</folder>
+				</folder>
+				<folder
+				capname="container"
+				id="739c5b91-c79d-4e2f-bf9d-facb8caf4a73"
+				isrooted="True"
+				name="ReasonForAcknowledgeAllergy"
+				refimgid="97073e19-f17a-4f0b-ba45-5be55ecce67c"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="checkbox,wpfelement"
+					capname="text"
+					id="9707bb56-0af2-46fd-a306-ca55083bc0d1"
+					name="Reason"
+					refimgid="9999db3e-a2d3-49f9-840a-e594b503ee26"
+					searchtimeout="60000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/?/?/container[@automationid='WindowContainer']/element[2]/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[2]/container[2]/?/?/container/text[@caption='']
+					</item>
+					<item
+					capname="text"
+					id="b010e09d-de67-43d0-b470-86f2c6be5a63"
+					name="Save"
+					refimgid="ddbea5d1-8b1b-4541-a197-8795a4d4e9ba"
+					searchtimeout="60000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/?/?/container[@automationid='WindowContainer']/element[2]/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[1]/container[2]//text[@caption='Save']
+					</item>
+					<item
+					capname="text"
+					id="7983b3bf-7905-4093-ac95-dbc4924df9b6"
+					name="Cancel"
+					refimgid="6c6c7416-abd9-46d9-899a-5e47a322dce6"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/?/?/container[@automationid='WindowContainer']/element[2]/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[1]/container[1]//text[@caption='Cancel']
+					</item>
+					<basepath>
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/?/?/container[@automationid='WindowContainer']/element[2]/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container
+					</basepath>
+				</folder>
+			</folder>
+			<folder
+			capname="unknown"
+			id="551eedb6-2de0-417b-a2b9-d7004f87e364"
+			isrooted="False"
+			name="HandoverNotes"
+			searchtimeout="0ms">
+				<folder
+				capname="container"
+				id="d7d09017-e5ad-4af0-8976-085d6831f61d"
+				isrooted="True"
+				name="AddNoteWindow"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="unknown,wpfelement"
+					capname="unknown"
+					id="dc76afb6-be46-4ab4-906c-747525f1c75a"
+					name="NoteDetail"
+					refimgid="233eda14-1be4-4d60-8a82-a5c37cee7a8a"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/?/?/element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//text[@automationid='NoteTextBox']/element[2]
+					</item>
+					<item
+					addcaps="checkbox,wpfelement"
+					capname="text"
+					id="a944e692-2506-489e-9908-be14909e5aff"
+					name="HandoverNote"
+					refimgid="02d20108-b7c3-4d45-8397-fd1cea96fdb6"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/?/?/element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//text[@caption='Handover Note']
+					</item>
+					<item
+					addcaps="checkbox,wpfelement"
+					capname="text"
+					id="5675ca77-3b5f-4f1e-bd2b-99db5ff3eedf"
+					name="DontPrint"
+					refimgid="44548726-993f-4964-8133-a3204953c04f"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/?/?/element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//container[@automationid='IconLeftToggleButtonUserControl']//text[@caption='Don''t Print']
+					</item>
+					<basepath>
+						/form[@wpfnative='True' and @name='MainWindow']/element/?/?/element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container
+					</basepath>
+				</folder>
+				<folder
+				capname="unknown"
+				id="0820ce2f-47fe-432b-b726-3bba24d35060"
+				isrooted="True"
+				name="NotesSection"
+				refimgid="6befe084-a698-492e-8233-fa12a190748e"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="button,wpfelement"
+					capname="text"
+					id="354d256c-f7c4-45fe-b2ed-76a3b6e97c21"
+					name="AddNote"
+					refimgid="94aaf342-87e2-4180-a507-e3068d942b22"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container//text[@caption='Notes']/..//text[@caption='Add']
+					</item>
+					<item
+					addcaps="button,wpfelement"
+					capname="button"
+					id="765a954d-425c-4ec6-b71e-610dbfe1843d"
+					name="ViewNote"
+					refimgid="538d9db8-7032-4b49-8df0-bcfd31b209be"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container//text[@caption='Notes']/..//button[@text='View']
+					</item>
+					<item
+					addcaps="cell,wpfelement"
+					capname="cell"
+					id="80a2e67e-d320-4f4c-869b-64fd1b6c2050"
+					name="AddedNote"
+					refimgid="677af756-642a-4e4a-86b7-427a09ea9fc7"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container//text[@caption='Notes']/../following-sibling::table//cell[@text=$NoteDetail]
+					</item>
+					<item
+					addcaps="checkbox,wpfelement"
+					capname="checkbox"
+					id="d31b5cb8-33af-4ffd-8641-7d894d6d2aee"
+					name="ShowDeleted"
+					refimgid="47865ec5-3b52-4deb-9214-267d00ba76e2"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container//text[@caption='Notes']/..//checkbox[@text='Show Deleted']
+					</item>
+					<item
+					addcaps="checkbox,wpfelement"
+					capname="checkbox"
+					id="c2381fc7-a01a-4ff9-b8d0-912cde42a6d8"
+					name="HideDeleted"
+					refimgid="026ab2b1-3310-4bc1-88b1-510409657fab"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container//text[@caption='Notes']/..//checkbox[@text='Hide Deleted']
+					</item>
+					<basepath>
+						/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container//text[@caption='Notes']/..
+					</basepath>
+				</folder>
+			</folder>
+			<folder
+			capname="unknown"
+			id="e3b3d910-effd-4e63-a673-6039d63e5b8c"
+			isrooted="False"
+			name="SearchPatientScreen"
+			searchtimeout="0ms">
+				<item
+				addcaps="checkbox,wpfelement"
+				capname="combobox"
+				id="32804963-a9d7-4c82-9ff7-303a74b19936"
+				name="ReviewRound"
+				refimgid="8805e73b-d33a-4e5d-9301-d11896fe1345"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//text[@caption='Review Round:']/following-sibling::combobox
+				</item>
+				<item
+				addcaps="button,wpfelement"
+				capname="button"
+				id="77e01928-02c2-4ab1-9dde-8b830e4be36f"
+				name="Search"
+				refimgid="665289e1-566c-4a97-85f5-4a2d7611fcc7"
+				refpath="/form[@automationid='MainWindow' and @wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[1]/button[@text='Search']"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[1]/button[@text='Search']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="c404b535-ac68-414d-838e-73795c57912a"
+				name="NHI"
+				refimgid="d9bb435c-6f8d-4ea6-bc76-203a24dd1c3f"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//text[@automationid='NhiTextBox']
+				</item>
+				<item
+				addcaps="checkbox,wpfelement"
+				capname="checkbox"
+				id="be555996-bfc7-4587-b820-d4e9d7abed91"
+				name="WardView"
+				refimgid="f2b774f2-2bcf-4a22-a0d9-8dbdac86e80b"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//text[@caption='Ward View']/preceding-sibling::checkbox
+				</item>
+				<item
+				addcaps="cell,wpfelement"
+				capname="cell"
+				id="bc444f4a-b7e3-4f18-8119-5128b83575d1"
+				name="PatientNHISearch"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container/container[1]/element/container/container/container[2]/table/container[@automationid='PART_RowsPresenter']/row/cell[@text=$NHI]
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="c8e0de8b-6d9b-4e9a-9e45-f63263fd772f"
+				name="LogoAcutePain"
+				refimgid="64069f36-24e8-44d3-a215-34482d634bb0"
+				refpath="/form[@automationid='MainWindow' and @wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/container[1]/container/container[1]/text[@caption='SAFERsleep AcutePain']"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container/container[1]/container[1]/container/container[1]/text[@caption='SAFERsleep AcutePain']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="beee8389-a8bc-4865-9bf9-1037821e1c36"
+				name="WardTab"
+				refimgid="2da78a22-f511-4687-a188-3bf74ab423d3"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[2]/container/list[@automationid='ResultControl']/container/container[1]/container//text[@caption=$Ward]
+				</item>
+				<item
+				capname="text"
+				id="891b2173-e2c6-44ea-8eaf-aa6026df3716"
+				name="PatientSearchWardView"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container/container[1]/element/container/container/container[2]/container/list[@automationid='ResultControl']/container/container[1]/?/?/table/container[@automationid='PART_RowsPresenter']//text[@caption=$Patient]
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="f5cc38e8-b143-4af0-bfe5-a6d4b6890638"
+			isrooted="False"
+			name="ConfirmPatient"
+			searchtimeout="0ms">
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="9479f360-38a5-457a-9d0b-7c5a3f4c2bf4"
+				name="NHI"
+				refimgid="641ddf0e-179b-45b1-b4cd-32afed0dd859"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container[2]/container[1]/?/?/text[@caption=$NHI]
+				</item>
+				<item
+				addcaps="button,wpfelement"
+				capname="text"
+				id="d1e68db5-340a-43fd-b903-3e4dd6ec165a"
+				name="Confirm"
+				refimgid="6bd3fdd2-7b9e-466a-88c0-8cc58de4d4f7"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/?/?/element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container[1]/container[2]/button/?/?/text[@caption='Confirm']
+				</item>
+				<item
+				capname="text"
+				id="d932a486-4289-4494-b140-18326c8e95c5"
+				name="Cancel"
+				refimgid="4ca5df57-0617-49d2-8c48-8c6df34c9ace"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/?/?/element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container[1]/container[1]/button/?/?/text[@caption='Cancel']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="4c739a7f-3874-4815-b346-21d97f3f3839"
+			isrooted="False"
+			name="ActiveProblems"
+			searchtimeout="0ms">
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="text"
+				id="c037609e-5f96-48fe-94a3-8ab8988a0822"
+				name="Add_Allergies"
+				refimgid="bedacc15-405f-44e9-ae44-c71fb7c7b817"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container//text[@caption='Allergies and Relevant History']/preceding-sibling::container//text[@caption='Add']
+				</item>
+				<folder
+				capname="unknown"
+				id="b7c10d80-fe6e-4d37-8b54-e604e4228ccc"
+				isrooted="True"
+				name="PopupWindows"
+				searchtimeout="60000ms"
+				usecache="False">
+					<item
+					addcaps="tabpage,uiautomation"
+					capname="tabpage"
+					id="f3db6daa-3afc-4eb2-85ed-7fe78ed8aba1"
+					name="ConditionsTab"
+					refimgid="f3162087-e8cd-43a2-a2a7-c94cca2a1c1b"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpage[@title='Conditions']
+					</item>
+					<item
+					addcaps="tabpage,uiautomation"
+					capname="tabpage"
+					id="52abe08e-90de-43f3-93a5-92f88a3cf94f"
+					name="AllergiesTab"
+					refimgid="3463f516-c61e-4678-b8d1-efbefc548000"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpage[@title='Allergies']
+					</item>
+					<item
+					capname="tabpage"
+					id="8358c43f-9183-4a51-b67d-b930b285843d"
+					name="PatientAssessmentTab"
+					refimgid="d4ff714e-d235-40eb-8217-2df932ac86de"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpage[@title='Patient Assessment']
+					</item>
+					<folder
+					capname="unknown"
+					id="2bccebb3-69f5-4d8b-8c05-a14715460bd4"
+					isrooted="False"
+					name="Allergies"
+					searchtimeout="0ms">
+						<item
+						addcaps="button,uiautomation,uiautomationinvoke"
+						capname="button"
+						id="696bf1f0-c7c9-4998-a94d-6a0e95c3e6d7"
+						name="AddAllergy"
+						refimgid="2b624d1c-7273-485f-ae37-4889bc0ddc0b"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpagelist/tabpage[@title='Allergies']/?/?/button[@text='Add Allergy']
+						</item>
+						<item
+						addcaps="text,uiautomation"
+						capname="cell"
+						id="d879540d-e9f5-4d37-9e86-5a95cd541360"
+						name="AddedAllergy"
+						refimgid="7563ff73-0039-4bb3-9698-78d6e9878adf"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpage[@title='Allergies']//table//cell[@text=$Detail]/preceding-sibling::cell[@text=$WarningType]/preceding-sibling::cell[@text=$DrugClass]
+						</item>
+					</folder>
+					<folder
+					capname="unknown"
+					id="1853fa7e-764f-4c62-a7a0-f000179d181a"
+					isrooted="False"
+					name="Conditions"
+					searchtimeout="0ms">
+						<item
+						addcaps="checkbox,wpfelement"
+						capname="checkbox"
+						id="f22e01d1-3776-4ac5-ac81-4a99b7674473"
+						name="Asthma"
+						refimgid="23caa2ee-d169-4060-871a-b9e6a7518fa0"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpage[@title='Conditions']/list//checkbox[@text='Asthma']
+						</item>
+						<item
+						addcaps="checkbox,wpfelement"
+						capname="checkbox"
+						id="8932922b-63ba-4626-8806-797c5539a292"
+						name="ChronicOpioidUse"
+						refimgid="359528fe-040c-4f8b-9330-403fc9009634"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpage[@title='Conditions']/list//checkbox[@text='Chronic opioid use']
+						</item>
+						<item
+						addcaps="text,wpfelement"
+						capname="text"
+						id="18b7d5e3-e2f7-4c39-99af-0dcacaf75149"
+						name="ChronicOpioidUseNote"
+						refimgid="d5a374a9-f7ad-4606-97fc-44b396061aa1"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpage[@title='Conditions']/list//checkbox[@text='Chronic opioid use']/following-sibling::container/text
+						</item>
+						<item
+						addcaps="text,wpfelement"
+						capname="text"
+						id="e5434e16-bc1b-43e4-ba31-bfaac124305f"
+						name="AsthmaNote"
+						refimgid="e1e9140a-ee08-4da7-89b6-ec01a6138eb3"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpage[@title='Conditions']/list//checkbox[@text='Asthma']/following-sibling::container/text
+						</item>
+						<item
+						addcaps="checkbox,wpfelement"
+						capname="checkbox"
+						id="772ac8f7-addc-48ad-8a16-980a53268d32"
+						name="PsychiatricDisorder"
+						refimgid="0d442bb0-fe10-482f-bb9e-96fc0aeee235"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpagelist/tabpage[@title='Conditions']//checkbox[@text='Psychiatric Disorder']
+						</item>
+						<item
+						addcaps="radiobutton,wpfelement"
+						capname="radiobutton"
+						id="f105775d-2dae-42e0-b213-79c1ee3d2e1a"
+						name="Anxiety"
+						refimgid="38ea80be-5b48-47e0-a51f-5fe6c9c50bbb"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpage[@title='Conditions']//radiobutton[@text='Anxiety']
+						</item>
+						<item
+						addcaps="radiobutton,wpfelement"
+						capname="radiobutton"
+						id="25b1f173-4754-4fa1-8512-465cac4cfd43"
+						name="Depression"
+						refimgid="53e128a5-a426-4604-8643-f40062a85155"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpage[@title='Conditions']//radiobutton[@text='Depression']
+						</item>
+						<item
+						addcaps="radiobutton,wpfelement"
+						capname="radiobutton"
+						id="d5602028-7d7f-4aa5-a554-58c5fb615416"
+						name="Other"
+						refimgid="7159cecf-e69e-4606-825c-4e0dfc8e6e3a"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpage[@title='Conditions']//radiobutton[@text='Other']
+						</item>
+						<item
+						addcaps="checkbox,wpfelement"
+						capname="checkbox"
+						id="c000f910-8b33-42d5-979c-edaede919c2d"
+						name="Condition"
+						refimgid="99ed4bf5-025b-4f5c-8712-54610cf25ff8"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpage[@title='Conditions']/list/container//checkbox[@text=$Condition]
+						</item>
+						<item
+						addcaps="text,wpfelement"
+						capname="text"
+						id="25c3e9f6-2dc3-431e-ac9b-6b9593b81c06"
+						name="Condition_Note"
+						refimgid="83e0797b-f918-4e0a-8b3b-40dccdb2d942"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpage[@title='Conditions']/list/container//checkbox[@text=$Condition]/following-sibling::container/text
+						</item>
+						<item
+						addcaps="radiobutton,wpfelement"
+						capname="radiobutton"
+						id="edf271ec-c5ba-434e-8ab1-185807b8eee0"
+						name="Condition_Option"
+						refimgid="021bf0d7-6cec-49f0-a110-d631794def02"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpage[@title='Conditions']//radiobutton[@text=$ConditionDetail]
+						</item>
+					</folder>
+					<folder
+					capname="unknown"
+					id="cabc4b55-bea1-44a0-8afc-6a4a8678f9a5"
+					isrooted="False"
+					name="PatientAssessment"
+					searchtimeout="0ms">
+						<item
+						capname="text"
+						id="7245b756-1181-4de7-8c52-40722c5e8d2a"
+						name="PAssessmentDescription"
+						refimgid="3232dd7c-0a5f-448a-bff7-7362c9daedad"
+						searchtimeout="30000ms">
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpage[@title='Patient Assessment']/container/text[2]
+						</item>
+					</folder>
+					<item
+					addcaps="button,uiautomation,uiautomationinvoke"
+					capname="text"
+					id="de7923c0-597e-41aa-a99a-6f66c27b51c8"
+					name="NoComorbidities"
+					refimgid="c116f442-3b9d-4d0f-944b-8f4a3d84030a"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[2]/button/?/?/text[@caption~'^No\ comorbidities\ or\ other']
+					</item>
+					<item
+					capname="text"
+					id="ee01073e-28d3-4c0f-815c-cb264ec2b7b3"
+					name="SaveActiveProblem"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[2]/button/?/?/text[@caption='Save']
+					</item>
+					<basepath>
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']
+					</basepath>
+				</folder>
+				<folder
+				capname="container"
+				id="a579897c-f760-4e85-a21f-faab441d83a9"
+				isrooted="True"
+				name="ListActiveProblem"
+				searchtimeout="30000ms"
+				usecache="True">
+					<item
+					addcaps="cell,wpfelement"
+					capname="text"
+					id="cbd172ed-a13b-48ec-834e-cb14ca55e9cf"
+					name="ConditionItem"
+					refimgid="3303189b-a844-4155-87e8-80858c691f03"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container/container[1]/element/container/container/container[3]/container[2]//table/container[@automationid='PART_RowsPresenter']//text[@caption=$ConditionDetail]/../../..//text[@caption=$Condition]
+					</item>
+					<item
+					addcaps="cell,wpfelement"
+					capname="text"
+					id="5c53d108-e6a3-4da0-95ed-26ce615280ab"
+					name="AllergyItem"
+					refimgid="786a10ee-445d-4bbf-aad4-10f8c55f7e71"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container/container[1]/element/container/container/container[3]/container[2]//table/container[@automationid='PART_RowsPresenter']//text[@caption=$WarningType+', '+$Detail]/../../..//text[@caption=$DrugClass]
+					</item>
+					<item
+					capname="text"
+					id="2a88826b-474e-40a4-a603-b1f2c1230a6e"
+					name="AssessmentItem"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container/container[1]/element/container/container/container[3]/container[2]//table/container[@automationid='PART_RowsPresenter']//text[@caption='Patient Assessment']/../../following-sibling::cell//text
+					</item>
+					<basepath>
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container/container[1]/element/container/container/container[3]/container[2]//table/container[@automationid='PART_RowsPresenter']
+					</basepath>
+				</folder>
+				<item
+				addcaps="scrollbar,wpfelement"
+				capname="scrollbar"
+				id="c770f4d8-9d63-4ada-8e80-5b9ea5763889"
+				name="Addition_ScrollBar"
+				refimgid="bd1ecef1-e6e8-4428-99f5-3e2922862d0b"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/?/?/element[@automationid='content']/container/container[1]/element/container/container/container[3]/container[2]/container[@automationid='ContentPanelUserControl']//table/scrollbar[@automationid='PART_VerticalScrollBar']
+				</item>
+				<item
+				addcaps="button,wpfelement"
+				capname="button"
+				id="26db0247-b364-4351-b5c3-ed947cac6156"
+				name="DownButton"
+				refimgid="4b3faa31-7b7f-48de-b3c5-979b5fd7420b"
+				refpath="/form[@automationid='MainWindow' and @wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/element/container/container/container[3]/container[2]/container[@automationid='ContentPanelUserControl']/container/container[2]/table/scrollbar[@automationid='PART_VerticalScrollBar']/button[@automationid='PART_LineDownButton']"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container/container[1]/element/container/container/container[3]/container[2]/container[@automationid='ContentPanelUserControl']//table/scrollbar[@automationid='PART_VerticalScrollBar']/button[@automationid='PART_LineDownButton']
+				</item>
+				<item
+				capname="button"
+				id="a60db523-e691-4fab-8629-4d2315e88f63"
+				name="UpButton"
+				refimgid="f7e88a8c-7df4-4f2c-9ffb-3b10e8c0bebe"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/container/container[1]/element/container/container/container[3]/container[2]/container[@automationid='ContentPanelUserControl']//table/scrollbar[@automationid='PART_VerticalScrollBar']/button[@automationid='PART_LineUpButton']
+				</item>
+				<folder
+				capname="unknown"
+				id="3d4659b4-9147-4680-8788-e53027ad13b1"
+				isrooted="True"
+				name="AddAllergyContraindicationAdverseReaction"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="combobox,uiautomation,uiautomationvalue"
+					capname="combobox"
+					id="6e5b8152-8a94-432c-a07f-c3fbd07a975d"
+					name="DrugClass"
+					refimgid="a55eb986-53ef-463f-b4e1-70f781fee6f2"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/?/?/element[@automationid='content']/?/?/container[@automationid='WindowContainer']/element[2]/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']//container[@automationid='PART_HeaderGrid']/text[@caption='Add Allergy, Contraindication or Adverse Reaction']/../../..//text[@caption='Drug/Class']/following-sibling::combobox
+					</item>
+					<item
+					addcaps="combobox,uiautomation"
+					capname="combobox"
+					id="96c45d0b-3511-42a1-a9e0-148d6ac8f3d8"
+					name="WarningType"
+					refimgid="44e755cc-1ae8-430f-9141-e15fe9b3ab9c"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/?/?/element[@automationid='content']/?/?/container[@automationid='WindowContainer']/element[2]/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']//container[@automationid='PART_HeaderGrid']/text[@caption='Add Allergy, Contraindication or Adverse Reaction']/../../..//text[@caption='Warning Type']/following-sibling::combobox
+					</item>
+					<item
+					addcaps="container,uiautomation"
+					capname="text"
+					id="ae622673-a216-4772-a1b0-d788d60fab63"
+					name="Detail"
+					refimgid="1ac6a6ed-8532-4626-b66c-ecbe09dcc625"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/?/?/element[@automationid='content']/?/?/container[@automationid='WindowContainer']/element[2]/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']//container[@automationid='PART_HeaderGrid']/text[@caption='Add Allergy, Contraindication or Adverse Reaction']/../../..//text[@caption='Details']/following-sibling::text/following-sibling::text
+					</item>
+					<item
+					addcaps="button,uiautomation,uiautomationinvoke"
+					capname="text"
+					id="27959265-9e69-4cce-81ad-cb365fe6dd39"
+					name="Save"
+					refimgid="3f493de8-8f58-4a3a-ba9b-a9d6040f750c"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/?/?/element[@automationid='content']/?/?/container[@automationid='WindowContainer']/element[2]/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']//container[@automationid='PART_HeaderGrid']/text[@caption='Add Allergy, Contraindication or Adverse Reaction']/../../..//text[@caption='Save']
+					</item>
+					<item
+					addcaps="button,uiautomation,uiautomationinvoke"
+					capname="button"
+					id="cd449ead-31c7-430f-b6cd-a7fae70b6721"
+					name="Cancel"
+					refimgid="8cb1e92c-ccce-41a3-a027-5214030b4875"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']/element/?/?/element[@automationid='content']/?/?/container[@automationid='WindowContainer']/element[2]/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']//container[@automationid='PART_HeaderGrid']/text[@caption='Add Allergy, Contraindication or Adverse Reaction']/../../..//container[@automationid='IconLeftButtonUserControl'][1]/button
+					</item>
+					<basepath>
+						/form[@wpfnative='True' and @name='MainWindow']/element/?/?/element[@automationid='content']/?/?/container[@automationid='WindowContainer']/element[2]/container[@automationid='PART_WindowRoot']/element[@automationid='PART_WindowControl']//container[@automationid='PART_HeaderGrid']/text[@caption='Add Allergy, Contraindication or Adverse Reaction']/../../..
+					</basepath>
+				</folder>
+			</folder>
+			<folder
+			capname="container"
+			id="17f94582-b931-4f8f-96a7-fc99d97998c1"
+			isrooted="True"
+			name="SavingReview"
+			searchtimeout="30000ms"
+			usecache="True">
+				<item
+				addcaps="checkbox,wpfelement"
+				capname="combobox"
+				id="eea4e208-e92e-4763-a90a-889f25d6bfd5"
+				name="ReviewRound"
+				refimgid="1b9a2e03-edc3-4ec0-8b1e-3a67a2b1c802"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']/container//container[@automationid='PART_HeaderGrid']/following-sibling::container/?/container/container//text[@caption='When to next review:']/following-sibling::combobox
+				</item>
+				<item
+				addcaps="checkbox,wpfelement"
+				capname="combobox"
+				id="38007a90-32a0-47b6-b2a2-cedd4c14cd16"
+				name="SelectPrinter"
+				refimgid="4fa3cbbf-1d2a-4205-9ba3-88a4d4fbf532"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']/container//container[@automationid='PART_HeaderGrid']/following-sibling::container/?/container/container//container[2]//text[@caption='Select Printer:' and @visible='true']/following-sibling::combobox
+				</item>
+				<item
+				addcaps="button,wpfelement"
+				capname="button"
+				id="b4bedf93-3ec4-4e87-8c0c-4afc17c18322"
+				name="Cancel"
+				refimgid="7f99fe35-d812-4ba8-8038-71026ee7b828"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']/container//container[@automationid='PART_HeaderGrid']/following-sibling::container/?/container/container/element/container/element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container[1]/container[1]/button
+				</item>
+				<item
+				addcaps="button,wpfelement"
+				capname="text"
+				id="32d8b403-c539-4e4f-b9f2-5e66e2bd34fe"
+				name="Print_Save"
+				refimgid="f21a581c-12f6-4f63-a97e-2f307e95cdcd"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']/container//container[@automationid='PART_HeaderGrid']/following-sibling::container/?/container/container//text[@caption='Print and Save']
+				</item>
+				<folder
+				capname="unknown"
+				id="db476c3d-90e6-4142-8318-dc8eca813745"
+				isrooted="False"
+				name="Discharge"
+				searchtimeout="0ms">
+					<item
+					addcaps="checkbox,wpfelement"
+					capname="combobox"
+					id="c186ebaf-548e-4a6b-b8bf-920c910d7702"
+					name="Printer_DisIntruction"
+					refimgid="6cbda88b-71a4-4214-8ec6-b5b2a8ebe9c7"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']/container//container[@automationid='PART_HeaderGrid']/following-sibling::container/?/container/container//container[2]/container[3]/container[1]/?/?/combobox
+					</item>
+					<item
+					addcaps="checkbox,wpfelement"
+					capname="combobox"
+					id="8babf6c4-e8e1-4a86-afcc-458d32887732"
+					name="Printer_DisSummary"
+					refimgid="3f0546ba-359f-4720-b1a3-0694c2a4acb0"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']/container//container[@automationid='PART_HeaderGrid']/following-sibling::container/?/container/container//container[2]/container[3]/container[2]/?/?/combobox
+					</item>
+					<item
+					addcaps="checkbox,wpfelement"
+					capname="combobox"
+					id="4f6b8dda-83cf-4a44-ac03-491f1e4dd3fc"
+					name="Template"
+					refimgid="7dac1557-775d-488f-9f5e-387ac587330d"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']/container//container[@automationid='PART_HeaderGrid']/following-sibling::container/?/container/container/container[2]/container[3]/combobox
+					</item>
+					<item
+					addcaps="text,wpfelement"
+					capname="text"
+					id="93a0d2dc-a5cb-4d14-a66f-6dc0846e6dca"
+					name="TemplateContent"
+					refimgid="1d826c09-6c93-4d0f-9d6b-cc4d8416eeb0"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']/container//container[@automationid='PART_HeaderGrid']/following-sibling::container/?/container/container//container[4]/following-sibling::text
+					</item>
+				</folder>
+				<basepath>
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']/container//container[@automationid='PART_HeaderGrid']/following-sibling::container/?/container/container
+				</basepath>
+			</folder>
+			<folder
+			capname="unknown"
+			id="c16e72d0-1aba-4ce4-945d-211efc0c579c"
+			isrooted="False"
+			name="MainButtons"
+			searchtimeout="0ms">
+				<folder
+				capname="unknown"
+				id="12198346-cecc-46e0-92f1-adf956054e34"
+				isrooted="True"
+				name="OnPoppup"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="button,wpfelement"
+					capname="text"
+					id="6e4cb3d5-42bd-4aa5-b8bc-4abc3c824989"
+					name="CancelDialogue"
+					refimgid="7f142de3-ae07-4798-9013-c87eb8d8a469"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//text[@caption='Cancel']
+					</item>
+					<item
+					addcaps="button,wpfelement"
+					capname="text"
+					id="442dd12a-3201-41a1-a199-572a4257f056"
+					name="SaveDialogue"
+					refimgid="be5ebbb2-6371-4502-b08f-865a19d2ad05"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//text[@caption='Save']
+					</item>
+					<item
+					addcaps="text,wpfelement"
+					capname="text"
+					id="8be667b7-6c39-4334-b3d1-c7b6f5048d57"
+					name="DeleteNote"
+					refimgid="c430ef7e-287a-4776-ae43-baed97267488"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//text[@caption='Delete']
+					</item>
+					<basepath>
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']
+					</basepath>
+				</folder>
+				<folder
+				capname="container"
+				id="1e865043-c967-4018-b926-57b21d95f668"
+				isrooted="True"
+				name="OnMainScreen"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="button,uiautomation,uiautomationinvoke"
+					capname="text"
+					id="be7b83af-0514-4e5a-937b-c9280f0998bf"
+					name="History"
+					refimgid="3f37aaf7-4e8a-4939-aaa3-98c21a801d2c"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='IconLeftButtonUserControl']//text[@caption='History']
+					</item>
+					<item
+					addcaps="button,uiautomation,uiautomationinvoke"
+					capname="text"
+					id="a4712bc4-07cb-442d-8705-53aa8a46d92c"
+					name="DeleteModality"
+					refimgid="ec95aa98-e76b-4f88-92ea-12f698ec851c"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='IconLeftButtonUserControl']//text[@caption='Delete Modalities']
+					</item>
+					<item
+					addcaps="button,uiautomation,uiautomationinvoke"
+					capname="text"
+					id="0ed041fe-b92e-4c92-9c58-b9ace1bd17cd"
+					name="SaveReview"
+					refimgid="43e4cd70-a18c-4dcd-b337-dc01a31a4430"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='IconLeftButtonUserControl']//text[@caption='Save']
+					</item>
+					<item
+					addcaps="button,wpfelement"
+					capname="text"
+					id="bcfe30f2-ac0a-4fb0-8a60-fc7b38869d83"
+					name="Logout"
+					refimgid="d559d7c5-43af-4f0d-9701-a6431332e887"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='IconLeftButtonUserControl']/button//text[@caption='Logout']
+					</item>
+					<item
+					addcaps="text,wpfelement"
+					capname="text"
+					id="70fffe04-c251-40bd-afa0-edfd02864db7"
+					name="RoundTeam"
+					refimgid="efc326ac-5968-4c80-8a39-e309524fa132"
+					refpath="/form[@automationid='MainWindow' and @wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[1]/container[1]/container/container[1]/container[@automationid='IconLeftButtonUserControl']/button/container/text[@caption='Round Team']"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='IconLeftButtonUserControl']/button/?/?/text[@caption='Round Team']
+					</item>
+					<item
+					capname="text"
+					id="5073283a-25a2-4efb-a7b4-9fa4d6c59341"
+					name="CancelReview"
+					refimgid="bed08354-b090-428f-94c8-67500db303f2"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='IconLeftButtonUserControl']//text[@caption='Close']
+					</item>
+					<basepath>
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='IconLeftButtonUserControl']
+					</basepath>
+				</folder>
+			</folder>
+			<folder
+			capname="unknown"
+			id="1f83c1c7-c1ce-472a-a1b3-26cceecdfaa9"
+			isrooted="True"
+			name="Confirmation"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,wpfelement"
+				capname="text"
+				id="5e46baac-8121-4b22-83e9-50ab73ff43c7"
+				name="ButtonYes"
+				refimgid="951e3957-3457-4e3b-9793-524399d0ca29"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//text[@caption='Yes']
+				</item>
+				<item
+				addcaps="button,wpfelement"
+				capname="text"
+				id="14592bd0-e8d3-4df6-a4df-637f7ca6c8bb"
+				name="ButtonNo"
+				refimgid="58d04a21-51dd-48fc-8138-c42af056ccf0"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//text[@caption='No']
+				</item>
+				<basepath>
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']
+				</basepath>
+			</folder>
+			<folder
+			capname="unknown"
+			id="90cf808f-6878-4d63-8498-980afd0f7fa3"
+			isrooted="True"
+			name="DeleteModality"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="checkbox,wpfelement"
+				capname="checkbox"
+				id="6d6536fc-9683-4d13-be47-d971c3c08c46"
+				name="SelectAllModalitiesForDeletion"
+				refimgid="99a1add8-b4ec-4c6e-a911-f3df7ea5ee42"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element//element[@automationid='content']//element[@automationid='PART_WindowControl']//checkbox[@text~'^Select\ all\ modalities\ for']
+				</item>
+				<item
+				addcaps="checkbox,wpfelement"
+				capname="checkbox"
+				id="ea545e42-9487-4ff6-a9fc-33bfad733fcd"
+				name="ReasonAppliesToAllDeletions"
+				refimgid="70101576-b6cc-408f-8b70-8d8347e06bb4"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element//element[@automationid='content']//element[@automationid='PART_WindowControl']//checkbox[@text~'^Reason\ applies\ to\ all\ del']
+				</item>
+				<item
+				capname="text"
+				id="a057d8fd-1778-47fc-a2e8-915794d8770f"
+				name="Save"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element//element[@automationid='content']//element[@automationid='PART_WindowControl']//text[@caption='Save']
+				</item>
+				<item
+				capname="text"
+				id="756527d2-cdd9-46ec-8bd2-b96163c52941"
+				name="Cancel"
+				refimgid="38d6d7de-593e-4664-a4a6-1f75065655a5"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element//element[@automationid='content']//element[@automationid='PART_WindowControl']//text[@caption='Cancel']
+				</item>
+				<basepath>
+					/form[@wpfnative='True' and @name='MainWindow']/element//element[@automationid='content']//element[@automationid='PART_WindowControl']
+				</basepath>
+			</folder>
+			<folder
+			capname="container"
+			id="9d06f915-7c86-44ad-953f-93789ec49130"
+			isrooted="True"
+			name="PainTrend"
+			searchtimeout="30000ms"
+			usecache="False">
+				<folder
+				capname="unknown"
+				id="b4962e9f-2020-4cef-85b2-3d385b16f425"
+				isrooted="True"
+				name="PainTrendColumn"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					capname="text"
+					id="73b6c235-985e-42d5-a6e9-8587e01f2da5"
+					name="UpdatedBy"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container[2]/container[@automationid='HorizontalGridUserControl']//list//text[@caption~'^'+$PainTrendDate]/../../container[17]/text[@caption~$TeamMember]
+					</item>
+					<item
+					capname="text"
+					id="1fb7ce74-479a-44b1-a72b-4adf0df8f126"
+					name="ReviewHistoryData"
+					searchtimeout="30000ms">
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container[2]/container[@automationid='HorizontalGridUserControl']//list//text[@caption~'^'+$PainTrendDate]/../../container[$PainTrendIndex]/text[@caption=$ReviewAnswer]
+					</item>
+					<basepath>
+						/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container[2]/container[@automationid='HorizontalGridUserControl']//list//text[@caption~'^'+$PainTrendDate]/../..
+					</basepath>
+				</folder>
+				<item
+				addcaps="checkbox,wpfelement"
+				capname="checkbox"
+				id="e234fdd8-325c-4714-a1bb-c961efeae0cf"
+				name="ShowDataValues"
+				refimgid="d600afc3-3526-4e1e-8654-24edb989b81a"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/checkbox[@text='Show Data Values']
+				</item>
+				<item
+				addcaps="button,wpfelement"
+				capname="text"
+				id="9d83c9e3-e2b7-47f4-9da9-aa2a60b8ef2f"
+				name="Close"
+				refimgid="f142fa78-46ec-4267-9733-771ad19d23c3"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container//text[@caption='Close']
+				</item>
+				<basepath>
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container
+				</basepath>
+			</folder>
+			<folder
+			capname="container"
+			id="e5855bb7-d380-4c7f-af55-733bc89a7cf1"
+			isrooted="True"
+			name="ConfirmReview"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,wpfelement"
+				capname="text"
+				id="1f2350fb-1bb7-44f9-9719-96e311168f06"
+				name="NewReview"
+				refimgid="b17e3656-9863-4aa2-9ec3-abe89585becf"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[2]/button/?/?/text[@caption='New Review']
+				</item>
+				<item
+				addcaps="button,wpfelement"
+				capname="text"
+				id="2d68b71f-5c26-4fd4-8759-7871d9599cb2"
+				name="OpenCurrentReview"
+				refimgid="0c07905e-2d04-47cd-b04e-49b90d146628"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[3]/button/?/?/text[@caption='Open Current Review']
+				</item>
+				<item
+				addcaps="button,wpfelement"
+				capname="text"
+				id="e8a5acf3-e8d4-41d6-8722-124a3a82e294"
+				name="Cancel"
+				refimgid="4d0affe1-774f-4fd3-9e7e-fb90bc0b548d"
+				searchtimeout="30000ms">
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[1]/button/?/?/text[@caption='Cancel']
+				</item>
+				<basepath>
+					/form[@wpfnative='True' and @name='MainWindow']/element/container/element[@automationid='content']/container/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@wpfnative='True' and @name='MainWindow']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAADFSURBVDhPpYwxCgJBDEXHu3gV72G5hRew8ACW
+HsHO7WxsrKwFGxEsRQSxcWDBVbBZdzLJmEmyWPjgFXnzGeeKsvlLM6KE9ZY0I0pYb0kzohzrHTQj
+yrHeQX6MFrtszBnOt6ln8uNwrWA8mG3gloR28U+8ItkH0/URcxyf7g+8Ir5+p21SBoK38XKvWlIG
+wur9yUr1zg8CXZ24Va/fH0jkXn1w9jVOv2MO34IqtBLyDvAdqEIrIe8A34EqoHzcwzvAN64omw+g
+nZ18Wq7KggAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="contextmenu,nativewindow,wpfwin32element,wpfelement"
+		capname="contextmenu"
+		id="0f98767d-6d24-49db-8261-fb9d5ce48163"
+		isrooted="True"
+		name="ModalityMenuItems"
+		refpath="/contextmenu[@wpfnative='True' and @processname='SAFERsleepAcutePainClient' and @win32ownerwindowlevel='1']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="menuitem,wpfelement"
+			capname="menuitem"
+			id="b2c7cd91-c140-4cb4-a9d0-33a5d55c11e7"
+			name="PCA"
+			refimgid="d4ccabe1-ea4e-4ab3-aa19-b850b5ee10d9"
+			searchtimeout="30000ms">
+				/contextmenu[@processname='SAFERsleepAcutePainClient' and @win32ownerwindowlevel='1']//menuitem[@text='PCA']
+			</item>
+			<item
+			addcaps="menuitem,wpfelement"
+			capname="menuitem"
+			id="f45dd104-c55a-43b0-98a6-8e22d352a0ad"
+			name="Regional"
+			refimgid="d205baf3-6597-41e4-b365-9ea1bdacc5f5"
+			searchtimeout="30000ms">
+				/contextmenu[@processname='SAFERsleepAcutePainClient' and @win32ownerwindowlevel='1']//menuitem[@text='Regional']
+			</item>
+			<item
+			addcaps="menuitem,wpfelement"
+			capname="menuitem"
+			id="97ddf1c0-1629-44af-9cee-15602d2f3b50"
+			name="Epidural"
+			refimgid="5a195f6f-5e54-4563-8b78-7b5e1cebcc3a"
+			searchtimeout="30000ms">
+				/contextmenu[@processname='SAFERsleepAcutePainClient' and @win32ownerwindowlevel='1']//menuitem[@text='Epidural']
+			</item>
+			<item
+			addcaps="menuitem,wpfelement"
+			capname="menuitem"
+			id="3bc77328-4cdf-4a97-83fd-3c813f4ffe69"
+			name="CoAnalgesia"
+			refimgid="12d3bb50-3545-42fd-85fa-628ccac4d0d4"
+			searchtimeout="30000ms">
+				/contextmenu[@processname='SAFERsleepAcutePainClient' and @win32ownerwindowlevel='1']//menuitem[@text='Co-Analgesia']
+			</item>
+			<item
+			addcaps="menuitem,wpfelement"
+			capname="menuitem"
+			id="52aed1a2-9801-451f-9a32-d6e183cb331e"
+			name="Other"
+			refimgid="e35720dd-2c6a-4f8e-a1ea-0cea067c3fc3"
+			searchtimeout="30000ms">
+				/contextmenu[@processname='SAFERsleepAcutePainClient' and @win32ownerwindowlevel='1']//menuitem[@text='Other']
+			</item>
+			<basepath>
+				/contextmenu[@processname='SAFERsleepAcutePainClient' and @win32ownerwindowlevel='1']
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="d5ddcba2-eb80-48eb-9e89-22995daa295a"
+		isrooted="True"
+		name="SaveAs"
+		refimgid="415c7b3a-9afa-4b0b-8831-d246eab4648e"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="5e553760-c0a6-497e-af7e-0fbc4aff258f"
+			name="Filename"
+			refimgid="42ca241a-f95a-44fe-bbf8-5a502ab03e30"
+			searchtimeout="30000ms">
+				/form[@title='Save Print Output As']/element[@class='DUIViewWndClassName']//combobox[@class='ComboBox']/text
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="e81c79b0-f2d2-4db1-a8b1-2aac516c34ad"
+			name="Save"
+			refimgid="f13309e2-5379-4b51-b9dc-2812b69fbc16"
+			searchtimeout="30000ms">
+				/form[@title='Save Print Output As']/button[@text='&amp;Save']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="5bb0f558-2a0c-4b68-8143-011d5172c5fc"
+			name="Cancel"
+			refimgid="3e2f3559-6ce5-41f1-b709-69efb58953d9"
+			searchtimeout="30000ms">
+				/form[@title='Save Print Output As']/button[@text='Cancel']
+			</item>
+			<item
+			addcaps="combobox,nativewindow"
+			capname="combobox"
+			id="d7bd6ee5-f392-4eee-9052-6d0718ab0367"
+			name="FileType"
+			refimgid="316fc1aa-04bc-4a07-af4c-4e288b231294"
+			searchtimeout="30000ms">
+				/form[@title='Save Print Output As']/element[@class='DUIViewWndClassName']/container/element[5]/combobox[@class='ComboBox']
+			</item>
+			<basepath>
+				/form[@title='Save Print Output As']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAACISURBVDhPzZNbEoAgCEVZujs3uUTgC6OvnGFS
+gyNchYiofrFaEYfR5jlDTAOUUgARgB9+vfi/B2hg9EXJfNqbDEYQ4iKA10JL8iXc83UGCSEnQP4a
+Bw0Shz833oloAFF2ZZKlPZkQII497McAaQqt7aSB+XoNOBxP82Qsrvqo0GjHnfLRvrbyBY0UI8ku
+vLmdAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="contextmenu,nativewindow,wpfwin32element,wpfelement"
+		capname="contextmenu"
+		id="6f199814-6d77-4a94-bbd2-39cdec57e597"
+		isrooted="True"
+		name="ListItems"
+		refpath="/contextmenu"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="listitem,wpfelement"
+			capname="listitem"
+			id="ac56014e-36e0-4097-b765-3acb6c544ed6"
+			name="TeamMember"
+			searchtimeout="30000ms">
+				/contextmenu/listitem[@text=$TeamMember]
+			</item>
+			<item
+			capname="listitem"
+			id="a26a1687-d6e2-408d-baf6-b0d927e43f7a"
+			name="MedicationListItem"
+			searchtimeout="30000ms">
+				/contextmenu/listitem[@text=$Medication]
+			</item>
+			<item
+			capname="listitem"
+			id="8f6e98bd-3825-4578-9380-e28267556c5c"
+			name="ModeListItem"
+			searchtimeout="30000ms">
+				/contextmenu/listitem[@text=$Mode]
+			</item>
+			<basepath>
+				/contextmenu
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="da4fe089-5e07-488e-8ed5-cd97f36eca45"
+		name="Detail">
+		</var>
+		<var
+		id="d9674540-1e78-4ef7-b7fb-c3a3e51e13cc"
+		name="WarningType">
+		</var>
+		<var
+		id="47a8681a-b714-468c-b065-308909344c64"
+		name="DrugClass">
+			Amoxicillin
+		</var>
+		<var
+		id="1e1ce02d-79ce-40c3-a91b-372d1e83cdc4"
+		name="ASA">
+			3
+		</var>
+		<var
+		id="73a78519-0a06-4ff0-bf1e-ce8e1d029575"
+		name="Gender">
+			male
+		</var>
+		<var
+		id="52b34c8b-2efe-491b-ad4c-c5c3ef00dd2f"
+		name="DOB">
+		</var>
+		<var
+		id="8eeda0d1-a56e-486e-8ef4-690dcdaca8ad"
+		name="NoteDetail">
+			Test Note 3
+		</var>
+		<var
+		id="52b6827b-4200-457f-8aad-91aaa2b7444c"
+		name="Medication">
+			Ketamine ONE milligram/ml (100 mg of Ketamine made up to 100 mls with Normal Saline)
+		</var>
+		<var
+		id="66765106-b07a-43cd-bd86-459384bf6f84"
+		name="Age">
+			2
+		</var>
+		<var
+		id="e027bc68-a644-4689-a8bc-9f072a168278"
+		name="NHI">
+			ACP2031
+		</var>
+		<var
+		id="b8617e85-cd60-4f02-8460-4d431a2baf66"
+		name="Condition">
+			Renal Impairment
+		</var>
+		<var
+		id="4423e698-bc8f-41c1-8563-5d74026b9676"
+		name="Room">
+			Arethusa
+		</var>
+		<var
+		id="86013d6d-817a-4fae-b75c-0efe3bd89f54"
+		name="Ward">
+			Arethusa
+		</var>
+		<var
+		id="79c63260-e488-4215-a12e-69fec3dabad1"
+		name="ConditionDetail">
+			Moderate
+		</var>
+		<var
+		id="65f5c515-3f4f-4cf1-89eb-796cc06ad500"
+		name="ReviewQuestion">
+			Pain Score - at rest:
+		</var>
+		<var
+		id="8f4dafff-c12a-45a0-ba1a-31af9a8a9279"
+		name="ReviewAnswer">
+			Yes
+		</var>
+		<var
+		id="f224f7df-037c-42fc-92d2-a66e85b6ea1c"
+		name="BMI">
+		</var>
+		<var
+		id="344b9842-bb06-4667-b17a-423dd0aba837"
+		name="Weight">
+		</var>
+		<var
+		id="6c216c96-34ae-4972-89d2-03f6feb55bd7"
+		name="ReferralDate">
+		</var>
+		<var
+		id="0fca950c-88d5-47f9-84f1-76c06b7de42b"
+		name="RefDays">
+		</var>
+		<var
+		id="81203625-c631-43fd-8b52-60aaa7a7f4db"
+		name="IsSurgical">
+			Yes
+		</var>
+		<var
+		id="f2cb618d-adda-4fcd-9950-437b198e2954"
+		name="ProcedureDetails">
+			Testing Procedure 2
+		</var>
+		<var
+		id="4a95cab1-85f3-47ff-be49-58e028c66ee0"
+		name="PainTrendDate">
+			27 May 2019
+		</var>
+		<var
+		id="b8016435-1fb2-4c22-b2d3-8bd780a97d05"
+		name="TeamMember">
+		</var>
+		<var
+		id="dd5a28c2-fcd2-47d6-a6a1-3dd4de678399"
+		name="PainTrendIndex">
+		</var>
+		<var
+		id="dad07a18-c8e6-45ad-a63c-78982b425b53"
+		name="ExistingMedication">
+			Aciclovir
+		</var>
+		<var
+		id="860edb51-7427-4161-9997-d3a644adb484"
+		name="Patient">
+		</var>
+		<var
+		id="40588e2e-812b-4c6f-9fb2-00d8019a4561"
+		name="Date">
+			27 Mar 2019
+		</var>
+		<var
+		id="01b08a55-7e2a-47d1-9834-0ab7500159f1"
+		name="Mode">
+			Bolus dose only
+		</var>
+		<var
+		id="0ff3482b-b6ad-4a8c-9500-32097c314bc1"
+		name="Dose">
+			4.99
+		</var>
+		<var
+		id="0da3d0a0-d5a6-4d58-ad22-463d664ece9a"
+		name="Rate">
+		</var>
+		<var
+		id="25e49336-013a-4936-950f-21f223de6e6c"
+		name="Lockout">
+		</var>
+		<var
+		id="775a390e-79ed-4063-a29d-3d9e115e80c7"
+		name="ExistingMedicationDropdown">
+		</var>
+		<var
+		id="1c7e9e82-1e62-4e78-8f74-46ef599d723a"
+		name="Route">
+		</var>
+	</variables>
+</repository>

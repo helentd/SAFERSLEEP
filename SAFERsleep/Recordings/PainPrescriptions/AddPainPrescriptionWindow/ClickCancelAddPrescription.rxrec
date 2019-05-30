@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9d2702d1-b6f8-4a68-b0fe-5e751e492ef6"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ClickCancelAddPrescription
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClickCancelAddPrescription"
+	namespace="SAFERsleep.Recordings.PainPrescriptions.AddPainPrescriptionWindow">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="bc011b51-c09d-4008-ab31-861f7a04fe45"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="36fad36b-e0d7-41d7-8a4a-272aeac843e4"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@name='frmEditPainPrescription']/?/?/button[@name='btnCancel']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClickCancelAddPrescription.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="40d4a26e-3dbf-4b24-b7cd-4f5f8f18414c"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ClickFormTab
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClickFormTab"
+	namespace="SAFERsleep_Portal.Recordings.Forms">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="3099dc91-d58a-4ff9-8a4a-3b316c57e3e5"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b0c84e17-c72a-44e2-9860-0ec608cbd1a1"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@caption='SAFERsleep Portal' and @page='Forms']//div[#'main']//ul/?/?/a[@innertext=$Form]
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="8b6da581-29b7-4008-acee-aa5289a51147"
+	name="SAFERsleep_PortalRepository"
+	relativepath="..\..\SAFERsleep_PortalRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleep_PortalRepository"
+		namespace="SAFERsleep_Portal">
+		</codegen>
+		<rootfolder
+		id="219f0845-3470-46f6-a731-fca5a231d466"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClickFormTab.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

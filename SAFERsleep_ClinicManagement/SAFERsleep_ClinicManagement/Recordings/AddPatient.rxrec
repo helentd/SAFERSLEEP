@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c5ba6e15-1775-4ccd-bb9e-661a0d9a11b7"
+mode="Desktop"
+rxversion="8.2">
+	<name>
+		AddPatient
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="AddPatient"
+	namespace="SAFERsleep_ClinicManagement.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="120;18"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="7438f68f-4ab8-4286-94f1-5d55bff28058"
+		sx="1809"
+		sy="149"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a21ebaa3-d689-4c27-93ec-209dded1f323"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="buttontag"
+				rect="1689,131,197,34"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						btn btn-primary text-bold pull-right
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#160;&#160;Search / Add Booking
+                   &#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div[1]/div/div[3]//button[@innertext~'^&#160;&#160;Search\ /\ Add\ Booking\ \ ']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="0efddc93-356e-4825-9001-e37d580323ce">
+				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
++5Z+3XP/AD0/8dFQSP5rl5I4Xc9WaJST+lNoosg5n3JIZ3gz5Ijj3ddkajP5Cpft1z/z0/8AHRVa
+iiyDmfcs/brn/np/46KPt1z/AM9P/HRVaijlQcz7ln7dc/8APT/x0Ufbrn/np/46KrUUcqDmfcs/
+brn/AJ6f+Oij7dc/89P/AB0VWoo5UHM+5oWV5NJcCORtwbPbGK0qxbD/AI/I/wAf5GtqspqzN6bb
+WoUUUVBYUUUUAc7RRRXScgUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
+FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAFiw/4/I/x/ka2qxbD/j8j/H+
+RrarGpub0tgoooqDQKKKKAOdooorpOQKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCxYf8fkf4/yNbVY
+th/x+R/j/I1tVjU3N6WwUUUVBoFFFFAEmB6UYHpRRSGGB6UYHpRRQAYHpRgelFFABgelGB6UUUAG
+B6UYHpRRQAYHpRgelFFABgelGB6UUUAGB6UYHpRRQAYHpRgelFFABgelGB6UUUAGB6UYHpRRQAYH
+pRgelFFABgelGB6UUUAGB6UYHpRRQAYHpRgelFFABgelGB6UUUAGB6UYHpRRQAYHpRgelFFABgel
+GB6UUUAGB6UYHpRRQAYHpRgelFFAENx96H/f/wDZTTqbcfeh/wB//wBlNOpiCiiigAooooAkooop
+DCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAhuPvQ/7/AP7KadTbj70P+/8A+ymnUxBRRRQAUUUUASUU
+UUhhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUU
+UAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAQ3H3of9/8A9lNOptx96H/f/wDZTTqYgooooAKKKKAJ
+KKKKQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
+KKKACiiigAooooAKKKKACiiigAooooAKKKKAIbj70P8Av/8Aspp1FFMQUUUUAFFFFAH/2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="41;16"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="f896fb6a-27fa-4140-a66d-6ff639a38143"
+		sx="1291"
+		sy="150"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="78f1b35b-f4ee-4195-92c1-79fb96ffac39"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="buttontag"
+				rect="1250,134,113,34"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						btn btn-primary
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#32;Add Patient
+                       &#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						button
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div[4]/div/div/div[1]//button[@innertext~'^\ Add\ Patient\ \ \ \ \ \ \ \ \ \ \ \ ']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="5218860c-b451-427a-a9a6-6a266331e19e">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABcAW4DASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKCQoJJAA6k0AFFMM0YQOXUK3Q560+gArI8Tf8AIPj/AOuo/ka16y/EKh7FAf8AnqP5GhCZy9FT
++QvqaPIX1NXcmzIKKn8hfU0eQvqaLhZkFFT+QvqaPIX1NFwsyCip/IX1NHkL6mi4WZBRU/kL6mjy
+F9TRcLM7WiiioLCiiigAooooAKKKKACiiigAooooAKKKKACiis3V7me3e3WCUR7yQSQCO3t70m7K
+5cIOcuVGlRXNnUtQzxNkeu1f8KP7S1H/AJ6/+Or/AIUa9iuSP86/r5HSUVzf9paj/wA9f/HV/wAK
+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
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="0e897a8c-761f-43a7-8560-5a95da3077db"
+	name="SAFERsleep_ClinicManagementRepository"
+	relativepath="..\SAFERsleep_ClinicManagementRepository.rxrep"
+	rxversion="8.1">
+		<codegen
+		classname="SAFERsleep_ClinicManagementRepository"
+		namespace="SAFERsleep_ClinicManagement">
+		</codegen>
+		<rootfolder
+		id="8ac50317-db92-43ad-bd4e-e2bddb6fc229"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		AddPatient.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

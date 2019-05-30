@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f374fc70-2042-4b18-8d04-cd970d90335e"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ValidateAddedCoAnalgesia
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ValidateAddedCoAnalgesia"
+	namespace="SAFERsleep.Recordings.PainPrescriptions.PresListValidation">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="755f24ef-ec60-4115-bc3d-d03288174fda">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="83f904c0-addf-49f1-b9c5-9720e66276b4"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']/container[@name='pnlMain']/form[@name='frmPainPrescription']//table[@class='TcxGridSite']/?/?//cell[@name=$PrescriptionType]/following-sibling::cell[@name~$Medication]
+				</path>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ValidateAddedCoAnalgesia.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

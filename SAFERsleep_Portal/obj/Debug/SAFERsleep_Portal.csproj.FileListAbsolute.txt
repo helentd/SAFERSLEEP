@@ -1,0 +1,8 @@
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep_Portal\bin\Debug\SAFERsleep_Portal.rxtst
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep_Portal\bin\Debug\SAFERsleep_Portal.exe.config
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep_Portal\bin\Debug\SAFERsleep_Portal.exe
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep_Portal\bin\Debug\SAFERsleep_Portal.pdb
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep_Portal\bin\Debug\Ranorex.Core.Resolver.dll
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep_Portal\obj\Debug\SAFERsleep_Portal.csprojResolveAssemblyReference.cache
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep_Portal\obj\Debug\SAFERsleep_Portal.exe
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep_Portal\obj\Debug\SAFERsleep_Portal.pdb

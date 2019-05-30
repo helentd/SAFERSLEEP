@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4ec5f173-cad1-47fa-b5d0-1b7955125979"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ClickStopAlert
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClickStopAlert"
+	namespace="SAFERsleep.Recordings.Drugs.FunctionalTestDrugs">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="224d0992-fc94-4639-b91b-520002bad5be"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+				Click On &quot;Stop Alert&quot; button
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="17398671-aa45-44c6-a6ba-24865eb35686"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmEditDrug']/button[@name='btnStopAlerts']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClickStopAlert.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="717815fd-7585-4790-bb35-73000b108b81"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ClickExistingCoAnalgesia
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClickExistingCoAnalgesia"
+	namespace="SAFERSleep_AP.Recordings.Modalities.CoAnalgesia">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="ClickExistingCoAnalgesia"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Mouse_Click_AddedCoAnalgesia"
+		namespace="SAFERSleep_AP.Recordings.Modalities.CoAnalgesia"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="b2786ad4-5945-4635-9ddc-ad1d88387d18">
+				<argument
+				argname="textInfo"
+				id="c53c0f24-3a10-4e39-b599-4b63b444652d">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="a447befe-a47f-420e-9cf7-c2d9ceef18cf"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']//text[@caption='Advanced Analgesia']/../..//container[@automationid='PART_RowsPresenter']//text[@caption='Co-Analgesia']/following-sibling::text[@caption~$Medication]
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="74af8252-1843-4d76-9a8c-e91bc2e3aebe"
+	name="SAFERSleep_APRepository"
+	relativepath="..\..\..\SAFERSleep_APRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERSleep_APRepository"
+		namespace="SAFERSleep_AP">
+		</codegen>
+		<rootfolder
+		id="c3c47bee-94a9-426b-a8de-43196bca6868"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClickExistingCoAnalgesia.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

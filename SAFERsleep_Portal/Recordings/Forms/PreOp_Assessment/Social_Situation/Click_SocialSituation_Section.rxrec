@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9d84f7ef-80b6-46a1-aaa1-7775b3357bb7"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Click_SocialSituation_Section
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Click_SocialSituation_Section"
+	namespace="SAFERsleep_Portal.Recordings.Forms.PreOp_Assessment.Social_Situation">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Click_SocialSituation_Section"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="ClickSocialSituation"
+		namespace="SAFERsleep_Portal.Recordings.Forms.PreOp_Assessment.Social_Situation"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="6a1e2f3b-7873-46d8-a463-4b5242126838">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="8b6da581-29b7-4008-acee-aa5289a51147"
+	name="SAFERsleep_PortalRepository"
+	relativepath="..\..\..\..\SAFERsleep_PortalRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleep_PortalRepository"
+		namespace="SAFERsleep_Portal">
+		</codegen>
+		<rootfolder
+		id="219f0845-3470-46f6-a731-fca5a231d466"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Click_SocialSituation_Section.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

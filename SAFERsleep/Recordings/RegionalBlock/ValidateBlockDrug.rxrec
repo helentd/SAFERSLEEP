@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="5e71db29-2391-4dfc-82d8-6b7e41a15d79"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ValidateBlockDrug
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ValidateBlockDrug"
+	namespace="SAFERsleep.Recordings.RegionalBlock">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b708b3dc-e697-4045-bf96-b57b34c1184b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c66201f6-e4da-44ac-b196-a8b7ff4d9007"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']/?/?/form[@name='frmDrugModule']/?/?/tabpage[@name='tsDrugs']/?/?/table[@class='TcxGridSite']/?/?/cell[@name=$DoseUnit]/preceding-sibling::cell[@name=$DrugProduct]
+				</path>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ValidateBlockDrug.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

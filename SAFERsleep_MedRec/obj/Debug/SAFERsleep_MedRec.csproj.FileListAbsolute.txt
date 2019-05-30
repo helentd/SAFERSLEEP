@@ -1,0 +1,9 @@
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep_MedRec\bin\Debug\SAFERsleep_MedRec.rxtmg
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep_MedRec\bin\Debug\SAFERsleep_MedRec.rxtst
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep_MedRec\bin\Debug\SAFERsleep_MedRec.exe.config
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep_MedRec\bin\Debug\SAFERsleep_MedRec.exe
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep_MedRec\bin\Debug\SAFERsleep_MedRec.pdb
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep_MedRec\bin\Debug\Ranorex.Core.Resolver.dll
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep_MedRec\obj\Debug\SAFERsleep_MedRec.csprojResolveAssemblyReference.cache
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep_MedRec\obj\Debug\SAFERsleep_MedRec.exe
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep_MedRec\obj\Debug\SAFERsleep_MedRec.pdb

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="0297d271-79d2-4495-89b8-2ac00a598750"
+mode="Global"
+rxversion="8.2">
+	<name>
+		AddMed_OnceOnly_ClickOK
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="AddMed_OnceOnly_ClickOK"
+	namespace="SAFERsleep.Recordings.Post_Op_Medications">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="7400c72c-5dbb-4828-ba5c-ec1d1ef7d858"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0a9e95de-3326-4824-9b01-750213d4a5e7"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@name='frmEditOnceOnlyMedication']/?/?/button[@name='btnOk']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		AddMed_OnceOnly_ClickOK.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

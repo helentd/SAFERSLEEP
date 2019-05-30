@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="37627d65-1d17-4fd0-a440-3c47b8cd8bb7"
+mode="Global"
+rxversion="8.2">
+	<name>
+		SelectKeyProblem_button
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectKeyProblem_button"
+	namespace="SAFERsleep_MedRec.Recordings.KeyProblems">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="58a303d3-0abb-4635-ac45-af2714da5217"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="61e362a6-c62d-4311-a68f-5814a76050b5"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//tabpage[@automationid='204AF425-FAF1-49F8-9155-0052820A9EFB']/element[1]/?/?/button[@name=$KeyProblem]
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="e3d70b44-5875-4ae7-b328-2625979e95df"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bd0c01f0-37d9-4ffa-a96a-25c55e9f8568"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//tabpage[@automationid='204AF425-FAF1-49F8-9155-0052820A9EFB']/element[1]/element[@classname='SaferSleepFieldBase']/button[@text=$KeyProblem]/following-sibling::element[@classname='ConditionCategoryField']/radiobutton[@text=$SubKeyProblem]
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="3ba3b792-db8b-4342-8208-146c83bb83b4"
+	name="SAFERsleep_MedRecRepository"
+	relativepath="..\..\SAFERsleep_MedRecRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleep_MedRecRepository"
+		namespace="SAFERsleep_MedRec">
+		</codegen>
+		<rootfolder
+		id="543445dd-0470-4c58-a59a-2c2d06fa4b16"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectKeyProblem_button.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

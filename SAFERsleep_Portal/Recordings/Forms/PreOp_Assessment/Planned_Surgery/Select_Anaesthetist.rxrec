@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="6dc118e3-798f-42c1-8c22-20403ac62d28"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Select_Anaesthetist
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Select_Anaesthetist"
+	namespace="SAFERsleep_Portal.Recordings.Forms.PreOp_Assessment.Planned_Surgery">
+	</codegen>
+	<variables>
+		<var
+		id="ebff8dd0-a03c-4afe-aade-a732ff43b82f"
+		name="Anaesthetist">
+			Clark, Jude
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Select_Anaesthetist"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Select_Anaesthetist_Method"
+		namespace="SAFERsleep_Portal.Recordings.Forms.PreOp_Assessment.Planned_Surgery"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="ce1c86f2-f026-4a9a-8233-5f4f71363d50">
+				<argument
+				argname="anaes"
+				id="a4fe1cbb-4405-4808-b054-5410cbede926"
+				variable="Anaesthetist">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="8b6da581-29b7-4008-acee-aa5289a51147"
+	name="SAFERsleep_PortalRepository"
+	relativepath="..\..\..\..\SAFERsleep_PortalRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleep_PortalRepository"
+		namespace="SAFERsleep_Portal">
+		</codegen>
+		<rootfolder
+		id="219f0845-3470-46f6-a731-fca5a231d466"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Select_Anaesthetist.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

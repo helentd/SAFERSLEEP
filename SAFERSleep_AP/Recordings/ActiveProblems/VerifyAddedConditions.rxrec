@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="41a54530-162d-4c9a-8d69-21fa0b24f2c3"
+mode="Global"
+rxversion="8.2">
+	<name>
+		VerifyAddedConditions
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="VerifyAddedConditions"
+	namespace="SAFERSleep_AP.Recordings.ActiveProblems">
+	</codegen>
+	<variables>
+		<var
+		id="8a6afd0a-8490-4971-907d-41a0d33ee114"
+		name="IsSelected">
+			Yes
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="VerifyAddedConditions"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="ValidateConditionExisted"
+		namespace="SAFERSleep_AP.Recordings.ActiveProblems"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="32140b45-f41b-42e9-8c27-d32ac69eb4a3">
+				<argument
+				argname="IsSelected"
+				id="d141253a-b121-4fe6-8e63-52c9b4c31074"
+				variable="IsSelected">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="74af8252-1843-4d76-9a8c-e91bc2e3aebe"
+	name="SAFERSleep_APRepository"
+	relativepath="..\..\SAFERSleep_APRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERSleep_APRepository"
+		namespace="SAFERSleep_AP">
+		</codegen>
+		<rootfolder
+		id="c3c47bee-94a9-426b-a8de-43196bca6868"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		VerifyAddedConditions.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

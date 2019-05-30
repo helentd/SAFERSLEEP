@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="93fec4c5-d5a1-4d4f-9c3f-e01b36016df5"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Check_OR_Version
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Check_OR_Version"
+	namespace="SAFERsleep.Recordings.AutoUpdate">
+	</codegen>
+	<variables>
+		<var
+		id="5a9a2574-3470-41a4-8178-84e1c5800faf"
+		name="Version">
+			7.10.42.22790
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Check_OR_Version"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="ValidateORVersion"
+		namespace="SAFERsleep.Recordings.AutoUpdate"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="74a48e8a-74e6-4272-9968-c363239a5175">
+				<argument
+				argname="ver"
+				id="2c882802-e3ad-48d5-9d5e-9be8558c42b0"
+				variable="Version">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Check_OR_Version.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

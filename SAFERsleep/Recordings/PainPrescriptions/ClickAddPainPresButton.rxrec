@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8a938879-0f52-40cf-a580-e250c350de2e"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ClickAddPainPresButton
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClickAddPainPresButton"
+	namespace="SAFERsleep.Recordings.PainPrescriptions">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="25c33a39-a153-418b-94ed-1267a518c71b"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0871c453-521c-4391-bfee-d851ffb4c14f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']/container[@name='pnlMain']/form[@name='frmPainPrescription']//button[@name='btnAddPrescription']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClickAddPainPresButton.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

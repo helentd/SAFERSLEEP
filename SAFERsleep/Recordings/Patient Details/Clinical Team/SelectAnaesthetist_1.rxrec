@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="48f62fce-b9ba-4dce-98fe-b0cf86cf4852"
+mode="Global"
+rxversion="8.2">
+	<name>
+		SelectAnaesthetist_1
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectAnaesthetist_1"
+	namespace="SAFERsleep.Recordings.Patient_Details.Clinical_Team">
+	</codegen>
+	<variables>
+		<var
+		id="76c74485-1627-4fe7-bf4c-8f7f9b849569"
+		name="Anaesthetist_1">
+			Test, Mike
+		</var>
+	</variables>
+	<recorditems>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="4958333e-9344-4c03-859f-6d0ce35c7c82">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Anaesthetist_1">
+				</binding>
+			</bindings>
+			<info
+			id="6231f064-dda3-4c1f-b05d-2856d7a531b8"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="132,145,269,27"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						Test, Mike
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Text
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						ReadOnly, Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						Test, Mike
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmMain']/element[@controlname='pnlMain']//element[@controlname='tsTeam']/element[@controlname='dbcbAnaesthetist1']/?/?/text[@accessiblerole='Text']
+				</path>
+			</info>
+		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Return"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="78f8d348-090c-4627-ac9c-00c2c1baeab9"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.1">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectAnaesthetist_1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

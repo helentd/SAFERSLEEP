@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="8.2">
+	<testsuiteentryhierarchy>
+		<flatlistofchildren>
+			<modulegroupdef
+			id="3878c8c7-b266-44a7-a8d4-1226e576867d"
+			name="ModuleGroup">
+			</modulegroupdef>
+			<modulegroups
+			id="dcafdf69-bfaa-4526-8af6-418f03a10c8b"
+			name="SAFERsleep_ClinicManagement">
+			</modulegroups>
+		</flatlistofchildren>
+		<childhierarchy>
+			<modulegroups
+			id="dcafdf69-bfaa-4526-8af6-418f03a10c8b"
+			name="SAFERsleep_ClinicManagement">
+				<modulegroupdef
+				id="3878c8c7-b266-44a7-a8d4-1226e576867d"
+				name="ModuleGroup">
+				</modulegroupdef>
+			</modulegroups>
+		</childhierarchy>
+	</testsuiteentryhierarchy>
+</modulegroupdoc>

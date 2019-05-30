@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f53699d9-e1d6-4acf-a20d-2a69934a3b5e"
+mode="Global"
+rxversion="8.2">
+	<name>
+		CheckDrugInDrugList
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CheckDrugInDrugList"
+	namespace="SAFERsleep.Recordings.Drugs.FunctionalTestDrugs">
+	</codegen>
+	<variables>
+		<var
+		id="b39ccba1-21c8-4d2d-9901-b253fec485cf"
+		name="DoseUnit">
+			5.5 ml
+		</var>
+		<var
+		id="7b54b8d7-6771-4e56-a5a1-b1d4dc1e2b80"
+		name="Mode">
+			Bolus
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="CheckDrugInDrugList"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="CheckDrugListItem"
+		namespace="SAFERsleep.Recordings.Drugs.FunctionalTestDrugs"
+		optional="False"
+		varname="">
+			<comment>
+				Validate the  Drug is added succesfully
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e950b869-4c99-490a-8afb-a778f23e495c">
+				<argument
+				argname="Mode"
+				id="4e9d44d3-68bf-4765-b585-f09389c01437"
+				variable="Mode">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						110 mg
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CheckDrugInDrugList.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

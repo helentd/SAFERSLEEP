@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="0eb97076-87ec-458c-85bd-cd91c037ed4c"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ValidateDefaultOxygenTherapy
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ValidateDefaultOxygenTherapy"
+	namespace="SAFERsleep.Recordings.PainPrescriptions">
+	</codegen>
+	<variables>
+		<var
+		id="2f93291a-9e39-48ae-a8d6-b296b59a76b0"
+		name="DefaultOxygenTherapy">
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a31150bf-5883-4bd9-be49-20dd17959978">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="DefaultOxygenTherapy">
+				</binding>
+			</bindings>
+			<info
+			id="177ba354-c470-4f32-a7ae-a074e2c4c969"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']/container[@name='pnlMain']/form[@name='frmPainPrescription']//combobox[@name='dbeOxygenScriptPCA']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ValidateDefaultOxygenTherapy.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

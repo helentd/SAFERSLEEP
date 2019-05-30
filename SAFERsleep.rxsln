@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# Ranorex Studio 8.2
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BD14AA0E-5A0D-43E0-A121-97B690C9F490}"
+	ProjectSection(SolutionItems) = postProject
+		Ranorex = .\Ranorex.rxsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAFERsleep_OR", "SAFERsleep\SAFERsleep_OR.csproj", "{FAB006AC-51D0-455E-B83E-49A5FF77AF8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAFERsleep_ClinicManagement", "SAFERsleep_ClinicManagement\SAFERsleep_ClinicManagement\SAFERsleep_ClinicManagement.csproj", "{45A65073-4101-420E-9C34-0678EBAE4345}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAFERsleep_MedRec", "SAFERsleep_MedRec\SAFERsleep_MedRec.csproj", "{C0CAD9F2-A5B9-474C-AF02-2F5F3FE1170E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAFERsleep_Portal", "SAFERsleep_Portal\SAFERsleep_Portal.csproj", "{90EA8A78-33B3-4B23-BC50-C2F8EFAF4D95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAFERSleep_AP", "SAFERSleep_AP\SAFERSleep_AP.csproj", "{71B62A0D-9ABD-48CE-9FD6-B29FA9DB52CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAB006AC-51D0-455E-B83E-49A5FF77AF8B}.Debug|x86.Build.0 = Debug|x86
+		{FAB006AC-51D0-455E-B83E-49A5FF77AF8B}.Debug|x86.ActiveCfg = Debug|x86
+		{FAB006AC-51D0-455E-B83E-49A5FF77AF8B}.Release|x86.Build.0 = Release|x86
+		{FAB006AC-51D0-455E-B83E-49A5FF77AF8B}.Release|x86.ActiveCfg = Release|x86
+		{45A65073-4101-420E-9C34-0678EBAE4345}.Debug|x86.Build.0 = Debug|x86
+		{45A65073-4101-420E-9C34-0678EBAE4345}.Debug|x86.ActiveCfg = Debug|x86
+		{45A65073-4101-420E-9C34-0678EBAE4345}.Release|x86.Build.0 = Release|x86
+		{45A65073-4101-420E-9C34-0678EBAE4345}.Release|x86.ActiveCfg = Release|x86
+		{C0CAD9F2-A5B9-474C-AF02-2F5F3FE1170E}.Debug|x86.Build.0 = Debug|x86
+		{C0CAD9F2-A5B9-474C-AF02-2F5F3FE1170E}.Debug|x86.ActiveCfg = Debug|x86
+		{C0CAD9F2-A5B9-474C-AF02-2F5F3FE1170E}.Release|x86.Build.0 = Release|x86
+		{C0CAD9F2-A5B9-474C-AF02-2F5F3FE1170E}.Release|x86.ActiveCfg = Release|x86
+		{90EA8A78-33B3-4B23-BC50-C2F8EFAF4D95}.Debug|x86.Build.0 = Debug|x86
+		{90EA8A78-33B3-4B23-BC50-C2F8EFAF4D95}.Debug|x86.ActiveCfg = Debug|x86
+		{90EA8A78-33B3-4B23-BC50-C2F8EFAF4D95}.Release|x86.Build.0 = Release|x86
+		{90EA8A78-33B3-4B23-BC50-C2F8EFAF4D95}.Release|x86.ActiveCfg = Release|x86
+		{71B62A0D-9ABD-48CE-9FD6-B29FA9DB52CD}.Debug|x86.Build.0 = Debug|x86
+		{71B62A0D-9ABD-48CE-9FD6-B29FA9DB52CD}.Debug|x86.ActiveCfg = Debug|x86
+		{71B62A0D-9ABD-48CE-9FD6-B29FA9DB52CD}.Release|x86.Build.0 = Release|x86
+		{71B62A0D-9ABD-48CE-9FD6-B29FA9DB52CD}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

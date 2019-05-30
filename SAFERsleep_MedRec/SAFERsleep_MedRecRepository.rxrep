@@ -1,0 +1,1207 @@
+﻿<repository
+id="3ba3b792-db8b-4342-8208-146c83bb83b4"
+name="SAFERsleep_MedRecRepository"
+rxversion="8.2">
+	<codegen
+	classname="SAFERsleep_MedRecRepository"
+	namespace="SAFERsleep_MedRec">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="543445dd-0470-4c58-a59a-2c2d06fa4b16"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,uiautomation,nativewindow"
+		capname="form"
+		id="2bd6ceb1-dcb3-4a9e-8eae-4ae3234c7b53"
+		isrooted="True"
+		name="MedRecWindow"
+		searchtimeout="30000ms"
+		usecache="True">
+			<folder
+			capname="unknown"
+			id="e5f70ab3-861e-495e-b08d-64affc4ba425"
+			isrooted="False"
+			name="LoginForm"
+			searchtimeout="0ms">
+				<item
+				addcaps="container,uiautomation"
+				capname="text"
+				id="991b61fe-e9fb-40a4-b742-ddbb77be29ed"
+				name="Username"
+				refimgid="d59f4930-3148-43ae-a174-c04b47611f4c"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/?/?/element[@classname='LoginView']//text[@classname='TextBox']
+				</item>
+				<item
+				addcaps="container,uiautomation"
+				capname="text"
+				id="08ab5192-73d3-4caa-9078-b505efc63b28"
+				name="Password"
+				refimgid="fc04cfed-27f1-4685-a05e-8c7da98b6e94"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/?/?/element[@classname='LoginView']//text[@classname='PasswordBox']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="d8ef9af6-3e94-4dbc-9375-b4819aafc2d0"
+				name="Login"
+				refimgid="e1c913a7-7050-4a23-b80c-cfde8f8a4350"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/?/?/element[@classname='LoginView']//button[@name='Login']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="1f4e6dd8-cc89-4539-a29b-658f1048cb61"
+				name="Exit"
+				refimgid="6b6f1cb3-4c90-4561-93f7-2d860d4c805a"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/?/?/element[@classname='LoginView']//button[@name='Exit']
+				</item>
+				<item
+				addcaps="link,uiautomation,uiautomationinvoke"
+				capname="link"
+				id="4688b325-c048-425a-bbcb-1f0c878cb629"
+				name="Disclaimer"
+				refimgid="b3f11258-97cb-4a3e-8612-3370e02ce611"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//link[@name='Disclaimer']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="ac01964d-d244-408b-8a57-bc61a4effc7d"
+			isrooted="False"
+			name="SearchScreen"
+			searchtimeout="0ms">
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="9db1199b-a46c-4f9b-b043-241a7ab5a405"
+				name="AddPatientButton"
+				refimgid="ea6c02e1-8ebf-4830-85f4-4e02e2f67f9f"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/?/?/element[@automationid='D2CFE219-3433-4D9E-819E-ED5794E1A3A1']/button[@classname='Button']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="7c0f32e8-60fb-4385-aa8c-1660f3c2838c"
+			isrooted="True"
+			name="MedRec"
+			searchtimeout="30000ms"
+			usecache="False">
+				<folder
+				capname="unknown"
+				id="41fae913-3dc2-4fde-b4e9-0bf9ae8f43a1"
+				isrooted="False"
+				name="AddPatient"
+				searchtimeout="0ms">
+					<item
+					addcaps="text,uiautomation,uiautomationvalue"
+					capname="text"
+					id="156763ee-f10e-4f65-baaf-255763f62b2b"
+					name="NHI"
+					refimgid="cda23ccf-5dd3-4586-8d5a-d81752076d90"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//text[@automationid='A88D0214-01DA-4D59-B8EE-1DCFF605627B']
+					</item>
+					<item
+					addcaps="text,uiautomation,uiautomationvalue"
+					capname="text"
+					id="0e91de8d-5278-4f81-8701-6b6411187d50"
+					name="LastName"
+					refimgid="ac5a271d-91ca-41db-83d1-40733b1c78f5"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//text[@automationid='ED7D85F2-B9BB-4BF3-879A-1FBF69531459']
+					</item>
+					<item
+					addcaps="text,uiautomation,uiautomationvalue"
+					capname="text"
+					id="564c2f2d-5365-42dd-b06b-cc76dad0f8ec"
+					name="FirstName"
+					refimgid="cffe8b23-b9f9-423e-8c73-fe5c4ddc5219"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//text[@automationid='5E5059DE-FE42-4E6A-9007-1377D31E91F5']
+					</item>
+					<item
+					addcaps="text,uiautomation,uiautomationvalue"
+					capname="text"
+					id="567965b2-cee9-49b9-8446-2135989b7cf3"
+					name="PreferredName"
+					refimgid="a73bab0e-2c46-4e6a-aac8-469d38016951"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//text[@automationid='9B894511-F89E-493F-B16C-A665548626BD']
+					</item>
+					<item
+					addcaps="unknown,uiautomation,uiautomationvalue"
+					capname="unknown"
+					id="7a3df3a1-916c-46ba-943a-44b1d6939fbd"
+					name="DOB"
+					refimgid="3c44de27-3a85-4200-967c-182ce7ce32d1"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//element[@automationid='C3D82B6D-FC7B-4A3C-9290-CC5AA645C5AC']
+					</item>
+					<item
+					addcaps="combobox,uiautomation"
+					capname="combobox"
+					id="878c85f2-ff28-4055-80b2-e9423ab6716c"
+					name="Gender"
+					refimgid="82e774d9-61a4-484e-8072-654f081cb918"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//combobox[@automationid='B36F7A2B-3AF0-4AED-9A2A-CA9319D23B37']
+					</item>
+					<item
+					addcaps="combobox,wpfelement"
+					capname="combobox"
+					id="6263c01b-a8ff-4bbe-ac45-e160b8f8e5b0"
+					name="Ward"
+					refimgid="6d39ecd7-cd68-42ad-9380-01b6ce73a9f7"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//combobox[@automationid='AC1C6C66-9876-4362-AC76-985BDD2771E9']
+					</item>
+					<item
+					addcaps="text,wpfelement"
+					capname="text"
+					id="c610adba-1286-4300-a193-1390df49554b"
+					name="Procedure"
+					refimgid="25ec1cb8-7016-4310-971b-97121522b470"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//text[@automationid='B0F870C9-494C-4E79-887F-FF4C60CBFC3B']
+					</item>
+					<item
+					addcaps="datetime,wpfelement"
+					capname="unknown"
+					id="cac66e32-3603-4e04-8ac9-d7ea6c39f931"
+					name="ProcedureDate"
+					refimgid="78244601-d8bb-4bbe-b047-3fb7725f4ed2"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//element[@automationid='D2EA0392-48A1-4B7C-BC92-D8CB4BF9670C']
+					</item>
+					<item
+					addcaps="radiobutton,wpfelement"
+					capname="radiobutton"
+					id="a9061924-8fc3-4952-bad0-0b63cb508e96"
+					name="Priority"
+					refimgid="ab3fab87-7d21-409a-8ebd-c2a39cc6c874"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//radiobutton[@text=$Priority]
+					</item>
+				</folder>
+				<folder
+				capname="unknown"
+				id="08de9209-919c-4b26-b829-23c190994a8f"
+				isrooted="False"
+				name="ChooseProcedure"
+				searchtimeout="0ms">
+					<item
+					addcaps="cell,wpfelement"
+					capname="text"
+					id="6d852d5f-3be0-4e5b-a8a4-ba79f48f715f"
+					name="ProcedureName"
+					refimgid="82119d2d-3b92-483d-b1db-45036d32745a"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/table[@automationid='DataGridMeds']/?/?/cell[@classname='DataGridCell' and @text='' and @columnindex='2']/text[@name=$ProcedureName]
+					</item>
+					<item
+					addcaps="button,wpfelement"
+					capname="button"
+					id="51c1f951-4980-4be8-abe6-36acc5fcc5df"
+					name="Start"
+					refimgid="2c4e3e1d-2c3a-42d0-b9fe-5d8817651509"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/button[@name='Start']
+					</item>
+					<item
+					addcaps="button,wpfelement"
+					capname="button"
+					id="f604b1e6-5c0e-4b91-8646-a95a6bb5fdf6"
+					name="Cancel"
+					refimgid="03747ef1-74d8-419c-9bcb-5d9a9a2a3a14"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/button[@name='Cancel']
+					</item>
+					<item
+					addcaps="button,wpfelement"
+					capname="button"
+					id="77307824-7637-4eff-b248-2a57a15410b6"
+					name="NewProcedure"
+					refimgid="41ddde0c-c42c-4c05-8085-5901d140a2ff"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/button[@name='New Procedure']
+					</item>
+				</folder>
+				<folder
+				capname="unknown"
+				id="580e23e2-91da-4523-8aad-fc004f70c6b6"
+				isrooted="False"
+				name="KeyProblems"
+				searchtimeout="0ms">
+					<item
+					addcaps="tabpage,wpfelement"
+					capname="tabpage"
+					id="114403af-2694-4bb2-9ca7-d642b9d68759"
+					name="KeyProblemsTab"
+					refimgid="279cad0f-8bff-4e93-ae13-2e99449d2466"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/tabpagelist[@classname='TabControl']/tabpage[@automationid='204AF425-FAF1-49F8-9155-0052820A9EFB']
+					</item>
+					<item
+					addcaps="tabpage,wpfelement"
+					capname="tabpage"
+					id="b81fd83e-bc20-4fb9-860d-b54d75563e24"
+					name="AllergiesTab"
+					refimgid="20c94ac7-a700-462e-9b34-5cbd1524de21"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/tabpagelist[@classname='TabControl']/tabpage[@automationid='5908A1D5-AAF3-4CEC-A259-1BDB4A64E474']
+					</item>
+					<item
+					addcaps="checkbox,wpfelement"
+					capname="button"
+					id="61e362a6-c62d-4311-a68f-5814a76050b5"
+					name="KeyProblem"
+					refimgid="2fde858b-bf2e-4024-9906-c61f3f75fcb7"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//tabpage[@automationid='204AF425-FAF1-49F8-9155-0052820A9EFB']//element[@classname='SaferSleepFieldBase']/button[@text=$KeyProblem]
+					</item>
+					<item
+					capname="radiobutton"
+					id="bd0c01f0-37d9-4ffa-a96a-25c55e9f8568"
+					name="SubKeyProblem"
+					refimgid="c18845de-8211-4023-841b-4f4fd2b256cd"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//tabpage[@automationid='204AF425-FAF1-49F8-9155-0052820A9EFB']//element[@classname='SaferSleepFieldBase']/button[@text=$KeyProblem]/following-sibling::element[@classname='ConditionCategoryField']/radiobutton[@text=$SubKeyProblem]
+					</item>
+					<item
+					addcaps="text,wpfelement"
+					capname="text"
+					id="6e7733fe-e92c-41ff-a408-a3c165d49d8e"
+					name="SubKeyProblemText"
+					refimgid="eacbc4eb-478d-47ba-86c3-b4b4b83e8071"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//tabpage[@automationid='204AF425-FAF1-49F8-9155-0052820A9EFB']//element[@classname='SaferSleepFieldBase']/button[@text=$KeyProblem]//following-sibling::text[@classname='TextBox']
+					</item>
+					<item
+					addcaps="button,wpfelement"
+					capname="button"
+					id="b2275589-88ca-456b-938c-a1eaed6a96d6"
+					name="ConfirmKeyProblems"
+					refimgid="a0b429b2-7c2d-4a5e-9c72-9e0d7fb29eb5"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/element[@automationid='A84C6F37-35BE-46AF-9189-08BF10E901CF']/button[@classname='Button']
+					</item>
+					<item
+					addcaps="button,wpfelement"
+					capname="button"
+					id="3519cbfd-6f6e-4171-b2f5-f5eb16753422"
+					name="AddAllergyCondition"
+					refimgid="d71c3d75-f334-4a3a-8fb5-4c47617dc8a7"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//tabpage[@automationid='5908A1D5-AAF3-4CEC-A259-1BDB4A64E474']/button[@name='Add Allergy/Condition']
+					</item>
+				</folder>
+				<folder
+				capname="unknown"
+				id="bb3b1a67-1b50-4658-b0cf-b580dc716bae"
+				isrooted="False"
+				name="AddMedication"
+				searchtimeout="0ms">
+					<item
+					addcaps="combobox,uiautomation"
+					capname="combobox"
+					id="522e1873-cb23-4338-898f-04bfbcf83336"
+					name="SourceOne"
+					refimgid="9a5c1d77-82cb-404a-8d53-0cb689bc1c7d"
+					refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.MedicationReconciliation.MedicationViewModel']/element[@automationid='CFFB7677-EE76-4ABC-A8DE-C3B39B392250']/element[3]/combobox[@automationid='F1A277D1-C398-4A0E-829B-D6207FF203AB']"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//combobox[@automationid='F1A277D1-C398-4A0E-829B-D6207FF203AB']
+					</item>
+					<item
+					addcaps="combobox,uiautomation"
+					capname="combobox"
+					id="46abd061-f1f5-4ce3-9aa0-fe219289efc4"
+					name="SourceTwo"
+					refimgid="e34226fb-0218-461e-af47-3a0492148bf1"
+					refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.MedicationReconciliation.MedicationViewModel']/element[@automationid='CFFB7677-EE76-4ABC-A8DE-C3B39B392250']/element[4]/combobox[@automationid='14958E07-2236-47D8-BF89-5C67E323BD3F']"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//combobox[@automationid='14958E07-2236-47D8-BF89-5C67E323BD3F']
+					</item>
+					<item
+					addcaps="combobox,uiautomation,uiautomationvalue"
+					capname="combobox"
+					id="a05f3bea-52d5-4c18-9e14-751e36087375"
+					name="Medication"
+					refimgid="04a2cabf-7412-4ef7-9e89-b10f8cbc0c5c"
+					refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.MedicationReconciliation.MedicationViewModel']/element[@automationid='CFFB7677-EE76-4ABC-A8DE-C3B39B392250']/element[5]/combobox[@automationid='C48F2457-0658-47EF-9F49-DD1FE1DDA7A7']"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//combobox[@automationid='C48F2457-0658-47EF-9F49-DD1FE1DDA7A7']
+					</item>
+					<item
+					addcaps="combobox,uiautomation,uiautomationvalue"
+					capname="combobox"
+					id="245b0e3a-52eb-4d7b-a57a-2622a8b2654c"
+					name="Dose"
+					refimgid="76479d18-61d2-4c92-b378-8fe05be3af81"
+					refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.MedicationReconciliation.MedicationViewModel']/element[@automationid='CFFB7677-EE76-4ABC-A8DE-C3B39B392250']/element[6]/combobox[@automationid='3315B5CD-0A93-4F58-B1A5-5B93C88560EB']"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//combobox[@automationid='3315B5CD-0A93-4F58-B1A5-5B93C88560EB']
+					</item>
+					<item
+					addcaps="combobox,uiautomation,uiautomationvalue"
+					capname="combobox"
+					id="70138e5e-1c37-4fcd-8f6d-89b1b331123c"
+					name="Unit"
+					refimgid="d684ba35-8297-468b-a524-174199ea3fcb"
+					refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.MedicationReconciliation.MedicationViewModel']/element[@automationid='CFFB7677-EE76-4ABC-A8DE-C3B39B392250']/element[7]/combobox[@automationid='04E0C03F-1CC5-4887-B6C3-A18051D84423']"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//combobox[@automationid='04E0C03F-1CC5-4887-B6C3-A18051D84423']
+					</item>
+					<item
+					addcaps="combobox,uiautomation,uiautomationvalue"
+					capname="combobox"
+					id="1f5394bf-b34a-4ea9-b301-3fd00c6fc5fa"
+					name="Route"
+					refimgid="a9106713-275e-410a-9ddc-ee46f1f9dcc3"
+					refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.MedicationReconciliation.MedicationViewModel']/element[@automationid='CFFB7677-EE76-4ABC-A8DE-C3B39B392250']/element[8]/combobox[@automationid='1CDDF852-9D28-482A-ABC3-447DB23F23E1']"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//combobox[@automationid='1CDDF852-9D28-482A-ABC3-447DB23F23E1']
+					</item>
+					<item
+					addcaps="combobox,uiautomation,uiautomationvalue"
+					capname="combobox"
+					id="eebe513d-e526-498c-8bd3-604192dcd162"
+					name="Frequency"
+					refimgid="e6124d2a-8e68-434b-9773-11cd248f601b"
+					refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.MedicationReconciliation.MedicationViewModel']/element[@automationid='CFFB7677-EE76-4ABC-A8DE-C3B39B392250']/element[9]/combobox[@automationid='1BEF46CC-DE38-4366-B702-0A522E933F0D']"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//combobox[@automationid='1BEF46CC-DE38-4366-B702-0A522E933F0D']
+					</item>
+					<item
+					addcaps="text,uiautomation,uiautomationvalue"
+					capname="text"
+					id="a8eb308a-0aa4-4074-90e4-6c048aa75a3c"
+					name="Comment"
+					refimgid="0f7c91ab-3900-4d89-acdd-a9e6412f2daf"
+					refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.MedicationReconciliation.MedicationViewModel']/element[@automationid='CFFB7677-EE76-4ABC-A8DE-C3B39B392250']/element[10]/text[@automationid='CAC467E3-3EE9-4F84-AA49-B1033D317978']"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//text[@automationid='CAC467E3-3EE9-4F84-AA49-B1033D317978']
+					</item>
+				</folder>
+				<folder
+				capname="unknown"
+				id="90c56e72-c668-46a4-96d6-d875b17be3a5"
+				isrooted="False"
+				name="AddNote"
+				searchtimeout="0ms">
+					<item
+					addcaps="container,uiautomation"
+					capname="text"
+					id="2b81b3bb-9897-4993-aec7-e1dc8bb98fc5"
+					name="NoteTextBox"
+					refimgid="529b59b8-fed2-4a36-801b-a8e4640ee290"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//text[@automationid='NoteTextBox']
+					</item>
+					<item
+					addcaps="button,uiautomation,uiautomationinvoke"
+					capname="button"
+					id="ad090680-5d70-4bb1-819a-33c4b4e091c2"
+					name="Save"
+					refimgid="f34574ce-d43a-4d8f-88b0-0ced8b81f8d3"
+					refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.MedicationReconciliation.NoteViewModel']/element[@classname='NoteEdit']/element[@automationid='8ad21508-f32e-40d4-a157-d311e8ee0291']/button[@classname='Button']"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/element[@automationid='8ad21508-f32e-40d4-a157-d311e8ee0291']/button[@classname='Button']
+					</item>
+				</folder>
+				<folder
+				capname="unknown"
+				id="e7a0720d-a6db-4905-ae7a-6bb4399648c6"
+				isrooted="False"
+				name="Save_Record"
+				searchtimeout="0ms">
+					<item
+					addcaps="button,uiautomation,uiautomationinvoke"
+					capname="button"
+					id="ce83ef11-9fde-43ae-9baa-308f923a9ea5"
+					name="PrintSave"
+					refimgid="b89be598-f543-4241-a067-2cf4ce9f102f"
+					refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.MedicationReconciliation.PrintSaveViewModel']/element[@classname='PrintView']/button[@automationid='c3de23ae-4017-443a-8b6a-f72736b01fb1']"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/button[@automationid='c3de23ae-4017-443a-8b6a-f72736b01fb1']
+					</item>
+					<item
+					addcaps="combobox,uiautomation"
+					capname="combobox"
+					id="b3c8618f-f20b-4ee0-a2dd-8d6480d0ed7c"
+					name="WardCombobox"
+					refimgid="7c33de7b-0f12-48c2-a5ae-ba86eb6a6119"
+					refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.MedicationReconciliation.PrintSaveViewModel']/element[@classname='PrintView']/combobox[@automationid='8e3298d0-7dea-46eb-9f61-8e25d1bcc586']"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/combobox[@automationid='8e3298d0-7dea-46eb-9f61-8e25d1bcc586']
+					</item>
+					<item
+					addcaps="combobox,uiautomation"
+					capname="combobox"
+					id="3853fcf8-d0ad-4e69-890e-4f0e8151fb9b"
+					name="RoomCombobox"
+					refimgid="f71d15a7-a439-4ebf-9939-1c6c439f049e"
+					refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.MedicationReconciliation.PrintSaveViewModel']/element[@classname='PrintView']/combobox[@automationid='ace2c4f2-7450-4b6a-8d6a-afa98a98540c']"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/combobox[@automationid='ace2c4f2-7450-4b6a-8d6a-afa98a98540c']
+					</item>
+				</folder>
+				<folder
+				capname="unknown"
+				id="8c519380-423f-4e89-a774-76078939d13f"
+				isrooted="False"
+				name="ConfirmPatient"
+				searchtimeout="0ms">
+					<item
+					addcaps="container,uiautomation"
+					capname="unknown"
+					id="200d1188-455f-4639-b8a7-d4940b4e34e7"
+					name="NHI"
+					refimgid="84bc4402-6254-4090-882f-bf23ca164c90"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/element[@name=$NHI]
+					</item>
+					<item
+					addcaps="text,uiautomation,uiautomationvalue"
+					capname="unknown"
+					id="e18f992f-35d9-4d8c-8c95-e0d44592489d"
+					name="Procedure"
+					refimgid="a0dca313-57e4-4bac-a2a0-0ceea5a6de9c"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/element[@name=$Procedure]
+					</item>
+					<item
+					addcaps="button,uiautomation,uiautomationinvoke"
+					capname="button"
+					id="47197b36-5e53-406b-a929-34c6cab88c04"
+					name="Confirm"
+					refimgid="5c5d669d-3f47-44e2-9289-58ac95d01e12"
+					refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.Search.Patient.ConfirmPatientViewModel']/element[@classname='ConfirmPatientView']/button[@name='Confirm']"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/button[@name='Confirm']
+					</item>
+					<item
+					addcaps="button,uiautomation,uiautomationinvoke"
+					capname="button"
+					id="c0c097d2-57d3-4ee2-82a1-7c65f51172c1"
+					name="Close"
+					refimgid="4a24d53f-840f-4300-b139-922b89b61522"
+					refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.Search.Patient.ConfirmPatientViewModel']/element[@classname='ConfirmPatientView']/button[@name='Close']"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/button[@name='Close']
+					</item>
+				</folder>
+				<folder
+				capname="unknown"
+				id="a2d37fc4-0c4c-4406-9a55-a7ca33ffaefc"
+				isrooted="False"
+				name="IntentionalDiscrepancy"
+				searchtimeout="0ms">
+					<item
+					addcaps="radiobutton,uiautomation"
+					capname="radiobutton"
+					id="7eeec462-5c66-4aba-994d-9f06456ca9e5"
+					name="Type"
+					refimgid="28416c09-2a58-43ca-82c4-229b8397c3cb"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/radiobutton[@name=$Button1]
+					</item>
+					<item
+					addcaps="radiobutton,uiautomation"
+					capname="radiobutton"
+					id="7676e041-72da-41ca-8d89-2340c47991e8"
+					name="Classification"
+					refimgid="fe0d4c01-3c3e-4ef0-8166-8ce7b6e90b6e"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/radiobutton[@name=$Button2]
+					</item>
+					<item
+					addcaps="text,uiautomation"
+					capname="text"
+					id="09eb8619-74fe-4276-926e-e77bb878d1b3"
+					name="Save"
+					refimgid="d81d4185-111a-4133-8d84-d45ba5e8652b"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//button[@classname='Button']/text[@name='Save']
+					</item>
+				</folder>
+				<folder
+				capname="unknown"
+				id="ab1cc01f-4f88-4323-8450-fe2b7e104a12"
+				isrooted="False"
+				name="MedReviewIntervention"
+				searchtimeout="0ms">
+					<item
+					addcaps="button,uiautomation,uiautomationtoggle"
+					capname="button"
+					id="f2be23be-83a6-43b1-af6e-64196b0c03c6"
+					name="Reason"
+					refimgid="41d97c30-0c6e-429a-bd50-96250ca78f72"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//button[@name=$Button1]
+					</item>
+					<item
+					addcaps="button,uiautomation,uiautomationtoggle"
+					capname="button"
+					id="48f8bab3-49c1-4015-8dc5-b4a1401967ca"
+					name="Intervention"
+					refimgid="f08f9a09-dbb3-4200-8144-1d0afe12be48"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//button[@name=$Button2]
+					</item>
+					<item
+					addcaps="button,uiautomation,uiautomationtoggle"
+					capname="button"
+					id="8d67f68b-f59a-4095-bf36-120113b305f2"
+					name="Outcomes"
+					refimgid="5d4573ac-9461-45dd-8127-f485266c300c"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//button[@name=$Button3]
+					</item>
+					<item
+					addcaps="text,uiautomation"
+					capname="text"
+					id="71bba348-e4b2-4f19-a40a-3119be7141ed"
+					name="Save"
+					refimgid="76f948b3-6a3c-4998-abcc-7257de4fdab3"
+					refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.MedicationReconciliation.MedReviewInterventionViewModel']/element[@classname='MedReviewInterventionView']/element[1]/button[@classname='Button']/text[@name='Save']"
+					searchtimeout="30000ms">
+						/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']//button[@classname='Button']/text[@name='Save']
+					</item>
+				</folder>
+				<item
+				addcaps="button,wpfelement"
+				capname="button"
+				id="88a543d4-49ca-465c-9231-e827b8bb57e3"
+				name="Save"
+				refimgid="3f18b291-6e80-4481-a772-5f2091136e8d"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/button[@name='Save']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="caf194e7-3b11-4bae-800c-f55593bf61da"
+				name="AddNext"
+				refimgid="08fe8aef-f824-48b9-a6a0-f910bfb3c84c"
+				refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.MedicationReconciliation.MedicationViewModel']/element[@automationid='CFFB7677-EE76-4ABC-A8DE-C3B39B392250']/button[@name='Add Next']"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/button[@name='Add Next']
+				</item>
+				<item
+				addcaps="button,wpfelement"
+				capname="button"
+				id="6a0010d5-e663-4dea-982e-ff50fe7a1d28"
+				name="Cancel"
+				refimgid="9dd784fc-7419-479d-b626-f6e9d1543431"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/button[@name='Cancel']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="f2660e9d-6f7e-4e72-b27c-a92bf999c9b7"
+				name="Yes"
+				refimgid="20908330-1db1-4e4e-8ae2-0c3a4f54a8fe"
+				refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.Patient.VerifyPatientLocationViewModel']/element[@classname='VerifyPatientLocationDialog']/button[@name='Yes']"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/button[@name='Yes']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="f8987ffc-757a-48a7-bae0-d86a2d7fead4"
+				name="No"
+				refimgid="23e9ee93-08af-4453-8e45-70eaa17f3816"
+				refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.Patient.VerifyPatientLocationViewModel']/element[@classname='VerifyPatientLocationDialog']/button[@name='No']"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/button[@name='No']
+				</item>
+				<basepath>
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']
+				</basepath>
+			</folder>
+			<folder
+			capname="unknown"
+			id="b86075c9-d94d-4944-8d7b-9dc64d9d7caa"
+			isrooted="True"
+			name="AddAllergy"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="checkbox,wpfelement"
+				capname="combobox"
+				id="c26d255c-9fc7-4202-bbd5-06edf65c1936"
+				name="DrugClass"
+				refimgid="574340a2-3b02-4b24-aa82-02cc14dbf3dd"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.ActiveProblem.PatientAllergyViewModel']/element[@classname='AddDrugAllergyView']//combobox[@automationid='7363DB50-08D4-4FC7-8564-536323A02360']
+				</item>
+				<item
+				addcaps="checkbox,wpfelement"
+				capname="combobox"
+				id="f41b6cb8-b997-411c-b813-476c461264f5"
+				name="WarningType"
+				refimgid="ff7ed356-3d33-4f7d-b85d-51f97a801284"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.ActiveProblem.PatientAllergyViewModel']/element[@classname='AddDrugAllergyView']//combobox[@automationid='EC8133B2-4606-48C0-9F24-A23F1E1EB869']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="342be077-559b-40f7-ac79-d50d0d150e77"
+				name="AllergyDetails"
+				refimgid="25866642-36a7-4de2-914c-d8812bcc4ea8"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.ActiveProblem.PatientAllergyViewModel']/element[@classname='AddDrugAllergyView']//text[@automationid='086114B6-B042-4976-8280-EF2AE2B332D0']
+				</item>
+				<item
+				addcaps="button,wpfelement"
+				capname="button"
+				id="02145d83-dd6b-4461-8b12-1340a8c3abcb"
+				name="Save"
+				refimgid="279f221e-776e-4b1b-9da5-673c25dc4c77"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.ActiveProblem.PatientAllergyViewModel']/element[@classname='AddDrugAllergyView']/element[@automationid='4D34D0DD-7763-4D35-8B4F-6A50CEA9774A']/button[@classname='Button']
+				</item>
+				<item
+				addcaps="container,wpfelement"
+				capname="button"
+				id="3ea7cc8c-68ee-4c55-b98c-1d7e11f5e6df"
+				name="Cancel"
+				refimgid="99f7de0c-25fd-43d3-95c8-bf55c57d6b72"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.ActiveProblem.PatientAllergyViewModel']/element[@classname='AddDrugAllergyView']/element[@automationid='4BEA6633-34E9-4102-B492-763131A2EEE0']/button[@classname='Button']
+				</item>
+				<basepath>
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name='SaferSleep.MedRec.Client.Desktop.ViewModel.ActiveProblem.PatientAllergyViewModel']/element[@classname='AddDrugAllergyView']
+				</basepath>
+			</folder>
+			<folder
+			capname="unknown"
+			id="9e4db045-03e5-4072-8494-ed31edefa25f"
+			isrooted="True"
+			name="PreOp"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,wpfelement"
+				capname="button"
+				id="b3630466-c80d-4856-8ce5-579eb1021327"
+				name="AddMed"
+				refimgid="0c2332b6-e295-418f-8c1f-24440b492367"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@classname='MedicationReconciliationView']/?/?/element[@automationid='2282354e-d238-46ea-8f0d-75d964fbe561']/button[@classname='Button']
+				</item>
+				<item
+				addcaps="button,wpfelement"
+				capname="button"
+				id="c3d824f2-bdfe-48d2-9ab5-4a7258e09845"
+				name="DeleteMed"
+				refimgid="bff429f8-2491-4457-9b26-e5af0c8c2630"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@classname='MedicationReconciliationView']/?/?/element[@automationid='2496396a-090e-4440-b7d3-2fdb0dd8abdc']/button[@classname='Button']
+				</item>
+				<basepath>
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@classname='MedicationReconciliationView']
+				</basepath>
+			</folder>
+			<folder
+			capname="unknown"
+			id="596c634a-7898-47c9-936f-122d9041db6e"
+			isrooted="False"
+			name="PostOp"
+			searchtimeout="0ms">
+				<item
+				capname="button"
+				id="6efc7241-839f-4d6b-993c-5f429a17acca"
+				name="MedReview"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']//table[@automationid='D0CA07F8-3144-4B19-80E2-16476FE7E3B3']/?/?/cell[@classname='DataGridCell']//text[@name~$Medication]/../following-sibling::cell//button[@name=$Review]
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="26bf7eb4-f920-441f-b24d-ffc681377b47"
+			isrooted="True"
+			name="Notes"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="661adcdb-486d-48be-8160-e19577f5a458"
+				name="Add"
+				refimgid="dcf8629c-414a-4181-9545-a893d15594bc"
+				refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@classname='MedicationReconciliationView']/element[@classname='HandoverNotePanel']/element[@automationid='bd7a17b5-710c-4297-bc03-adbba7c7e92a']/element[@automationid='IconLeftButtonUserControl']/button[@classname='Button']"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']//element[@automationid='bd7a17b5-710c-4297-bc03-adbba7c7e92a']/element[@automationid='IconLeftButtonUserControl']/button[@classname='Button']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="49ad3bff-308f-4008-b3d7-6a91b7173936"
+				name="ViewAll"
+				refimgid="d2af3bdd-27a3-4928-a82c-76f5ea1199eb"
+				refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@classname='MedicationReconciliationView']/element[@classname='HandoverNotePanel']/element[@automationid='bd7a17b5-710c-4297-bc03-adbba7c7e92a']/button[@name='View All']"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']//element[@automationid='bd7a17b5-710c-4297-bc03-adbba7c7e92a']/button[@name='View All']
+				</item>
+				<item
+				addcaps="text,uiautomation"
+				capname="text"
+				id="8810c23f-1f4a-4bb9-9c72-c821675bb6b0"
+				name="NotesListItem"
+				refimgid="a92150b4-a1e8-46a7-975c-14570ea42812"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']//element[@automationid='bd7a17b5-710c-4297-bc03-adbba7c7e92a']/table[@classname='DataGrid']/row[@name~'^SaferSleep\.MedRec\.Client\.']/cell[@classname='DataGridCell']/text[@name~$Note]
+				</item>
+				<basepath>
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']//element[@automationid='bd7a17b5-710c-4297-bc03-adbba7c7e92a']
+				</basepath>
+			</folder>
+			<folder
+			capname="unknown"
+			id="2d8be33f-5a49-4c08-80b0-5b2ea1700d60"
+			isrooted="True"
+			name="Confirmation"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="56b6831e-e2a4-4a75-92a9-ec5954a8d654"
+				name="Yes"
+				refimgid="0de9eea5-fbce-469e-8b5b-46568a526143"
+				refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.ViewModel.Common.InformationDialogViewModel']/element[@classname='InformationDialogView']/button[@name='Yes']"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.ViewModel\.Comm']/?/?/button[@name='Yes']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="3d1907e1-9e8a-4675-844d-898dea40b9ed"
+				name="No"
+				refimgid="f98d91c4-b9f1-4b71-82b6-fd232840a083"
+				refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@name='SaferSleep.ViewModel.Common.InformationDialogViewModel']/element[@classname='InformationDialogView']/button[@name='No']"
+				searchtimeout="30000ms">
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.ViewModel\.Comm']/?/?/button[@name='No']
+				</item>
+				<basepath>
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.ViewModel\.Comm']
+				</basepath>
+			</folder>
+			<item
+			addcaps="text,uiautomation"
+			capname="text"
+			id="5b22657b-de63-4a75-a2f0-4030a626f9e5"
+			name="MedicationListItem"
+			searchtimeout="30000ms">
+				/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']//table//cell[@classname='DataGridCell' and @text='' and @columnindex='2']/text[@name=$Medication]
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="89dfe2a3-f833-4436-8c33-746b5eb09d32"
+			name="SaveClose"
+			refimgid="095c6c12-0927-45be-886a-85f8b2c0438f"
+			refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@classname='MedicationReconciliationView']/element[@automationid='42c34377-9855-4135-b63b-ac7ef9e093b0']/button[@classname='Button']"
+			searchtimeout="30000ms">
+				/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/?/?/element[@automationid='42c34377-9855-4135-b63b-ac7ef9e093b0']/button[@classname='Button']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="bbdcb0cd-17a0-4759-8052-d91379c87482"
+			name="Cancel"
+			refimgid="a63069b5-6668-481b-a424-770ca8603604"
+			refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@classname='MedicationReconciliationView']/element[@automationid='4d7416e7-bd6a-4514-a81e-62bc834fac42']/button[@classname='Button']"
+			searchtimeout="30000ms">
+				/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/?/?/element[@automationid='4d7416e7-bd6a-4514-a81e-62bc834fac42']/button[@classname='Button']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="bbb145da-0a18-4961-9f86-2b85cd3e95bc"
+			name="Clear"
+			refimgid="ee74a67b-d2f5-4d81-95c9-4ce0d3a661af"
+			refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@automationid='596651E0-3BB3-40C8-AFF9-A751B82CC69D']/button[@name='Clear']"
+			searchtimeout="30000ms">
+				/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/?/?/button[@name='Clear']
+			</item>
+			<item
+			addcaps="container,uiautomation"
+			capname="text"
+			id="7f90045d-e790-4717-a69e-a846ca9a3132"
+			name="PatientNumber"
+			refimgid="d248c567-4e06-47ad-9a1d-c73c251a589d"
+			searchtimeout="30000ms">
+				/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/?/?/text[@automationid='497C2962-3771-4CFB-8808-EB1A723DEAD3']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="f7901919-3639-4961-8657-87348e80ed6d"
+			name="Search"
+			refimgid="e2fe35ce-9053-4665-b50c-50b25969c4f0"
+			refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@automationid='596651E0-3BB3-40C8-AFF9-A751B82CC69D']/element[@automationid='F065536F-AB6F-4B30-B694-473100BBDF93']/button[@classname='Button']"
+			searchtimeout="30000ms">
+				/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/?/?/element[@automationid='F065536F-AB6F-4B30-B694-473100BBDF93']/button[@classname='Button']
+			</item>
+			<item
+			addcaps="text,uiautomation"
+			capname="text"
+			id="811f9b08-aeb0-41f2-b310-014d98afd209"
+			name="PatientListItem"
+			refimgid="cbb71d94-bff2-49ce-a4a3-ac7cf6bd199b"
+			searchtimeout="30000ms">
+				/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/?/?/table[@automationid='ResultControl']/?/?/cell[@classname='DataGridCell']/text[@name=$NHI]
+			</item>
+			<item
+			addcaps="text,uiautomation"
+			capname="text"
+			id="b4e66fe4-111b-4fed-bb3e-c54134436a71"
+			name="Logout"
+			refimgid="c72f0be3-a19c-434f-8715-5fd15fe39026"
+			refpath="/form[@automationid='13926B09-FFD9-40C5-A9FA-DAD316950316' and @classname='Window' and @orientation='None']/element[@classname='MainTitle']/element[@classname='UserInfo']/element[@automationid='82BE81F5-67B7-4ACF-B0DA-8B24F32F9815']/button[@classname='Button']/text[@name='Logout']"
+			searchtimeout="30000ms">
+				/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']//element[@automationid='82BE81F5-67B7-4ACF-B0DA-8B24F32F9815']/button[@classname='Button']/text[@name='Logout']
+			</item>
+			<basepath>
+				/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAADeSURBVDhPdY4hC8JgEIbXDBZ/gMls8F9pEASb
+oEnBaPA/DIaIoAgzqFXQKMIwyKJB24IwNne33efdt/OBJ7zPd4w5TsdL/wloXajGQiBOEvXNqMZC
+QnszqrGQmB/v6jvKB2BvgnchH4S9AX4Huucw7zwS9tZoDLfpaH3VPzD1b+oH+K2RD47WeTPywdE6
+b9EnzhuP9cEGI0Ct1l8V5Ue1tzTv4gMgYW+A3xntQLQmO7GB2T4Qt6gdDsETj0+PF+5Kd4EbCN+R
+uEVLIRNouxexCX6HlkJmc+yLTZT/wEu/FwWimHc0D4MAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="contextmenu,nativewindow,wpfwin32element,wpfelement"
+		capname="contextmenu"
+		id="2b95c9fc-ed7b-42a8-923f-7c4a2fa2aa79"
+		isrooted="True"
+		name="Dropdown"
+		refpath="/contextmenu"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="listitem,wpfelement"
+			capname="listitem"
+			id="bafa67c4-b0e1-4e96-b444-6d1d413a3243"
+			name="ListItem"
+			searchtimeout="30000ms">
+				/contextmenu/listitem[@text=$ListItem]
+			</item>
+			<item
+			addcaps="listitem,wpfelement"
+			capname="listitem"
+			id="c592f917-dd2d-403d-b060-cf5560216ac7"
+			name="ListItem_2"
+			searchtimeout="30000ms">
+				/contextmenu/listitem[@text=$ListItem_2]
+			</item>
+			<item
+			capname="listitem"
+			id="abedc922-ba72-419c-b79c-d267dc8dc1f6"
+			name="ListItem_3"
+			searchtimeout="30000ms">
+				/contextmenu/listitem[@text=$ListItem_3]
+			</item>
+			<basepath>
+				/contextmenu
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="desktop,nativewindow"
+		capname="desktop"
+		id="33f23d18-de17-4d1f-bd53-575add254834"
+		isrooted="True"
+		name="Desktop"
+		refpath="/desktop[@processname='explorer']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="3623c035-93ec-4cbe-b96a-5a034afffee0"
+			name="SAFERsleepMedRecClientLauncher"
+			refimgid="4363268c-7b5d-4180-b329-42d25d1e953b"
+			refpath="/desktop[@processname='explorer']/container[@class='SHELLDLL_DefView']/list[@controlid='1']/listitem[@text='SAFERsleep MedRec Client Launcher']"
+			searchtimeout="30000ms">
+				/desktop[@processname='explorer']/?/?/list[@controlid='1']/listitem[@text~'^SAFERsleep\ MedRec\ Client\ ']
+			</item>
+			<basepath>
+				/desktop[@processname='explorer']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACBElEQVQ4T4WSUWgScRzHHfQcLPZcL0EQFNtTQU9FRUHSXhaTRbBA
+ixBRiIhAMIz2JERgT0bI1ALZy6BCyY0RMtuZeqPi0hlUE0JcyZXV7S6/u9/vdnezC/rDB/7c///5
+8L//net/43TmG/6m2Wxie9kYC8I6Xjc7eLL0wbH50aqMWVHm+Y2ChiMz7xGPx+3IgduStZnmmUoX
+i1IX6GsOaA8FQqEQRFG0A/kNsNzXflhQ5Pi8yhy7Vbae/zPAstphRmd/WWJvE2jJMAL6GsnEg/17
+kcvl7EDtUwv9zS8MBWiY8pp+OlMst4C3F/dBvnsYubFhFItFcOCP8tGCAor+yiQTJL5aB8sZ0bhE
+kj0eD5LJ5Hbg95oFBUz5/p1plu+97FmnGLpShtvtRjgctk/Q2XgD7aeBGRjZPcSYIkHrFPB6vYN3
+UFit6os1hgJ03J3QJZrrFHB8hReiALW3wlBg+bMtmpBM/4gjsGfqGQq1ZWjfi8xOSf363ILl8aeM
+I0CU3y1ClRegdnWB0KXRm0sDHDpxFecnLiMWi6HRaNiBXWfnMHzusUM4euoSJqem4ff7EQwGEYlE
+kEqlUKlUIMuyEZhJreDghYcYO3MdJ8evwefzIRAI8DGj0Siy2SxKpRKq1SokSUK73YaiKIZsjnw+
+j0QigXQ6DZoLgsDvWK/XBzc6hsu1BRMfpP7Bj/TsAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="b5ecab97-7bf5-4d0f-84cf-8370242249a2"
+		isrooted="True"
+		name="OpenFileSecurityWarning"
+		refpath="/form[@title='Open File - Security Warning']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="c582df44-ff3f-4742-94bc-1764df6203f0"
+			name="ButtonRun"
+			refimgid="a2ff7426-29da-44a7-8104-3b16f37705d7"
+			refpath="/form[@title='Open File - Security Warning']/button[@text='&amp;Run']"
+			searchtimeout="30000ms">
+				/form[@title~'^Open\ File\ -\ Security\ Warn']/button[@text='&amp;Run']
+			</item>
+			<basepath>
+				/form[@title~'^Open\ File\ -\ Security\ Warn']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAlFJREFUOE+lk+tLk2EYh/eX9CGipCIyCKLo4HHlzA8SVoR9KogkkKDM
+CKRCCwQtKUjtIJSdrKggqQ+CFZmHHGlzzrU552HqNnWbO7zHXT3bBLXQoG74fXvv63c9z8tj+O9p
+aDFz55WDmuYBqpp+cLnRzJnqTk5UdlNc8YWic60Ulr6koOTJshw8/RjjkXIMdc9tNLVrNLZp3GqV
+qX4dofJZkIpHs5Q3+Tl710fJ7UlO1o5zvNrN0SoXh644yS8zsyZtB4baZjN1bwLcfBvm4oMpTt1w
+U3zdybFrDg5ftVNYYaPg0iCmcisHLgxgLLOQe95CRmk369KNGGoaXuAPxAhHNeZFQhGVYFghIDIb
+SsUbUPDMyLi9Mg6PhHVMosvqYePW7QJQ38JqE4+DokJEijMX0ZkKaoz6VSwuLxs2b8Nw/+n7hU//
+HE0HSYkzH9OZmdeYnNNw+xR+Tir0DP0FoItmWSwnm8M606J5TDQ7pxSs4zKd1tUACW1NLMtxglEd
+X0hjYlbD5VWwTSj0j8h8tgjAphUAi+pxZsRySl3FLtQtozK9wxLtfSsAkupqQl1PqQdS6o6kusJ3
+l0yXQ6LNnACkLwckb1yDqDh3YKn6dEq9zy3R45TosMX40PsbQOyiLqiHhLo/eesqIwl1z6L6V3uM
+T9Yo73q8rE8A7i0xEOVI4p+HYggATMyByxdnyKPRP6rxbVilw67wcVBOAtambRFvof4hufvzyTGa
+yBbJEskUycg1sS/HxN7sPPaI7M7KY1dmKjszUsnJL2LhTf7rGAy/AP7X5rYY5FLEAAAAAElFTkSu
+QmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,uiautomation,nativewindow"
+		capname="form"
+		id="4cb70d1c-13a5-443a-8710-821a0a017484"
+		isrooted="True"
+		name="SaferSleepClientApplicationUpdateCore"
+		refpath="/form[@name='SaferSleep.Client.ApplicationUpdate.Core.GUIService.SplashViewModel' and @classname='Window' and @orientation='None']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="6374ca82-fd77-45af-aca7-035ca28ab629"
+			name="Yes"
+			refimgid="0d6c8a50-95ad-4aef-89ff-dd37ef392d95"
+			refpath="/form[@name='SaferSleep.Client.ApplicationUpdate.Core.GUIService.SplashViewModel' and @classname='Window' and @orientation='None']/element[@classname='DialogView']/button[@automationid='TrueCommand']"
+			searchtimeout="30000ms">
+				/form[@classname='Window' and @orientation='None']/?/?/button[@automationid='TrueCommand']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="eb17267a-deff-448a-9428-8622635a182d"
+			name="No"
+			refimgid="e7a70338-6307-42ba-b315-f15ae6ba960c"
+			refpath="/form[@name='SaferSleep.Client.ApplicationUpdate.Core.GUIService.SplashViewModel' and @classname='Window' and @orientation='None']/element[@classname='DialogView']/button[@automationid='FalseCommand']"
+			searchtimeout="30000ms">
+				/form[@classname='Window' and @orientation='None']/?/?/button[@automationid='FalseCommand']
+			</item>
+			<item
+			addcaps="combobox,uiautomation"
+			capname="combobox"
+			id="c978d8b1-5117-48a9-85b0-e252b1ff6f15"
+			name="Hospital"
+			refimgid="028902a0-061d-41b9-8603-de65144e0413"
+			refpath="/form[@automationid='9FBDEBDF-5769-4970-A114-67B1C5A9794E' and @classname='Window' and @orientation='None']/combobox[@automationid='863375CE-0477-41F9-A14D-DB0FBD270671']"
+			searchtimeout="30000ms">
+				/form[@classname='Window' and @orientation='None']/combobox[@automationid='863375CE-0477-41F9-A14D-DB0FBD270671']
+			</item>
+			<item
+			addcaps="listitem,uiautomation"
+			capname="text"
+			id="295b2f9d-9df8-4dba-ae8a-c366c340e26d"
+			name="HospitalListItem"
+			refimgid="3ee3da76-37d8-4153-8edb-af78b05e6993"
+			searchtimeout="30000ms">
+				/form[@classname='Window' and @orientation='None']/combobox[@automationid='863375CE-0477-41F9-A14D-DB0FBD270671']/?/?/text[@name=$Hospital]
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="24fedc16-4295-4838-8778-c7d7264560f1"
+			name="OK"
+			refimgid="7d4aadfe-b568-449d-a272-a49570d2afe7"
+			refpath="/form[@automationid='9FBDEBDF-5769-4970-A114-67B1C5A9794E' and @classname='Window' and @orientation='None']/button[@automationid='887ACF71-F971-4C29-BE3B-F9142E2B01D0']"
+			searchtimeout="30000ms">
+				/form[@classname='Window' and @orientation='None']/button[@automationid='887ACF71-F971-4C29-BE3B-F9142E2B01D0']
+			</item>
+			<basepath>
+				/form[@classname='Window' and @orientation='None']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFISURBVDhPYxBNXfkfF/737/9/sTTscjCM0wCj
+ii1gA249+4hVHoZxGuDRvgdsAAhjk4dhnAa4tu6GGzBj902sakAYxQCQ4pSZx8BsjcINcANAGFkd
+MsYwAFkxsgFiaavAAZoMtODgtRf/f//5BxbHaoBB2WYMA0D47svP/zs2XgYHMEg+c84J7AbsvvQM
+zL/25MP/goWnwGIXH7yDq0PGKAY8evMFbgiy+LeffzDEYBjFgMk7rmM14Ny9t2Axy5pt/6fvuvn/
+/defYP6pO29QDQD5HWaAav76/1IZq///+QsJLBAG+RkkhqwHxQAQhimOnXoEhQ/CoLSBrh7DgJcf
+voMVg0IbxAc5E2ZA0aLTKGpBGMMAx6adYMVTdt4A85G91bP5KopaEMYwAIR//P77P2nGUTgfrwFR
+kw79J4Rn7rkFdxWq3KH/ADLQsRWBdt8fAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="4d5c41a9-3c68-4ec9-8255-7cf1b033829e"
+		name="ListItem">
+		</var>
+		<var
+		id="cf669a8b-11a5-404e-aa0a-d54875911a26"
+		name="Priority">
+			Medium
+		</var>
+		<var
+		id="33a108c7-070b-4b73-bc16-439f04193a06"
+		name="ListItem_2">
+		</var>
+		<var
+		id="b72c8699-9036-49d7-a1d7-590666711ad0"
+		name="ProcedureName">
+			Test Procedure 1
+		</var>
+		<var
+		id="e6d971c7-1541-4792-82eb-7d28df0d2bd2"
+		name="KeyProblem">
+			Renal Impairment
+		</var>
+		<var
+		id="50fc6d0b-1443-4389-83c9-60488fd21952"
+		name="SubKeyProblem">
+			Moderate
+		</var>
+		<var
+		id="5cbb1fc6-4644-4832-ab43-b244647d6849"
+		name="ListItem_3">
+		</var>
+		<var
+		id="f4ac33d3-f405-40e0-b810-b7f40193f236"
+		name="Medication">
+			Amiodarone
+		</var>
+		<var
+		id="8b8843ee-f7bb-4720-bff3-7d4de358f5a9"
+		name="Note">
+			this is testing Med Rec Notes
+		</var>
+		<var
+		id="b6c4365e-3b71-4353-a97e-ce87558ee970"
+		name="NHI">
+			MNF3676
+		</var>
+		<var
+		id="2c69a2d3-25fe-41a9-9c61-2c670c37b112"
+		name="Procedure">
+			Test Procedure 1
+		</var>
+		<var
+		id="5d77314f-092b-4bf7-98ea-ba047e46ffcf"
+		name="Review">
+			Charted
+		</var>
+		<var
+		id="2a0930d5-154c-40a3-b49f-617e682843f5"
+		name="Button1">
+		</var>
+		<var
+		id="840e3977-56f4-418f-a4b8-bfe0ee1f19b2"
+		name="Button2">
+		</var>
+		<var
+		id="d564e9be-95df-4226-b700-b8b26472bf33"
+		name="Button3">
+		</var>
+		<var
+		id="1b399279-a763-4c3b-9917-654213e6dfd8"
+		name="Hospital">
+			Generic Hospital 1
+		</var>
+	</variables>
+</repository>

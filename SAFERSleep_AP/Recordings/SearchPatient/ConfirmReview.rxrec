@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="6c2c78e2-daa7-45b9-b462-748c07d78383"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ConfirmReview
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ConfirmReview"
+	namespace="SAFERSleep_AP.Recordings.SearchPatient">
+	</codegen>
+	<variables>
+		<var
+		id="5e088fa5-a78c-4785-94a7-54287ca11f16"
+		name="Button">
+			New Review
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="ConfirmReview"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="ClickConfirmReviewButton"
+		namespace="SAFERSleep_AP.Recordings.SearchPatient"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="b9686949-76c5-4942-abb7-a0be5e54704f">
+				<argument
+				argname="button"
+				id="a304fcfa-cfba-4a9d-9a0b-3e96dbd2a242"
+				variable="Button">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="74af8252-1843-4d76-9a8c-e91bc2e3aebe"
+	name="SAFERSleep_APRepository"
+	relativepath="..\..\SAFERSleep_APRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERSleep_APRepository"
+		namespace="SAFERSleep_AP">
+		</codegen>
+		<rootfolder
+		id="c3c47bee-94a9-426b-a8de-43196bca6868"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ConfirmReview.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

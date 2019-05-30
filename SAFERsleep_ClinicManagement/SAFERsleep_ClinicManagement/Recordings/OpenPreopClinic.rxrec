@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="43513dc0-9148-4f22-8faf-47b98df6263d"
+mode="Desktop"
+rxversion="8.2">
+	<name>
+		OpenPreopClinic
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenPreopClinic"
+	namespace="SAFERsleep_ClinicManagement.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="bee5e085-a674-4813-aeda-3d323bf380ae"
+		waitaction="Exists"
+		waittimeout="10000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c1f2c492-951d-4d08-a90c-f4e87b8bc860"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div/div/div/div[4]//h2[@innertext='PREOP CLINIC']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="98;20"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="c84f96d5-ad56-4779-be1c-df8efa6a137f"
+		sx="1176"
+		sy="374"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c1f2c492-951d-4d08-a90c-f4e87b8bc860"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, h2tag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="h2tag"
+				rect="1078,354,390,33"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						PREOP CLINIC
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						h2
+					</attribute>
+				</element>
+				<path>
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div/div/div/div[4]//h2[@innertext='PREOP CLINIC']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="11a9c98d-856a-48b4-8c63-a674c6e9f216">
+				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
+CiiigAooooAKKKKACiiigAooooAKKKKAP//Z
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="0e897a8c-761f-43a7-8560-5a95da3077db"
+	name="SAFERsleep_ClinicManagementRepository"
+	relativepath="..\SAFERsleep_ClinicManagementRepository.rxrep"
+	rxversion="8.1">
+		<codegen
+		classname="SAFERsleep_ClinicManagementRepository"
+		namespace="SAFERsleep_ClinicManagement">
+		</codegen>
+		<rootfolder
+		id="8ac50317-db92-43ad-bd4e-e2bddb6fc229"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenPreopClinic.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

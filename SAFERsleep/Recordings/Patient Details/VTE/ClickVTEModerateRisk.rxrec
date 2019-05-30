@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="0796dbec-c6c4-4b5a-aff3-f70d539d9361"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ClickVTEModerateRisk
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClickVTEModerateRisk"
+	namespace="SAFERsleep.Recordings.Patient_Details.VTE">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="5dd6aa7f-cab4-4df3-9618-c17f0d64660c"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="40809226-a436-429e-a0f8-eb370af91a75"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']//element[@controlname='tsVte']/container[@controlname='pnlVteAssessment']/rawtext[@rawtext='Moderate Risk*']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.1">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClickVTEModerateRisk.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

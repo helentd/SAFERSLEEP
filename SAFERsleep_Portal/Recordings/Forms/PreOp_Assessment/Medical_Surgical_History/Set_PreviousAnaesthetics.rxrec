@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="0ec2001b-046e-456e-b43b-d1d13d217b06"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Set_PreviousAnaesthetics
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Set_PreviousAnaesthetics"
+	namespace="SAFERsleep_Portal.Recordings.Forms.PreOp_Assessment.Medical_Surgical_History">
+	</codegen>
+	<variables>
+		<var
+		id="a5423eab-7904-4ac1-8e99-f26b6f5a43cd"
+		name="PreviousAnaesthetic_Status">
+			Yes
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Set_PreviousAnaesthetics"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Set_PreviousAnaesthetic_Method"
+		namespace="SAFERsleep_Portal.Recordings.Forms.PreOp_Assessment.Medical_Surgical_History"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="baa76b9f-2418-48f5-9d85-c53d7dc4631b">
+				<argument
+				argname="status"
+				id="4dc1a738-6ef2-4da6-b990-561081d9dd11"
+				variable="PreviousAnaesthetic_Status">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						As new variable...
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="8b6da581-29b7-4008-acee-aa5289a51147"
+	name="SAFERsleep_PortalRepository"
+	relativepath="..\..\..\..\SAFERsleep_PortalRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleep_PortalRepository"
+		namespace="SAFERsleep_Portal">
+		</codegen>
+		<rootfolder
+		id="219f0845-3470-46f6-a731-fca5a231d466"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Set_PreviousAnaesthetics.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

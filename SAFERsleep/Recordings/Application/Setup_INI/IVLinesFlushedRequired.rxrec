@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="15249f0c-e552-4180-b7ae-c7c7525229db"
+mode="Global"
+rxversion="8.2">
+	<name>
+		IVLinesFlushedRequired
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="IVLinesFlushedRequired"
+	namespace="SAFERsleep.Recordings.Application.Setup_INI">
+	</codegen>
+	<variables>
+		<var
+		id="0c173916-6dee-475f-940d-bef0b51d33f5"
+		name="IVLineFlushedStat">
+			False
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="IVLinesFlushedRequired"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="SetIVLinesFlushedRequired"
+		namespace="SAFERsleep.Recordings.Application.Setup_INI"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="eb86668e-258d-4c31-9e42-82be0ac884cd">
+				<argument
+				argname="stat"
+				id="cce343ec-47db-44f3-a905-28b50bf045d8"
+				variable="IVLineFlushedStat">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		IVLinesFlushedRequired.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

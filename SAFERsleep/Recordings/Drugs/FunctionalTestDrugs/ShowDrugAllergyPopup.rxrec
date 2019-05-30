@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f5e066c1-5ff0-46e8-a0ea-515b01afb876"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ShowDrugAllergyPopup
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ShowDrugAllergyPopup"
+	namespace="SAFERsleep.Recordings.Drugs.FunctionalTestDrugs">
+	</codegen>
+	<variables>
+		<var
+		id="ada2acb6-1771-4f8a-9b89-a8c35dd0021a"
+		name="AllergyReminderTime">
+			30000
+		</var>
+	</variables>
+	<recorditems>
+		<explicitdelayitem
+		duration="30000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+				Wait for Allergy rminder interval
+			</comment>
+			<bindings>
+				<binding
+				target="Duration"
+				variable="AllergyReminderTime">
+				</binding>
+			</bindings>
+		</explicitdelayitem>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="66f01a38-2d6c-496c-9cfe-c6ddac2e34c6">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="15e9bb3a-940a-4ce2-97a3-48f053c96dde"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmEditDrug']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ShowDrugAllergyPopup.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

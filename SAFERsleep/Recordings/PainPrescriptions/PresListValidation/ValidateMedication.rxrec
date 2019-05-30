@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b09445b7-da19-4e2e-9ec9-afecbf112e9b"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ValidateMedication
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ValidateMedication"
+	namespace="SAFERsleep.Recordings.PainPrescriptions.PresListValidation">
+	</codegen>
+	<variables>
+		<var
+		id="16bcb67e-3d39-4841-a19b-65743594bffd"
+		name="PrescriptionType">
+			Epidural Analgesia
+		</var>
+		<var
+		id="468da0ff-cb85-4774-a2d4-3678876ecd5f"
+		name="PrescriptionDetails">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="ValidateMedication"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="CheckMedication"
+		namespace="SAFERsleep.Recordings.PainPrescriptions.PresListValidation"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e0623dae-49b5-445f-8416-f73b06a03891">
+				<argument
+				argname="medication"
+				id="2609630d-691b-48c7-8ba1-ec1b01ca7b67"
+				variable="PrescriptionDetails">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ValidateMedication.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{45A65073-4101-420E-9C34-0678EBAE4345}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SAFERsleep_ClinicManagement</RootNamespace>
+    <AssemblyName>SAFERsleep_ClinicManagement</AssemblyName>
+    <RanorexVersion>8.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>dda9144b-cece-4656-8f8b-51f3f4f1827b</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>6033def9-26c4-465e-aee3-f2d75fb70d21</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>16e9940e-a5dd-4abe-8892-9bed627592ec</id>
+    </Compile>
+    <Compile Include="Recordings\AddPatient.cs">
+      <DependentUpon>AddPatient.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>80f2c120-93dd-4aff-9ff6-e0da251cbd18</id>
+      <BoundTo>eb9c24c6-f336-4548-98fd-8367f1ec15b5</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\AddPatient.UserCode.cs">
+      <DependentUpon>AddPatient.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2978c217-bf81-44fd-808b-fd790a720148</id>
+      <BoundTo>eb9c24c6-f336-4548-98fd-8367f1ec15b5</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\BookApointment.cs">
+      <DependentUpon>BookApointment.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>15161d22-f10b-4a86-8d3b-89f900230894</id>
+      <BoundTo>af315673-7ff2-4cac-8081-3bdc312bd943</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\BookApointment.UserCode.cs">
+      <DependentUpon>BookApointment.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8a509e46-7308-4f8a-86ca-35e479a15751</id>
+      <BoundTo>af315673-7ff2-4cac-8081-3bdc312bd943</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseBrowser.cs">
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c4031873-c763-4398-86df-a4db24df0469</id>
+      <BoundTo>26af7131-2e48-4bc9-a73e-239ca39998e5</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseBrowser.UserCode.cs">
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cd81c742-10dd-45d8-9c95-dfad89a6d213</id>
+      <BoundTo>26af7131-2e48-4bc9-a73e-239ca39998e5</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\InputPatientDetail.cs">
+      <DependentUpon>InputPatientDetail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4f8e5b1b-d507-43c5-bfb2-2342e6f1545f</id>
+      <BoundTo>11ead454-0fa6-455c-a0a3-6f6d315712cf</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\InputPatientDetail.UserCode.cs">
+      <DependentUpon>InputPatientDetail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9ceb81cd-a9ca-4ab4-a5fd-065f35628ea2</id>
+      <BoundTo>11ead454-0fa6-455c-a0a3-6f6d315712cf</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Login.cs">
+      <DependentUpon>Login.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e0aadbe2-4a46-4440-abe7-2a5a84930cc2</id>
+      <BoundTo>e13abce6-56ae-4438-9a95-32476c159ca3</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Login.UserCode.cs">
+      <DependentUpon>Login.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ce2c74c9-7503-4a05-8d6d-58c32740e65b</id>
+      <BoundTo>e13abce6-56ae-4438-9a95-32476c159ca3</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\OpenSite_Clinician.cs">
+      <DependentUpon>OpenSite_Clinician.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d2cc570e-26aa-4254-96c5-2d406c0278b2</id>
+      <BoundTo>dda6b426-43de-4c2a-9cab-9ac172f23930</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\OpenSite_Clinician.UserCode.cs">
+      <DependentUpon>OpenSite_Clinician.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dd9fb1b1-0136-45e3-afb0-e82e6ce95764</id>
+      <BoundTo>dda6b426-43de-4c2a-9cab-9ac172f23930</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\OpenPreopClinic.cs">
+      <DependentUpon>OpenPreopClinic.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b23c33ac-3600-42da-98b6-81458697098b</id>
+      <BoundTo>9eec4ca9-a4da-4f6a-a63d-c0e54e43ae4a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\OpenPreopClinic.UserCode.cs">
+      <DependentUpon>OpenPreopClinic.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d42bd8e4-503c-4912-ad5b-934fe7aaea2c</id>
+      <BoundTo>9eec4ca9-a4da-4f6a-a63d-c0e54e43ae4a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Recording1.cs">
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>50ef6b4e-6df8-44cf-87cb-7f750e4340ec</id>
+      <BoundTo>13451709-8da4-4d12-81ba-37b3ddab6b37</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Recording1.UserCode.cs">
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>286d5eb3-1df2-416a-9129-a364469cbe82</id>
+      <BoundTo>13451709-8da4-4d12-81ba-37b3ddab6b37</BoundTo>
+    </Compile>
+    <Compile Include="SAFERsleep_ClinicManagementRepository.cs">
+      <BoundTo>dda9144b-cece-4656-8f8b-51f3f4f1827b</BoundTo>
+      <DependentUpon>SAFERsleep_ClinicManagementRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>8b58e72d-8312-40bb-a9fc-a37e383cb77f</id>
+    </Compile>
+    <Compile Include="VerifySearchNHI.cs">
+      <BoundTo>ba7058e6-3b84-4ef9-bdb6-ac3c049e9d1e</BoundTo>
+      <DependentUpon>VerifySearchNHI.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0ce47bb9-b8d3-47dd-b442-bcce4fc19e2e</id>
+    </Compile>
+    <Compile Include="VerifySearchNHI.UserCode.cs">
+      <BoundTo>ba7058e6-3b84-4ef9-bdb6-ac3c049e9d1e</BoundTo>
+      <DependentUpon>VerifySearchNHI.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d68094fb-7db2-461e-8200-684f92efa99b</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>cfcf872e-4593-4076-980a-545c127a8fdb</id>
+    </None>
+    <None Include="Recordings\AddPatient.rxrec">
+      <BoundTo>dda9144b-cece-4656-8f8b-51f3f4f1827b</BoundTo>
+      <id>eb9c24c6-f336-4548-98fd-8367f1ec15b5</id>
+      <recordtableid>c5ba6e15-1775-4ccd-bb9e-661a0d9a11b7</recordtableid>
+    </None>
+    <None Include="Recordings\BookApointment.rxrec">
+      <BoundTo>dda9144b-cece-4656-8f8b-51f3f4f1827b</BoundTo>
+      <id>af315673-7ff2-4cac-8081-3bdc312bd943</id>
+      <recordtableid>4c25e419-5d76-4591-a80a-ee6dd9de443e</recordtableid>
+    </None>
+    <None Include="Recordings\CloseBrowser.rxrec">
+      <BoundTo>dda9144b-cece-4656-8f8b-51f3f4f1827b</BoundTo>
+      <id>26af7131-2e48-4bc9-a73e-239ca39998e5</id>
+      <recordtableid>d30173e5-568d-4920-8578-63a986462b94</recordtableid>
+    </None>
+    <None Include="Recordings\InputPatientDetail.rxrec">
+      <BoundTo>dda9144b-cece-4656-8f8b-51f3f4f1827b</BoundTo>
+      <id>11ead454-0fa6-455c-a0a3-6f6d315712cf</id>
+      <recordtableid>c7826232-b1fa-4d2d-8323-206ee2816018</recordtableid>
+    </None>
+    <None Include="Recordings\Login.rxrec">
+      <BoundTo>dda9144b-cece-4656-8f8b-51f3f4f1827b</BoundTo>
+      <id>e13abce6-56ae-4438-9a95-32476c159ca3</id>
+      <recordtableid>d8d06853-a20c-4db6-bf8b-1206a748466b</recordtableid>
+    </None>
+    <None Include="Recordings\OpenSite_Clinician.rxrec">
+      <BoundTo>dda9144b-cece-4656-8f8b-51f3f4f1827b</BoundTo>
+      <id>dda6b426-43de-4c2a-9cab-9ac172f23930</id>
+      <recordtableid>8be73b34-dc2d-44cb-bdff-70e920cf365f</recordtableid>
+    </None>
+    <None Include="Recordings\OpenPreopClinic.rxrec">
+      <BoundTo>dda9144b-cece-4656-8f8b-51f3f4f1827b</BoundTo>
+      <id>9eec4ca9-a4da-4f6a-a63d-c0e54e43ae4a</id>
+      <recordtableid>43513dc0-9148-4f22-8faf-47b98df6263d</recordtableid>
+    </None>
+    <None Include="Recordings\Recording1.rxrec">
+      <BoundTo>dda9144b-cece-4656-8f8b-51f3f4f1827b</BoundTo>
+      <id>13451709-8da4-4d12-81ba-37b3ddab6b37</id>
+      <recordtableid>b80d136a-8010-426d-b958-a5b527e8ee03</recordtableid>
+    </None>
+    <None Include="SAFERsleep_ClinicManagementRepository.rximg">
+      <BoundTo>dda9144b-cece-4656-8f8b-51f3f4f1827b</BoundTo>
+      <DependentUpon>SAFERsleep_ClinicManagementRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>bee11178-bb88-45a4-9805-ef632a97ba56</id>
+    </None>
+    <None Include="SAFERsleep_ClinicManagementRepository.rxrep">
+      <id>dda9144b-cece-4656-8f8b-51f3f4f1827b</id>
+      <repoid>0e897a8c-761f-43a7-8560-5a95da3077db</repoid>
+      <reporootid>8ac50317-db92-43ad-bd4e-e2bddb6fc229</reporootid>
+    </None>
+    <None Include="VerifySearchNHI.rxrec">
+      <BoundTo>dda9144b-cece-4656-8f8b-51f3f4f1827b</BoundTo>
+      <id>ba7058e6-3b84-4ef9-bdb6-ac3c049e9d1e</id>
+      <recordtableid>02955872-452b-401a-8369-855fe9d7ad64</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SAFERsleep_ClinicManagement.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>99fc1f17-8f2a-4c45-9cc4-f66960fa8adc</id>
+    </Content>
+    <Content Include="SAFERsleep_ClinicManagement.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>4ff60e25-b184-4ef3-871d-a40fba669285</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Code Modules">
+      <id>cd62a083-b685-40cd-af1b-c76211f2e788</id>
+    </Folder>
+    <Folder Include="Recordings">
+      <id>75127d30-4ac4-4509-88b0-db2c2cfad230</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

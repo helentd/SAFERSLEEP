@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{90EA8A78-33B3-4B23-BC50-C2F8EFAF4D95}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SAFERsleep_Portal</RootNamespace>
+    <AssemblyName>SAFERsleep_Portal</AssemblyName>
+    <RanorexVersion>8.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>e38eb69a-273d-4d11-b84e-83d561e840c4</projectdefaultrepository>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <StartAction>Project</StartAction>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>81b19381-e1c2-43a0-89e9-aa5424de1e90</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>684908da-8e8b-46de-9958-875ebac8861a</id>
+    </Compile>
+    <Compile Include="Recordings\Dashboard\AddEpisodeofCare.cs">
+      <DependentUpon>AddEpisodeofCare.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>917b2100-ec4c-4791-b73c-0b86f1ea0226</id>
+      <BoundTo>9eaddbef-3939-41e6-b9dd-420b20d1d53d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Dashboard\AddEpisodeofCare.UserCode.cs">
+      <DependentUpon>AddEpisodeofCare.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1a0e9c4e-fbe8-420a-957b-121baa194ef8</id>
+      <BoundTo>9eaddbef-3939-41e6-b9dd-420b20d1d53d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Dashboard\OpenEoC.cs">
+      <BoundTo>5398862b-2159-4620-9500-f3046bdd1103</BoundTo>
+      <DependentUpon>OpenEoC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1c4a89ab-13f9-465b-bd23-919f34566988</id>
+    </Compile>
+    <Compile Include="Recordings\Dashboard\OpenEoC.UserCode.cs">
+      <BoundTo>5398862b-2159-4620-9500-f3046bdd1103</BoundTo>
+      <DependentUpon>OpenEoC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4b4e95ea-e0b5-465c-9b8b-88349fd0b1c9</id>
+    </Compile>
+    <Compile Include="Recordings\Database\Restore_Database.cs">
+      <id>4b20a756-4571-4e58-8af6-9acf75218ef3</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\ClickFormTab.cs">
+      <BoundTo>0841e2cb-1361-4d0d-9b7d-eb823e9852f6</BoundTo>
+      <DependentUpon>ClickFormTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e29cbee0-0e00-4237-94f7-95ce5c1c193d</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\ClickFormTab.UserCode.cs">
+      <BoundTo>0841e2cb-1361-4d0d-9b7d-eb823e9852f6</BoundTo>
+      <DependentUpon>ClickFormTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d590da82-fa57-48ca-9923-101576a52960</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Fill_FamilyHistory.cs">
+      <BoundTo>b2faedab-243a-4c27-a9c0-f748276d50ee</BoundTo>
+      <DependentUpon>Fill_FamilyHistory.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>12d7e898-dac5-495e-800b-405f86aa3e74</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Fill_FamilyHistory.UserCode.cs">
+      <BoundTo>b2faedab-243a-4c27-a9c0-f748276d50ee</BoundTo>
+      <DependentUpon>Fill_FamilyHistory.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a9324d33-451d-4602-b797-3ab4ea7f948a</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Fill_PreviousAnaestheticNote.cs">
+      <BoundTo>e73eb521-8003-4c40-878d-91d19672311c</BoundTo>
+      <DependentUpon>Fill_PreviousAnaestheticNote.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e3c5ff71-10f9-4f21-a263-268358c154f9</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Fill_PreviousAnaestheticNote.UserCode.cs">
+      <BoundTo>e73eb521-8003-4c40-878d-91d19672311c</BoundTo>
+      <DependentUpon>Fill_PreviousAnaestheticNote.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>99da3042-2581-4864-90aa-ccbff2b09369</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Add_ReasonAdmission.cs">
+      <BoundTo>eab5ba80-ef35-4d65-b39a-3d428afb3fb5</BoundTo>
+      <DependentUpon>Add_ReasonAdmission.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d394dac7-adfc-42ed-a00e-4c1bb29c5df9</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Add_ReasonAdmission.UserCode.cs">
+      <BoundTo>eab5ba80-ef35-4d65-b39a-3d428afb3fb5</BoundTo>
+      <DependentUpon>Add_ReasonAdmission.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>544bafae-2e77-4e07-9392-88024ff907e1</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Click_MedicalSurgicalHistory_Section.cs">
+      <BoundTo>795f04bc-92ed-4a0e-a6ed-5f962fd59406</BoundTo>
+      <DependentUpon>Click_MedicalSurgicalHistory_Section.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1dccd857-b84b-49a6-86de-7d1539e5b3fc</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Click_MedicalSurgicalHistory_Section.UserCode.cs">
+      <BoundTo>795f04bc-92ed-4a0e-a6ed-5f962fd59406</BoundTo>
+      <DependentUpon>Click_MedicalSurgicalHistory_Section.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>382cb82b-ed3f-4c0f-9350-6256247c0062</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Enter_HistoryPresentingIllness.cs">
+      <BoundTo>3844976c-1983-4f21-b3b6-6045aa2a9c2a</BoundTo>
+      <DependentUpon>Enter_HistoryPresentingIllness.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2a93c6f2-0802-4347-8bc1-04b3510e886d</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Enter_HistoryPresentingIllness.UserCode.cs">
+      <BoundTo>3844976c-1983-4f21-b3b6-6045aa2a9c2a</BoundTo>
+      <DependentUpon>Enter_HistoryPresentingIllness.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dce2fddd-fb19-448f-93f2-5a79f2ca8ffe</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Enter_MedicalDiagnosis.cs">
+      <BoundTo>0900e049-57ea-4a3b-97b5-d7008b045da3</BoundTo>
+      <DependentUpon>Enter_MedicalDiagnosis.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>585aec85-3723-4214-8772-de1491d7f927</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Enter_MedicalDiagnosis.UserCode.cs">
+      <BoundTo>0900e049-57ea-4a3b-97b5-d7008b045da3</BoundTo>
+      <DependentUpon>Enter_MedicalDiagnosis.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>abbb78f8-1867-4253-8843-28edcf0d8fa1</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Set_FamilyHistory.cs">
+      <BoundTo>60f14cd4-a4bd-42b6-b003-a6153165c9da</BoundTo>
+      <DependentUpon>Set_FamilyHistory.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>266d93ec-2955-4517-b9a5-1caf9edcdcd3</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Set_FamilyHistory.UserCode.cs">
+      <BoundTo>60f14cd4-a4bd-42b6-b003-a6153165c9da</BoundTo>
+      <DependentUpon>Set_FamilyHistory.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6ddb4233-4dfb-4e6a-94e2-92df5fabbf97</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Fill_Habits.cs">
+      <BoundTo>2cdbf92a-57da-4fa4-8cad-b9ead66c228a</BoundTo>
+      <DependentUpon>Fill_Habits.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b5edf964-f145-415f-945e-cc89238e7ed0</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Fill_Habits.UserCode.cs">
+      <BoundTo>2cdbf92a-57da-4fa4-8cad-b9ead66c228a</BoundTo>
+      <DependentUpon>Fill_Habits.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6b3d304d-6865-4619-be6f-7a483ffaf983</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Set_HospitalAdmission.cs">
+      <BoundTo>6ba67b22-8b68-44ee-a6ee-157ddcb20baf</BoundTo>
+      <DependentUpon>Set_HospitalAdmission.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>90d2e76a-6a8e-4d28-83b9-ec799e47a70c</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Set_HospitalAdmission.UserCode.cs">
+      <BoundTo>6ba67b22-8b68-44ee-a6ee-157ddcb20baf</BoundTo>
+      <DependentUpon>Set_HospitalAdmission.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7c37c248-fc00-40a6-b6c5-01c31bf77f47</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Set_PreviousAnaesthetics.cs">
+      <BoundTo>c465ea85-fe40-4be1-bf06-62cf12bf69d5</BoundTo>
+      <DependentUpon>Set_PreviousAnaesthetics.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2b36bb97-4814-48de-9f2f-58d065e2dfdc</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Set_PreviousAnaesthetics.UserCode.cs">
+      <BoundTo>c465ea85-fe40-4be1-bf06-62cf12bf69d5</BoundTo>
+      <DependentUpon>Set_PreviousAnaesthetics.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3a8f4017-6da3-48c4-9597-58c287796a3a</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Click_PlannedSurgery_Section.cs">
+      <BoundTo>6d254acb-f7dd-4646-b95d-f77cbd108b9b</BoundTo>
+      <DependentUpon>Click_PlannedSurgery_Section.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>279a91ae-981f-403c-8450-5465666a8f90</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Click_PlannedSurgery_Section.UserCode.cs">
+      <BoundTo>6d254acb-f7dd-4646-b95d-f77cbd108b9b</BoundTo>
+      <DependentUpon>Click_PlannedSurgery_Section.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6cb6eb5f-7198-4d47-8392-ae426f9ff3ae</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Enter_DateofSurgery.cs">
+      <BoundTo>e0e91a46-1cd6-4b1e-9ce6-63ee2759f930</BoundTo>
+      <DependentUpon>Enter_DateofSurgery.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1e48f913-2d6b-4dbd-ba8f-e2fda753382b</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Enter_DateofSurgery.UserCode.cs">
+      <BoundTo>e0e91a46-1cd6-4b1e-9ce6-63ee2759f930</BoundTo>
+      <DependentUpon>Enter_DateofSurgery.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1f8e3701-c17e-4102-876e-c9908077c910</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Enter_GeneralNotes.cs">
+      <DependentUpon>Enter_GeneralNotes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ed4bbfc3-a48a-4fa6-9d7c-275f317c4d8d</id>
+      <BoundTo>d9117936-def6-47ed-bac9-e17fb0228c75</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Enter_GeneralNotes.UserCode.cs">
+      <DependentUpon>Enter_GeneralNotes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7a150d97-11a9-41ed-b85e-e81b5a24fab1</id>
+      <BoundTo>d9117936-def6-47ed-bac9-e17fb0228c75</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Select_Anaesthetist.cs">
+      <BoundTo>907c04c4-75e0-4274-bdab-f186dd218d02</BoundTo>
+      <DependentUpon>Select_Anaesthetist.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7dfb0bc9-072b-4867-9002-c5450bc5e42b</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Select_Anaesthetist.UserCode.cs">
+      <BoundTo>907c04c4-75e0-4274-bdab-f186dd218d02</BoundTo>
+      <DependentUpon>Select_Anaesthetist.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>454c7d8e-8025-419e-b511-1d75306845d0</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Select_Specialty.cs">
+      <BoundTo>b62043e0-69e8-4353-8fb0-32fcf1485c56</BoundTo>
+      <DependentUpon>Select_Specialty.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6ab949e5-c1c1-4011-a060-69bb17487c27</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Select_Specialty.UserCode.cs">
+      <BoundTo>b62043e0-69e8-4353-8fb0-32fcf1485c56</BoundTo>
+      <DependentUpon>Select_Specialty.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3e944bbb-800d-4423-8e53-cca2bd0ef755</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Select_Surgeon.cs">
+      <BoundTo>670da08e-8836-42da-be8e-688d31a7a5e3</BoundTo>
+      <DependentUpon>Select_Surgeon.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1e249516-00c0-4048-9c33-b1f82291e477</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Select_Surgeon.UserCode.cs">
+      <BoundTo>670da08e-8836-42da-be8e-688d31a7a5e3</BoundTo>
+      <DependentUpon>Select_Surgeon.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>31c7ec36-edf0-492e-a30d-0d9ad13d7d21</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Validate_Planned_Surgery.cs">
+      <BoundTo>42c29620-1494-4692-9664-0c8fd7558988</BoundTo>
+      <DependentUpon>Validate_Planned_Surgery.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>73709ff7-4ddb-44a1-a426-c15d3247c530</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Validate_Planned_Surgery.UserCode.cs">
+      <BoundTo>42c29620-1494-4692-9664-0c8fd7558988</BoundTo>
+      <DependentUpon>Validate_Planned_Surgery.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>339aa67b-f863-4b47-82d6-079ba50f77cc</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Social_Situation\Click_SocialSituation_Section.cs">
+      <BoundTo>3dad0db5-e54e-41ee-9dd0-05f029408ce5</BoundTo>
+      <DependentUpon>Click_SocialSituation_Section.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5d9026b8-c787-4ef2-a348-0c846a3489d9</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Social_Situation\Click_SocialSituation_Section.UserCode.cs">
+      <BoundTo>3dad0db5-e54e-41ee-9dd0-05f029408ce5</BoundTo>
+      <DependentUpon>Click_SocialSituation_Section.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6086efa5-fc03-4567-a95a-9aff783535ac</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Social_Situation\Fill_SocialSituation.cs">
+      <BoundTo>f24f3e1e-2551-47fd-88af-2e7a336e0963</BoundTo>
+      <DependentUpon>Fill_SocialSituation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>32b40cc8-d931-4083-a098-c4973cb60265</id>
+    </Compile>
+    <Compile Include="Recordings\Forms\PreOp_Assessment\Social_Situation\Fill_SocialSituation.UserCode.cs">
+      <BoundTo>f24f3e1e-2551-47fd-88af-2e7a336e0963</BoundTo>
+      <DependentUpon>Fill_SocialSituation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>deb5d690-f3a1-4075-80af-77c8a8281e94</id>
+    </Compile>
+    <Compile Include="Recordings\Home\SelectModule.cs">
+      <BoundTo>75903113-0463-4718-891e-f79dd65ce1c4</BoundTo>
+      <DependentUpon>SelectModule.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>003732eb-66bf-4c20-9d83-6f40bc43e38f</id>
+    </Compile>
+    <Compile Include="Recordings\Home\SelectModule.UserCode.cs">
+      <BoundTo>75903113-0463-4718-891e-f79dd65ce1c4</BoundTo>
+      <DependentUpon>SelectModule.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>694e1188-134a-454a-86e3-90a31c67998c</id>
+    </Compile>
+    <Compile Include="Recordings\Login\Login.cs">
+      <DependentUpon>Login.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b64f39ae-9af6-4a4e-8405-4ddd49ca1f6b</id>
+      <BoundTo>dc1cb369-bf70-42a1-b42c-0b8d4a5e9dc5</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Login\Login.UserCode.cs">
+      <DependentUpon>Login.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dcc7cf91-3473-4334-9fc4-d7f9c9a0f3f0</id>
+      <BoundTo>dc1cb369-bf70-42a1-b42c-0b8d4a5e9dc5</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\OpenBrowser.cs">
+      <BoundTo>d6815952-7940-4c1f-b01d-4f84a94de5ee</BoundTo>
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>16d8d67e-1890-4c69-af51-b43f2eb83fd0</id>
+    </Compile>
+    <Compile Include="Recordings\OpenBrowser.UserCode.cs">
+      <BoundTo>d6815952-7940-4c1f-b01d-4f84a94de5ee</BoundTo>
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0b510589-3299-4f49-987a-11f02abc1493</id>
+    </Compile>
+    <Compile Include="Recordings\PatientSearch\AddPatient.cs">
+      <DependentUpon>AddPatient.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>846bc1fc-4968-404c-a7e3-1184e1db3344</id>
+      <BoundTo>ea37634d-2bc3-444a-ad07-833d30b6002e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\PatientSearch\AddPatient.UserCode.cs">
+      <DependentUpon>AddPatient.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>65b1131e-c959-4b07-b546-dbee486feb10</id>
+      <BoundTo>ea37634d-2bc3-444a-ad07-833d30b6002e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\PatientSearch\SearchPatient.cs">
+      <DependentUpon>SearchPatient.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>00484ea0-5140-4b29-9581-8d1eb055fda6</id>
+      <BoundTo>f6e78a69-32dd-4d87-891b-b73a97ecdcb9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\PatientSearch\SearchPatient.UserCode.cs">
+      <DependentUpon>SearchPatient.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e89c9f0f-0567-4a3d-a4b0-bb1824ca0d23</id>
+      <BoundTo>f6e78a69-32dd-4d87-891b-b73a97ecdcb9</BoundTo>
+    </Compile>
+    <Compile Include="SAFERsleep_PortalRepository.cs">
+      <DependentUpon>SAFERsleep_PortalRepository.rxrep</DependentUpon>
+      <id>bc386469-e9df-4cda-9b62-3cae4d2ecead</id>
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>028723df-ebc9-49b4-8ef9-508d8e2baaaa</id>
+    </None>
+    <None Include="Recordings\Dashboard\AddEpisodeofCare.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>9eaddbef-3939-41e6-b9dd-420b20d1d53d</id>
+      <recordtableid>88b53894-8933-400d-801a-ac1e16b7dacc</recordtableid>
+    </None>
+    <None Include="Recordings\Dashboard\OpenEoC.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>5398862b-2159-4620-9500-f3046bdd1103</id>
+      <recordtableid>5143fac2-5569-4163-bdf6-def06fd58ce3</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\ClickFormTab.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>0841e2cb-1361-4d0d-9b7d-eb823e9852f6</id>
+      <recordtableid>40d4a26e-3dbf-4b24-b7cd-4f5f8f18414c</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Fill_FamilyHistory.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>b2faedab-243a-4c27-a9c0-f748276d50ee</id>
+      <recordtableid>ef9b1841-7ab5-416c-993f-d6e171527052</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Fill_PreviousAnaestheticNote.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>e73eb521-8003-4c40-878d-91d19672311c</id>
+      <recordtableid>ebf01302-9466-4ec5-83f4-e8a06b4b9bb0</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Add_ReasonAdmission.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>eab5ba80-ef35-4d65-b39a-3d428afb3fb5</id>
+      <recordtableid>1839c396-fabb-4403-a3cb-01bc066d85e4</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Click_MedicalSurgicalHistory_Section.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>795f04bc-92ed-4a0e-a6ed-5f962fd59406</id>
+      <recordtableid>ea0da166-3a13-48b0-8c4b-c204885dcf64</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Enter_HistoryPresentingIllness.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>3844976c-1983-4f21-b3b6-6045aa2a9c2a</id>
+      <recordtableid>0f05b8fc-d946-4751-a1e0-0ae45c99363f</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Enter_MedicalDiagnosis.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>0900e049-57ea-4a3b-97b5-d7008b045da3</id>
+      <recordtableid>a6a51561-0adc-4bdb-96ad-71d6447eac68</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Set_FamilyHistory.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>60f14cd4-a4bd-42b6-b003-a6153165c9da</id>
+      <recordtableid>7af47bf2-23f0-40c5-9c15-a99fbacd8032</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Fill_Habits.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>2cdbf92a-57da-4fa4-8cad-b9ead66c228a</id>
+      <recordtableid>b7aaf8de-785b-4f3b-8400-b9c0ee32521b</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Set_HospitalAdmission.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>6ba67b22-8b68-44ee-a6ee-157ddcb20baf</id>
+      <recordtableid>8473fadd-0e8e-4dfb-8261-245bdb268592</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History\Set_PreviousAnaesthetics.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>c465ea85-fe40-4be1-bf06-62cf12bf69d5</id>
+      <recordtableid>0ec2001b-046e-456e-b43b-d1d13d217b06</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Click_PlannedSurgery_Section.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>6d254acb-f7dd-4646-b95d-f77cbd108b9b</id>
+      <recordtableid>807c58b1-b2c3-4c73-b2f6-f76db4a8ed0e</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Enter_DateofSurgery.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>e0e91a46-1cd6-4b1e-9ce6-63ee2759f930</id>
+      <recordtableid>cc747f0a-49a7-460b-b542-cb6cce5ea253</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Enter_GeneralNotes.rxrec">
+      <id>d9117936-def6-47ed-bac9-e17fb0228c75</id>
+      <recordtableid>8503db60-92ba-4ead-bfb1-f7a45e73df85</recordtableid>
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Select_Anaesthetist.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>907c04c4-75e0-4274-bdab-f186dd218d02</id>
+      <recordtableid>6dc118e3-798f-42c1-8c22-20403ac62d28</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Select_Specialty.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>b62043e0-69e8-4353-8fb0-32fcf1485c56</id>
+      <recordtableid>e0151476-7798-4e1a-8da4-b9be4d854237</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Select_Surgeon.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>670da08e-8836-42da-be8e-688d31a7a5e3</id>
+      <recordtableid>b2995100-b428-49a9-a845-86805936ca95</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery\Validate_Planned_Surgery.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>42c29620-1494-4692-9664-0c8fd7558988</id>
+      <recordtableid>01daa751-a135-4db8-b36d-52ea24220e98</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Social_Situation\Click_SocialSituation_Section.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>3dad0db5-e54e-41ee-9dd0-05f029408ce5</id>
+      <recordtableid>9d84f7ef-80b6-46a1-aaa1-7775b3357bb7</recordtableid>
+    </None>
+    <None Include="Recordings\Forms\PreOp_Assessment\Social_Situation\Fill_SocialSituation.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>f24f3e1e-2551-47fd-88af-2e7a336e0963</id>
+      <recordtableid>2487fddf-e1ff-4d69-8bad-8e154cacdc0c</recordtableid>
+    </None>
+    <None Include="Recordings\Home\SelectModule.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>75903113-0463-4718-891e-f79dd65ce1c4</id>
+      <recordtableid>30738988-60c7-4ca3-b47e-959636a2e5da</recordtableid>
+    </None>
+    <None Include="Recordings\Login\Login.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>dc1cb369-bf70-42a1-b42c-0b8d4a5e9dc5</id>
+      <recordtableid>b7db6778-2d53-41a8-afe5-f440d8144405</recordtableid>
+    </None>
+    <None Include="Recordings\OpenBrowser.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>d6815952-7940-4c1f-b01d-4f84a94de5ee</id>
+      <recordtableid>fa139de7-823f-4cde-90af-39adcdb1ff76</recordtableid>
+    </None>
+    <None Include="Recordings\PatientSearch\AddPatient.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>ea37634d-2bc3-444a-ad07-833d30b6002e</id>
+      <recordtableid>035f2cfc-3e82-428e-b948-2fc7ff6296ed</recordtableid>
+    </None>
+    <Content Include="SAFERsleep_Portal.rxtst">
+      <id>61e4c96a-f2bd-47da-b081-4ac00a07786b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Recordings\PatientSearch\SearchPatient.rxrec">
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <id>f6e78a69-32dd-4d87-891b-b73a97ecdcb9</id>
+      <recordtableid>78be645b-a90b-4d73-a295-98b4161653f3</recordtableid>
+    </None>
+    <None Include="SAFERsleep_PortalRepository.rximg">
+      <DependentUpon>SAFERsleep_PortalRepository.rxrep</DependentUpon>
+      <id>c0dee66c-7507-453b-84fe-9e4d9cff0693</id>
+      <BoundTo>e38eb69a-273d-4d11-b84e-83d561e840c4</BoundTo>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="SAFERsleep_PortalRepository.rxrep">
+      <id>e38eb69a-273d-4d11-b84e-83d561e840c4</id>
+      <repoid>8b6da581-29b7-4008-acee-aa5289a51147</repoid>
+      <reporootid>219f0845-3470-46f6-a731-fca5a231d466</reporootid>
+    </None>
+    <None Include="SAFERsleep_Portal.rxtmg">
+      <id>ace7ddd9-04b0-4e99-98b4-c38a239a37d1</id>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings">
+      <id>e4fbc906-7c02-4c00-8f55-39cbc03e86d3</id>
+    </Folder>
+    <Folder Include="Recordings\Database">
+      <id>e8c87987-2a22-43fa-b33c-10ca8e130c4f</id>
+    </Folder>
+    <Folder Include="Recordings\Forms\PreOp_Assessment">
+      <id>c3bb3c79-595f-4a59-a204-3008a9a43241</id>
+    </Folder>
+    <Folder Include="Recordings\Forms\PreOp_Assessment\Medical_Surgical_History">
+      <id>f51a85f1-0af3-412d-9f7b-f6454ba3bbca</id>
+    </Folder>
+    <Folder Include="Recordings\Forms\PreOp_Assessment\Social_Situation">
+      <id>c9656b3f-6b00-4f69-865e-9868e95bd975</id>
+    </Folder>
+    <Folder Include="Recordings\Forms\PreOp_Assessment\Planned_Surgery">
+      <id>96d0883f-7e4d-4a22-a8ce-df80fd6a95d0</id>
+    </Folder>
+    <Folder Include="Recordings\Login">
+      <id>5f15083d-aaf1-453e-a623-7ca01d809ef3</id>
+    </Folder>
+    <Folder Include="Recordings\Home">
+      <id>e1007251-be27-4c69-9041-1232eea1322a</id>
+    </Folder>
+    <Folder Include="Recordings\Dashboard">
+      <id>56ca10aa-1a0d-415a-9aa2-d3f2f886b5e4</id>
+    </Folder>
+    <Folder Include="Recordings\Forms">
+      <id>7c0ad4a2-43f6-42bf-b9a3-97ee14b480bf</id>
+    </Folder>
+    <Folder Include="Recordings\PatientSearch">
+      <id>2e2518e7-b7bf-4ef2-b7f9-b19671fc7633</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

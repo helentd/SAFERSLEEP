@@ -1,0 +1,5 @@
+^TcxGridSite$
+^TPanel$
+^TSAFERsleepPanel$
+^TcxPageControl$
+^TcxTabSheet$

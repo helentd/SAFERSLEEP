@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="fa0b2863-cd8e-4909-bb67-9ca163e56553"
+mode="Global"
+rxversion="8.2">
+	<name>
+		LaunchMedRec
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="LaunchMedRec"
+	namespace="SAFERsleep_MedRec.Recordings.Application">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<filename>
+				C:\Program Files\SAFERsleep\SAFERsleep MedRec Client\SaferSleep.MedRec.Application.exe
+			</filename>
+			<workingdir>
+				C:\Program Files\SAFERsleep\SAFERsleep MedRec Client
+			</workingdir>
+			<args>
+			</args>
+		</runapprecorditem>
+		<explicitdelayitem
+		duration="10000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+	</recorditems>
+	<repository
+	id="3ba3b792-db8b-4342-8208-146c83bb83b4"
+	name="SAFERsleep_MedRecRepository"
+	relativepath="..\..\SAFERsleep_MedRecRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleep_MedRecRepository"
+		namespace="SAFERsleep_MedRec">
+		</codegen>
+		<rootfolder
+		id="543445dd-0470-4c58-a59a-2c2d06fa4b16"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		LaunchMedRec.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

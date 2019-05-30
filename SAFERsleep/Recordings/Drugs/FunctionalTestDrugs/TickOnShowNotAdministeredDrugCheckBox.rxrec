@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="95e96a06-8f62-4a51-bcfa-9ed4e0860cb4"
+mode="Global"
+rxversion="8.2">
+	<name>
+		TickOnShowNotAdministeredDrugCheckBox
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="TickOnShowNotAdministeredDrugCheckBox"
+	namespace="SAFERsleep.Recordings.Drugs.FunctionalTestDrugs">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="326f6eaf-f43b-4f14-8d02-83252a7bb02f"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="83275621-a40c-4634-9e32-d8778767735f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']/?/?/form[@name='frmDrugModule']/?/?/tabpage[@name='tsDrugs']/?/?/checkbox[@name~'^chkShowNotAdministeredDru']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		TickOnShowNotAdministeredDrugCheckBox.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

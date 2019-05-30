@@ -1,0 +1,668 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{C0CAD9F2-A5B9-474C-AF02-2F5F3FE1170E}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SAFERsleep_MedRec</RootNamespace>
+    <AssemblyName>SAFERsleep_MedRec</AssemblyName>
+    <RanorexVersion>8.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>92f46e28-43b2-48b8-9642-13385a9157ca</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>6c0e1ca1-d7ae-41b5-a04f-3f0bd1a9711a</id>
+    </Compile>
+    <Compile Include="Recordings\AddPatient\FillinPatientDetails.cs">
+      <BoundTo>792a69d1-7c4b-405e-a7e5-8b50fcf77574</BoundTo>
+      <DependentUpon>FillinPatientDetails.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7ae5dd42-0434-45a9-83d3-bce3944f166f</id>
+    </Compile>
+    <Compile Include="Recordings\AddPatient\FillinPatientDetails.UserCode.cs">
+      <BoundTo>792a69d1-7c4b-405e-a7e5-8b50fcf77574</BoundTo>
+      <DependentUpon>FillinPatientDetails.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ae537839-07b5-4a90-9410-c255bca1100a</id>
+    </Compile>
+    <Compile Include="Recordings\Application\CloseMedRec.cs">
+      <BoundTo>5ca00dcc-1324-40fe-9921-c13a0ccf7351</BoundTo>
+      <DependentUpon>CloseMedRec.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ef16be3c-d761-48cd-b569-bc584bf82f1d</id>
+    </Compile>
+    <Compile Include="Recordings\Application\CloseMedRec.UserCode.cs">
+      <BoundTo>5ca00dcc-1324-40fe-9921-c13a0ccf7351</BoundTo>
+      <DependentUpon>CloseMedRec.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d9750722-f548-4d62-8617-67d00c71c5c0</id>
+    </Compile>
+    <Compile Include="Recordings\Application\Database\Restore_Database.cs">
+      <id>434b8a7a-18c1-4ddb-a243-d550f6e0f9de</id>
+    </Compile>
+    <Compile Include="Recordings\Application\Database\SwitchPreopToPostOp.cs">
+      <id>b94d6e5d-008a-479a-b50c-483ecf3414b6</id>
+    </Compile>
+    <Compile Include="Recordings\Application\LaunchMedRec.cs">
+      <DependentUpon>LaunchMedRec.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3bd996d8-d8c6-4680-bab6-42aed7cc7a3c</id>
+      <BoundTo>2c5d204d-f0bf-49a9-93a6-3944c1e09dfe</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Application\LaunchMedRec.UserCode.cs">
+      <DependentUpon>LaunchMedRec.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ef125d33-d778-40d9-a78e-9e6f3393be14</id>
+      <BoundTo>2c5d204d-f0bf-49a9-93a6-3944c1e09dfe</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Application\User_Login.cs">
+      <BoundTo>06379aea-35b5-4301-a1b2-4bb4f3bae3de</BoundTo>
+      <DependentUpon>User_Login.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3e28e180-2cd5-4e62-9932-460ed8cce73c</id>
+    </Compile>
+    <Compile Include="Recordings\Application\User_Login.UserCode.cs">
+      <BoundTo>06379aea-35b5-4301-a1b2-4bb4f3bae3de</BoundTo>
+      <DependentUpon>User_Login.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0fa46896-a206-4374-86e9-ef33141651a8</id>
+    </Compile>
+    <Compile Include="Recordings\Application\User_Logout.cs">
+      <BoundTo>940f72d4-1da5-4d33-b4fd-45d3f94d3077</BoundTo>
+      <DependentUpon>User_Logout.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>005d6d5f-c8a6-4e8d-9960-3d6ba43c0165</id>
+    </Compile>
+    <Compile Include="Recordings\Application\User_Logout.UserCode.cs">
+      <BoundTo>940f72d4-1da5-4d33-b4fd-45d3f94d3077</BoundTo>
+      <DependentUpon>User_Logout.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1a687d36-cb4a-461f-ab33-d4981b8b7518</id>
+    </Compile>
+    <Compile Include="Recordings\AutoUpdate\BrowsePortalDL.cs">
+      <DependentUpon>BrowsePortalDL.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9f463b14-3f20-4476-b47a-387dbf9c2d2a</id>
+      <BoundTo>930e7ed8-ec7e-4d75-b1a8-a4cc9324b403</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\AutoUpdate\BrowsePortalDL.UserCode.cs">
+      <DependentUpon>BrowsePortalDL.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5f0f996d-065c-4c21-bc0a-3ea966f1be73</id>
+      <BoundTo>930e7ed8-ec7e-4d75-b1a8-a4cc9324b403</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\AutoUpdate\CheckMedRecVersion.cs">
+      <BoundTo>fcbe74e2-5886-4527-bd50-55ac682b53c7</BoundTo>
+      <DependentUpon>CheckMedRecVersion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c17e21fb-fdd8-42cf-958e-a7cfe3333ea8</id>
+    </Compile>
+    <Compile Include="Recordings\AutoUpdate\CheckMedRecVersion.UserCode.cs">
+      <BoundTo>fcbe74e2-5886-4527-bd50-55ac682b53c7</BoundTo>
+      <DependentUpon>CheckMedRecVersion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>918775e1-d11e-4ea2-a978-1a037cb92727</id>
+    </Compile>
+    <Compile Include="Recordings\AutoUpdate\OpenMedRecLauncher.cs">
+      <BoundTo>24f4c41d-f52c-4032-9d87-c251788c1227</BoundTo>
+      <DependentUpon>OpenMedRecLauncher.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8419a8c4-45e7-4c89-a8b7-d489fb80d373</id>
+    </Compile>
+    <Compile Include="Recordings\AutoUpdate\OpenMedRecLauncher.UserCode.cs">
+      <BoundTo>24f4c41d-f52c-4032-9d87-c251788c1227</BoundTo>
+      <DependentUpon>OpenMedRecLauncher.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ee5482f9-3893-4336-bff2-9c3af62bf930</id>
+    </Compile>
+    <Compile Include="Recordings\ChooseProcedure\ChooseProcedure.cs">
+      <BoundTo>f3801a87-fd79-48b0-9ed6-534cbfd50da8</BoundTo>
+      <DependentUpon>ChooseProcedure.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>271b150f-4543-4c11-9eca-d5005c2b5465</id>
+    </Compile>
+    <Compile Include="Recordings\ChooseProcedure\ChooseProcedure.UserCode.cs">
+      <BoundTo>f3801a87-fd79-48b0-9ed6-534cbfd50da8</BoundTo>
+      <DependentUpon>ChooseProcedure.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1c28004f-6de8-402a-a21f-ca17c90e9a07</id>
+    </Compile>
+    <Compile Include="Recordings\KeyProblems\AddAllergyCondition.cs">
+      <BoundTo>c71d6daf-0c23-47d1-954e-88653e5c8117</BoundTo>
+      <DependentUpon>AddAllergyCondition.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dad9afd2-eeb0-4659-a2a6-e1096d5952b5</id>
+    </Compile>
+    <Compile Include="Recordings\KeyProblems\AddAllergyCondition.UserCode.cs">
+      <BoundTo>c71d6daf-0c23-47d1-954e-88653e5c8117</BoundTo>
+      <DependentUpon>AddAllergyCondition.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1adb820e-1495-4d48-9730-445874ad6de0</id>
+    </Compile>
+    <Compile Include="Recordings\KeyProblems\ClickKeyProblemsTab.cs">
+      <BoundTo>6595c8e0-feeb-4446-8c37-79f24b9e7f05</BoundTo>
+      <DependentUpon>ClickKeyProblemsTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b58544f5-90dc-4e18-9711-b1ef5f44cef7</id>
+    </Compile>
+    <Compile Include="Recordings\KeyProblems\ClickKeyProblemsTab.UserCode.cs">
+      <BoundTo>6595c8e0-feeb-4446-8c37-79f24b9e7f05</BoundTo>
+      <DependentUpon>ClickKeyProblemsTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>924a4cd3-06d3-48e2-a0fa-99d9ba0c1d93</id>
+    </Compile>
+    <Compile Include="Recordings\KeyProblems\ConfirmKeyProblems.cs">
+      <BoundTo>faff545f-cbfc-45ee-9a9f-a8d8996dc7a0</BoundTo>
+      <DependentUpon>ConfirmKeyProblems.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a0d427b2-ec05-4fe3-bddd-c6375341ecf9</id>
+    </Compile>
+    <Compile Include="Recordings\KeyProblems\ConfirmKeyProblems.UserCode.cs">
+      <BoundTo>faff545f-cbfc-45ee-9a9f-a8d8996dc7a0</BoundTo>
+      <DependentUpon>ConfirmKeyProblems.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8c17f479-ffba-49d6-a41d-cc066f67855d</id>
+    </Compile>
+    <Compile Include="Recordings\KeyProblems\SelectKeyProblem_button.cs">
+      <BoundTo>0be1c448-2841-45f9-9e32-08cb611abe92</BoundTo>
+      <DependentUpon>SelectKeyProblem_button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>673661b1-d32d-4481-9112-f97598cbabe3</id>
+    </Compile>
+    <Compile Include="Recordings\KeyProblems\SelectKeyProblem_button.UserCode.cs">
+      <BoundTo>0be1c448-2841-45f9-9e32-08cb611abe92</BoundTo>
+      <DependentUpon>SelectKeyProblem_button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>61711000-cd3f-4e3b-9abb-bc7ef3a8bcb5</id>
+    </Compile>
+    <Compile Include="Recordings\KeyProblems\SelectKeyProblem_text.cs">
+      <BoundTo>2acf1799-7789-4cf0-ae36-dc198de0eee6</BoundTo>
+      <DependentUpon>SelectKeyProblem_text.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1968f6f2-5092-4ab2-81e4-07f777141c73</id>
+    </Compile>
+    <Compile Include="Recordings\KeyProblems\SelectKeyProblem_text.UserCode.cs">
+      <BoundTo>2acf1799-7789-4cf0-ae36-dc198de0eee6</BoundTo>
+      <DependentUpon>SelectKeyProblem_text.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c0bae0fc-3dce-454c-b209-d46d3defb455</id>
+    </Compile>
+    <Compile Include="Recordings\MedRecPostOp\SaveEnd.cs">
+      <BoundTo>1190988e-06ef-4c7c-bfbd-3314ddc3c77f</BoundTo>
+      <DependentUpon>SaveEnd.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>79537695-5902-4d7f-8cbf-2af9cb86bbcd</id>
+    </Compile>
+    <Compile Include="Recordings\MedRecPostOp\SaveEnd.UserCode.cs">
+      <BoundTo>1190988e-06ef-4c7c-bfbd-3314ddc3c77f</BoundTo>
+      <DependentUpon>SaveEnd.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a1a6ddf4-216a-4e32-a796-8dd7024001d9</id>
+    </Compile>
+    <Compile Include="Recordings\MedRecPostOp\SetIntenDisc.cs">
+      <BoundTo>5c133778-acc7-4080-9298-a39c5226090d</BoundTo>
+      <DependentUpon>SetIntenDisc.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>69f63773-84e3-49eb-94e4-817f2b2e5f51</id>
+    </Compile>
+    <Compile Include="Recordings\MedRecPostOp\SetIntenDisc.UserCode.cs">
+      <BoundTo>5c133778-acc7-4080-9298-a39c5226090d</BoundTo>
+      <DependentUpon>SetIntenDisc.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>73e03f24-91aa-4177-9267-1439029473cd</id>
+    </Compile>
+    <Compile Include="Recordings\MedRecPostOp\SetMedReview.cs">
+      <BoundTo>fa6d7373-a595-4f32-84c5-94c5adefd608</BoundTo>
+      <DependentUpon>SetMedReview.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fcc416c9-ac14-40df-aa53-f4c18642c44d</id>
+    </Compile>
+    <Compile Include="Recordings\MedRecPostOp\SetMedReview.UserCode.cs">
+      <BoundTo>fa6d7373-a595-4f32-84c5-94c5adefd608</BoundTo>
+      <DependentUpon>SetMedReview.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6fdbd006-f4db-435f-ab07-fb3670314457</id>
+    </Compile>
+    <Compile Include="Recordings\MedRecPostOp\SetMedRevInterv.cs">
+      <BoundTo>f6e3fc3f-6abe-4721-9d31-6f413186562c</BoundTo>
+      <DependentUpon>SetMedRevInterv.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9ccbadc7-5426-4a55-b468-d4924e7c6240</id>
+    </Compile>
+    <Compile Include="Recordings\MedRecPostOp\SetMedRevInterv.UserCode.cs">
+      <BoundTo>f6e3fc3f-6abe-4721-9d31-6f413186562c</BoundTo>
+      <DependentUpon>SetMedRevInterv.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>040a48e6-0d6c-433f-86c4-e001918c717b</id>
+    </Compile>
+    <Compile Include="Recordings\MedRecPreOp\AddMedication.cs">
+      <BoundTo>7c672a47-5e60-425c-bff0-8b10e67059fc</BoundTo>
+      <DependentUpon>AddMedication.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>89100f06-6301-4f78-86eb-78ed1c4719c9</id>
+    </Compile>
+    <Compile Include="Recordings\MedRecPreOp\AddMedication.UserCode.cs">
+      <BoundTo>7c672a47-5e60-425c-bff0-8b10e67059fc</BoundTo>
+      <DependentUpon>AddMedication.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a7efc97a-77da-458e-9ee7-5615c0f68005</id>
+    </Compile>
+    <Compile Include="Recordings\MedRecPreOp\AddNotes.cs">
+      <BoundTo>dc6da463-ebba-4630-9fe1-0f1e5722ba24</BoundTo>
+      <DependentUpon>AddNotes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>642a3ca6-3918-422a-ba18-07b103b54e2d</id>
+    </Compile>
+    <Compile Include="Recordings\MedRecPreOp\AddNotes.UserCode.cs">
+      <BoundTo>dc6da463-ebba-4630-9fe1-0f1e5722ba24</BoundTo>
+      <DependentUpon>AddNotes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>312e7f22-a8b5-4c4d-82d0-b4e53284f16b</id>
+    </Compile>
+    <Compile Include="Recordings\MedRecPreOp\SaveClose.cs">
+      <BoundTo>e8408000-7238-4b9a-a89c-f56886c4f1d1</BoundTo>
+      <DependentUpon>SaveClose.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>153d49bf-2bf9-4944-8417-69d40c3e31f1</id>
+    </Compile>
+    <Compile Include="Recordings\MedRecPreOp\SaveClose.UserCode.cs">
+      <BoundTo>e8408000-7238-4b9a-a89c-f56886c4f1d1</BoundTo>
+      <DependentUpon>SaveClose.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>439cf053-54ad-40a1-be4f-1dd58e849c1d</id>
+    </Compile>
+    <Compile Include="Recordings\PatientSearch\ClickAddPatient.cs">
+      <BoundTo>a27f74e8-fe49-4dcd-b2f1-f12b4dd8e09e</BoundTo>
+      <DependentUpon>ClickAddPatient.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0d2db299-7045-475a-85b9-8d84542e4b4d</id>
+    </Compile>
+    <Compile Include="Recordings\PatientSearch\ClickAddPatient.UserCode.cs">
+      <BoundTo>a27f74e8-fe49-4dcd-b2f1-f12b4dd8e09e</BoundTo>
+      <DependentUpon>ClickAddPatient.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b900c8e2-00c5-46fa-9f5a-0c7098859420</id>
+    </Compile>
+    <Compile Include="Recordings\PatientSearch\ClickClear.cs">
+      <BoundTo>2d50a836-7001-4954-bc36-b79b2746e614</BoundTo>
+      <DependentUpon>ClickClear.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fb2c7ef0-2660-4fd1-baa2-9c99a835bf1b</id>
+    </Compile>
+    <Compile Include="Recordings\PatientSearch\ClickClear.UserCode.cs">
+      <BoundTo>2d50a836-7001-4954-bc36-b79b2746e614</BoundTo>
+      <DependentUpon>ClickClear.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>832b52af-3efb-4005-9380-0fa2b0d94301</id>
+    </Compile>
+    <Compile Include="Recordings\PatientSearch\ClickSearch.cs">
+      <BoundTo>f061d789-e7bc-469a-aa4a-923efd9b0af3</BoundTo>
+      <DependentUpon>ClickSearch.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cc8cb7b1-9ae9-4ca2-8f5a-a94d86702bad</id>
+    </Compile>
+    <Compile Include="Recordings\PatientSearch\ClickSearch.UserCode.cs">
+      <BoundTo>f061d789-e7bc-469a-aa4a-923efd9b0af3</BoundTo>
+      <DependentUpon>ClickSearch.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f6a567b3-0ea2-456f-8929-149c63555f25</id>
+    </Compile>
+    <Compile Include="Recordings\PatientSearch\SelectPatient.cs">
+      <BoundTo>ffd5ba03-03e4-4e71-a7cd-6caff236910b</BoundTo>
+      <DependentUpon>SelectPatient.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2d7a93e6-ab3a-4532-a718-7f2279c694db</id>
+    </Compile>
+    <Compile Include="Recordings\PatientSearch\SelectPatient.UserCode.cs">
+      <BoundTo>ffd5ba03-03e4-4e71-a7cd-6caff236910b</BoundTo>
+      <DependentUpon>SelectPatient.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f91618e8-e92a-46fa-a6c6-785d299f0d62</id>
+    </Compile>
+    <Compile Include="Recordings\PatientSearch\SetNHI.cs">
+      <BoundTo>623a6f81-dd0e-44a0-bdb0-dc8eff080311</BoundTo>
+      <DependentUpon>SetNHI.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6f972948-08ad-4e11-b3a4-7232f0c757b1</id>
+    </Compile>
+    <Compile Include="Recordings\PatientSearch\SetNHI.UserCode.cs">
+      <BoundTo>623a6f81-dd0e-44a0-bdb0-dc8eff080311</BoundTo>
+      <DependentUpon>SetNHI.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c537c311-9309-49c3-8408-5ed6e2185389</id>
+    </Compile>
+    <Compile Include="SAFERsleepORRepository.cs">
+      <DependentUpon>SAFERsleepORRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>2737e8e7-e9f8-4db3-b85b-add7160682c7</id>
+      <BoundTo>715a16b1-9345-4664-9f1d-39fac6a8cc06</BoundTo>
+    </Compile>
+    <Compile Include="SAFERsleep_MedRecRepository.cs">
+      <DependentUpon>SAFERsleep_MedRecRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>8c8b1a07-4bca-45fa-8f66-a817ed8d20bb</id>
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>23ef874a-6cc7-4d24-b8cd-583451150a0d</id>
+    </None>
+    <None Include="Recordings\AddPatient\FillinPatientDetails.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>792a69d1-7c4b-405e-a7e5-8b50fcf77574</id>
+      <recordtableid>e501d8f3-a75d-4d8b-9f31-5099541b3f25</recordtableid>
+    </None>
+    <None Include="Recordings\Application\CloseMedRec.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>5ca00dcc-1324-40fe-9921-c13a0ccf7351</id>
+      <recordtableid>2a0bceb3-0681-498b-8150-f7f1be46f01c</recordtableid>
+    </None>
+    <None Include="Recordings\Application\LaunchMedRec.rxrec">
+      <id>2c5d204d-f0bf-49a9-93a6-3944c1e09dfe</id>
+      <recordtableid>fa0b2863-cd8e-4909-bb67-9ca163e56553</recordtableid>
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+    </None>
+    <None Include="Recordings\Application\User_Login.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>06379aea-35b5-4301-a1b2-4bb4f3bae3de</id>
+      <recordtableid>0936ce4d-bd63-4cc3-8661-41da88e7f80d</recordtableid>
+    </None>
+    <None Include="Recordings\Application\User_Logout.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>940f72d4-1da5-4d33-b4fd-45d3f94d3077</id>
+      <recordtableid>171e67fa-01e1-49ef-8794-662ce7516a3e</recordtableid>
+    </None>
+    <None Include="Recordings\AutoUpdate\BrowsePortalDL.rxrec">
+      <BoundTo>715a16b1-9345-4664-9f1d-39fac6a8cc06</BoundTo>
+      <id>930e7ed8-ec7e-4d75-b1a8-a4cc9324b403</id>
+      <recordtableid>3b030522-76c3-4c2d-b9e4-ebc8e27a8eb9</recordtableid>
+    </None>
+    <None Include="Recordings\AutoUpdate\CheckMedRecVersion.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>fcbe74e2-5886-4527-bd50-55ac682b53c7</id>
+      <recordtableid>5ba09725-738a-4c0e-897a-8af9ba0d098a</recordtableid>
+    </None>
+    <None Include="Recordings\AutoUpdate\OpenMedRecLauncher.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>24f4c41d-f52c-4032-9d87-c251788c1227</id>
+      <recordtableid>612e6ad3-2f65-4436-9e16-835417605870</recordtableid>
+    </None>
+    <None Include="Recordings\ChooseProcedure\ChooseProcedure.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>f3801a87-fd79-48b0-9ed6-534cbfd50da8</id>
+      <recordtableid>a1833e31-e727-46f7-99d3-85c22411ef47</recordtableid>
+    </None>
+    <None Include="Recordings\KeyProblems\AddAllergyCondition.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>c71d6daf-0c23-47d1-954e-88653e5c8117</id>
+      <recordtableid>267c0eaa-426f-4df6-a840-71fb879d6940</recordtableid>
+    </None>
+    <None Include="Recordings\KeyProblems\ClickKeyProblemsTab.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>6595c8e0-feeb-4446-8c37-79f24b9e7f05</id>
+      <recordtableid>c4c914b8-7538-4018-a59f-8fccb9a28696</recordtableid>
+    </None>
+    <None Include="Recordings\KeyProblems\ConfirmKeyProblems.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>faff545f-cbfc-45ee-9a9f-a8d8996dc7a0</id>
+      <recordtableid>5223f628-a791-4497-a3c4-6cf0f4aefd77</recordtableid>
+    </None>
+    <None Include="Recordings\KeyProblems\SelectKeyProblem_button.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>0be1c448-2841-45f9-9e32-08cb611abe92</id>
+      <recordtableid>37627d65-1d17-4fd0-a440-3c47b8cd8bb7</recordtableid>
+    </None>
+    <None Include="Recordings\KeyProblems\SelectKeyProblem_text.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>2acf1799-7789-4cf0-ae36-dc198de0eee6</id>
+      <recordtableid>bd9fda1d-2816-47c4-89ec-26afa1bf6fdd</recordtableid>
+    </None>
+    <None Include="Recordings\MedRecPostOp\SaveEnd.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>1190988e-06ef-4c7c-bfbd-3314ddc3c77f</id>
+      <recordtableid>63e9039e-2439-4ea9-b5aa-d6357872488f</recordtableid>
+    </None>
+    <None Include="Recordings\MedRecPostOp\SetIntenDisc.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>5c133778-acc7-4080-9298-a39c5226090d</id>
+      <recordtableid>28a6b6cf-ca4c-40a6-94f3-a9e201c3f052</recordtableid>
+    </None>
+    <None Include="Recordings\MedRecPostOp\SetMedReview.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>fa6d7373-a595-4f32-84c5-94c5adefd608</id>
+      <recordtableid>171b3713-07eb-43f6-a1e2-bd6a672de9dd</recordtableid>
+    </None>
+    <None Include="Recordings\MedRecPostOp\SetMedRevInterv.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>f6e3fc3f-6abe-4721-9d31-6f413186562c</id>
+      <recordtableid>6591bd4b-dc7d-49a4-9e95-73d3b987d85a</recordtableid>
+    </None>
+    <None Include="Recordings\MedRecPreOp\AddMedication.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>7c672a47-5e60-425c-bff0-8b10e67059fc</id>
+      <recordtableid>03e72852-92a0-44e3-8275-15451fb32d6f</recordtableid>
+    </None>
+    <None Include="Recordings\MedRecPreOp\AddNotes.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>dc6da463-ebba-4630-9fe1-0f1e5722ba24</id>
+      <recordtableid>5fa160d0-6c1f-4f53-a83a-e3303c12b32a</recordtableid>
+    </None>
+    <None Include="Recordings\MedRecPreOp\SaveClose.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>e8408000-7238-4b9a-a89c-f56886c4f1d1</id>
+      <recordtableid>ad27ce20-b94e-4d88-8e7d-014f521cd705</recordtableid>
+    </None>
+    <None Include="Recordings\PatientSearch\ClickAddPatient.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>a27f74e8-fe49-4dcd-b2f1-f12b4dd8e09e</id>
+      <recordtableid>b67f0c64-fac6-4205-b7a9-c16e06963359</recordtableid>
+    </None>
+    <None Include="Recordings\PatientSearch\ClickClear.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>2d50a836-7001-4954-bc36-b79b2746e614</id>
+      <recordtableid>6b08f7dc-5365-4be5-b9ef-9999d1e8c55d</recordtableid>
+    </None>
+    <None Include="Recordings\PatientSearch\ClickSearch.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>f061d789-e7bc-469a-aa4a-923efd9b0af3</id>
+      <recordtableid>990f47e9-2a0b-4e90-87a2-867dc850544a</recordtableid>
+    </None>
+    <None Include="Recordings\PatientSearch\SelectPatient.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>ffd5ba03-03e4-4e71-a7cd-6caff236910b</id>
+      <recordtableid>e6de52a8-d878-42b7-ac45-161b25e2314e</recordtableid>
+    </None>
+    <None Include="Recordings\PatientSearch\SetNHI.rxrec">
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+      <id>623a6f81-dd0e-44a0-bdb0-dc8eff080311</id>
+      <recordtableid>1733d703-99ac-4643-bf05-c29bbf311064</recordtableid>
+    </None>
+    <None Include="SAFERsleepORRepository.rximg">
+      <DependentUpon>SAFERsleepORRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>00ac70c1-0449-4c18-952f-b0185b79e013</id>
+      <BoundTo>715a16b1-9345-4664-9f1d-39fac6a8cc06</BoundTo>
+    </None>
+    <None Include="SAFERsleepORRepository.rxrep">
+      <id>715a16b1-9345-4664-9f1d-39fac6a8cc06</id>
+      <repoid>41c87e14-be5b-4054-9be5-dbeab9612f52</repoid>
+      <reporootid>18a42f2b-7169-45ab-8b1f-148bb9f60f9b</reporootid>
+    </None>
+    <None Include="SAFERsleep_MedRecRepository.rximg">
+      <DependentUpon>SAFERsleep_MedRecRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>951710e4-44d9-4c31-9e18-c39660bd2197</id>
+      <BoundTo>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</BoundTo>
+    </None>
+    <None Include="SAFERsleep_MedRecRepository.rxrep">
+      <id>1e1fdeb7-3bb2-441c-be17-340f2844c3cf</id>
+      <repoid>3ba3b792-db8b-4342-8208-146c83bb83b4</repoid>
+      <reporootid>543445dd-0470-4c58-a59a-2c2d06fa4b16</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SAFERsleep_MedRec.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>ba87f9fb-d488-4124-82c4-3ba0249bfdf3</id>
+    </Content>
+    <Content Include="SAFERsleep_MedRec.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>b027eda1-f5df-4979-a59a-2fc0ace417fc</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings">
+      <id>44e069cc-129e-4150-b0e9-0334f1688fe2</id>
+    </Folder>
+    <Folder Include="Recordings\AddPatient">
+      <id>2ac35345-5481-44f5-875f-c614ad24db0e</id>
+    </Folder>
+    <Folder Include="Recordings\Application">
+      <id>8fad6dfb-f2a2-4d34-9a33-92151a848768</id>
+    </Folder>
+    <Folder Include="Recordings\Application\Database">
+      <id>d63a656f-ed3c-44ea-82d6-6023203ab419</id>
+    </Folder>
+    <Folder Include="Recordings\ChooseProcedure">
+      <id>e548de2e-7d87-472d-b89d-8e6efc54164a</id>
+    </Folder>
+    <Folder Include="Recordings\KeyProblems">
+      <id>5874033f-d1be-43f9-8d39-fd97dd9fb0d4</id>
+    </Folder>
+    <Folder Include="Recordings\MedRecPreOp">
+      <id>80b442a7-ce0d-4bd5-ad76-fa4baf8b4b68</id>
+    </Folder>
+    <Folder Include="Recordings\MedRecPostOp">
+      <id>5b0840d2-e965-4435-a4df-687f22f6ef73</id>
+    </Folder>
+    <Folder Include="Recordings\AutoUpdate">
+      <id>829409c7-7d15-4342-94e2-937948e46b9c</id>
+    </Folder>
+    <Folder Include="Recordings\PatientSearch">
+      <id>b5e77304-b961-4731-9d20-1605d1342202</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="eaf18762-670a-4c6f-bd79-18ed3bbf996a"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ClickApply
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClickApply"
+	namespace="SAFERSleep_AP.Recordings.Modalities.Other.OtherTemplates">
+	</codegen>
+	<variables>
+		<var
+		id="368e76dd-1094-4a36-940e-1bb7672c4e3c"
+		name="ReasonForAcknowledge">
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="d559990a-5b42-47e3-8763-14bd30986da8"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="eae99136-3220-4d58-b942-66e721e32d40"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/element[2]/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container//text[@caption='Apply']
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="SAFERSleepAPCollection"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AcknowledgeAllergy"
+		namespace="SAFERSleep_AP"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="0ef01e4a-b3e5-47fb-bb51-27f21805e244">
+				<argument
+				argname="ReasonAcknowledge"
+				id="de0338a7-7a16-4d03-acae-ee1b5dc9af2b"
+				variable="ReasonForAcknowledge">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						As new variable...
+					</argvalue>
+				</argument>
+				<argument
+				argname="AckButton"
+				id="04de0aac-31e5-4059-9a35-4f6a9a72c2db">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="35c8b8be-f1e1-4060-805a-008ba132ca6f"
+					sourcename="RepositoryEditor">
+						<path>
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container/container/container[2]/element/container/container/container/container[2]/list/container/container[last()='True']//checkbox[@text='Acknowledge Drug Allergy CI' and @visible='True']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="SaveButton"
+				id="8f39569a-317a-4101-8cc5-ae697b24d478">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="b010e09d-de67-43d0-b470-86f2c6be5a63"
+					sourcename="RepositoryEditor">
+						<path>
+							/form[@wpfnative='True' and @name='MainWindow']//element[@automationid='content']/?/?/container[@automationid='WindowContainer']/?/?/element[@automationid='PART_WindowControl']/container//container[@title='Please enter your reason for acknowledging drug allergy']/parent::container/preceding-sibling::container//container[@automationid='IconLeftButtonUserControl'][2]//text[@caption='Save']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="74af8252-1843-4d76-9a8c-e91bc2e3aebe"
+	name="SAFERSleep_APRepository"
+	relativepath="..\..\..\..\SAFERSleep_APRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERSleep_APRepository"
+		namespace="SAFERSleep_AP">
+		</codegen>
+		<rootfolder
+		id="c3c47bee-94a9-426b-a8de-43196bca6868"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClickApply.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

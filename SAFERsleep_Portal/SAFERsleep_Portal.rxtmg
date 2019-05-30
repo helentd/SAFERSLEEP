@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="8.2">
+	<testsuiteentryhierarchy>
+		<flatlistofchildren>
+			<modulegroups
+			id="9477ea5f-44e8-4dfb-a089-c3a68cacf7ff"
+			name="SAFERsleep_Portal">
+			</modulegroups>
+		</flatlistofchildren>
+		<childhierarchy>
+			<modulegroups
+			id="9477ea5f-44e8-4dfb-a089-c3a68cacf7ff"
+			name="SAFERsleep_Portal">
+			</modulegroups>
+		</childhierarchy>
+	</testsuiteentryhierarchy>
+</modulegroupdoc>

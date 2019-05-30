@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="084851e4-6ca9-4ff5-9a7e-c04408c9080c"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ConfirmNoActiveProblem
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ConfirmNoActiveProblem"
+	namespace="SAFERSleep_AP.Recordings.ActiveProblems">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="a61b9df7-3602-44e6-8bc6-603381f49cd7"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+				Confirm there is no Active problem
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="de7923c0-597e-41aa-a99a-6f66c27b51c8"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@wpfnative='True' and @name='MainWindow']//container[@automationid='WindowContainer']//element[@automationid='PART_WindowControl']//tabpagelist/preceding-sibling::container//container[@automationid='IconLeftButtonUserControl'][2]//button
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="74af8252-1843-4d76-9a8c-e91bc2e3aebe"
+	name="SAFERSleep_APRepository"
+	relativepath="..\..\SAFERSleep_APRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERSleep_APRepository"
+		namespace="SAFERSleep_AP">
+		</codegen>
+		<rootfolder
+		id="c3c47bee-94a9-426b-a8de-43196bca6868"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ConfirmNoActiveProblem.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

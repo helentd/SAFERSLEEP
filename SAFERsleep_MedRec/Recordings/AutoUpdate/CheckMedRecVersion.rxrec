@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="5ba09725-738a-4c0e-897a-8af9ba0d098a"
+mode="Global"
+rxversion="8.2">
+	<name>
+		CheckMedRecVersion
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CheckMedRecVersion"
+	namespace="SAFERsleep_MedRec.Recordings.AutoUpdate">
+	</codegen>
+	<variables>
+		<var
+		id="d1537a3a-5d7e-464b-8461-7c5510cb5b00"
+		name="Version">
+			7.10.62.23113
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="CheckMedRecVersion"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="ValidateMedRecVersion"
+		namespace="SAFERsleep_MedRec.Recordings.AutoUpdate"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="6febfd35-30e9-4b3f-a282-6906fe2b6cc2">
+				<argument
+				argname="ver"
+				id="ce54efc7-4f93-4122-91b1-1e865a8cfb31"
+				variable="Version">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="3ba3b792-db8b-4342-8208-146c83bb83b4"
+	name="SAFERsleep_MedRecRepository"
+	relativepath="..\..\SAFERsleep_MedRecRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleep_MedRecRepository"
+		namespace="SAFERsleep_MedRec">
+		</codegen>
+		<rootfolder
+		id="543445dd-0470-4c58-a59a-2c2d06fa4b16"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CheckMedRecVersion.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

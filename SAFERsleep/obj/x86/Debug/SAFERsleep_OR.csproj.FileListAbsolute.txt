@@ -1,0 +1,11 @@
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep\bin\Debug\ORRegressionTest.rxtst
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep\bin\Debug\TestSequence.rxsqc
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep\bin\Debug\SAFERsleep.rxtmg
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep\bin\Debug\ORSmokeTest.rxtst
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep\bin\Debug\SAFERsleep_OR.exe.config
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep\bin\Debug\SAFERsleep_OR.exe
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep\bin\Debug\SAFERsleep_OR.pdb
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep\bin\Debug\Ranorex.Core.Resolver.dll
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep\obj\x86\Debug\SAFERsleep_OR.csprojResolveAssemblyReference.cache
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep\obj\x86\Debug\SAFERsleep_OR.exe
+C:\AUTOMATION\SAFERSLEEP\SAFERsleep\obj\x86\Debug\SAFERsleep_OR.pdb

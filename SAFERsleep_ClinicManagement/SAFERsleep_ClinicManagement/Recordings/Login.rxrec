@@ -1,0 +1,746 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d8d06853-a20c-4db6-bf8b-1206a748466b"
+mode="Desktop"
+rxversion="8.2">
+	<name>
+		Login
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Login"
+	namespace="SAFERsleep_ClinicManagement.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="369269cf-8e4e-4910-8a8b-b3277f413c07"
+		name="varPassWord">
+			poi098{LShiftKey down})(*{LShiftKey up}
+		</var>
+		<var
+		id="0892f0d1-5eaf-45c1-8f70-c0e9ae262ee3"
+		name="varHospital">
+			Wellington Hospital
+		</var>
+		<var
+		id="fa5902cc-f67a-4315-a84d-e2d7264e07ba"
+		name="varUserName">
+			admin
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="1ee4d100-31be-4e72-ad63-3f85693d11bb"
+		sx="950"
+		sy="304"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="27028b21-5fe5-474b-9e9b-671972bdcc20"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, selecttag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="selecttag"
+				rect="785,287,330,34"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control select2 select2-hidden-accessible ng-pristine ng-untouched ng-not-empty ng-valid ng-valid-required
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						hospitals
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						select
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						object:243
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						hospitals
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-options"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="required"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//select[#'hospitals']
+				</path>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="8a144158-ab31-4610-987a-8e7ca21adc44">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="varHospital">
+				</binding>
+			</bindings>
+			<info
+			id="27028b21-5fe5-474b-9e9b-671972bdcc20"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, selecttag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="selecttag"
+				rect="785,287,330,34"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control select2 select2-hidden-accessible ng-pristine ng-untouched ng-not-empty ng-valid ng-valid-required
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						hospitals
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						select
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						object:243
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						hospitals
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-options"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="required"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//select[#'hospitals']
+				</path>
+			</info>
+		</keysequenceitem>
+		<keysequenceitem
+		KeySequence="{Return}"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="64ac9ac8-07f3-4feb-8173-7c155536c779">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="27028b21-5fe5-474b-9e9b-671972bdcc20"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, selecttag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="selecttag"
+				rect="0,66,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						select
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-options"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="required"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//select[#'hospitals']
+				</path>
+			</info>
+		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="541248a5-b28d-4e4d-b275-2207c15b3578"
+		sx="950"
+		sy="378"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="23add561-a0f1-4dc7-985d-53f47b16eb27"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="inputtag"
+				rect="785,361,330,34"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						username
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						username
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//input[#'username']
+				</path>
+			</info>
+		</mouseitem>
+		<setvaluerecorditem
+		attrname="Value"
+		enabled="True"
+		optional="False"
+		searchpropertyid="3aec046c-3a79-493e-bce6-f02035c1811a">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="AttributeValue"
+				variable="varUserName">
+				</binding>
+			</bindings>
+			<info
+			id="23add561-a0f1-4dc7-985d-53f47b16eb27"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//input[#'username']
+				</path>
+			</info>
+			<AttributeValue>
+			</AttributeValue>
+		</setvaluerecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="225712b8-e052-4593-a5d6-a9c6fc93b26f"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cf73f268-fba1-4cac-ae33-694b19433dc3"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//input[#'password']
+				</path>
+			</info>
+		</mouseitem>
+		<setvaluerecorditem
+		attrname="Value"
+		enabled="True"
+		optional="False"
+		searchpropertyid="df58ea2f-cc4e-44b5-b72b-3e32b26676a8">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="AttributeValue"
+				variable="varPassWord">
+				</binding>
+			</bindings>
+			<info
+			id="cf73f268-fba1-4cac-ae33-694b19433dc3"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//input[#'password']
+				</path>
+			</info>
+			<AttributeValue>
+				poi098)(*
+			</AttributeValue>
+		</setvaluerecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="56;18"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="fc5f4454-4f17-4ed1-b606-f0891f8b97c0"
+		sx="1119"
+		sy="503"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="266542aa-f648-4d58-8721-e8366a13f736"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="buttontag"
+				rect="1063,485,60,34"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						btn btn-primary pull-right
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Login
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div//form[@name='form']/div[6]/button[@innertext='Login']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="c9181fb2-2a26-455b-bdef-612c40302feb">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAFTAXwDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoKKKK
+YgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
+KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAqpPcvHf28ChdsoOSevFW6zrv8A5DFl9G/lR1H0NGiiqGo3
+E4litbUhZZeSx/hFAF+isiWC+sIzcLdtOF5dHz0/Opry8leO3jtDtkuOQx/hFAGjRWLdwX9lbPIt
+48qkYYHII9xzWrbEtaxFiSSgJJ78UCHu6ohdyAqjJJ7Vm/2jd3JJsbXcgP33OM/qKfrrlbDaDje4
+U/z/AKVeiRYolRBhVGAKBlCLUpI5lhv4PJZujj7prSqnq0ayadLuHKjcD6EVTvLiZdJtJUdg5K5w
+cZ4oA2KKx7i21COFro3rb1G4xgfL/n8K0rSUz2sUpGCygmgRNRRRQAUUUUAFFFFABRRRQAUUUUAF
+FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFZeoypBqdpJK2
+1FDZOM1qVHJBDKQZYkfHTcoOKBlX+17H/nv/AOON/hUN/J5N3bX6qXi27WI7A9D+tXfsdr/z7Q/9
++xUwVQu0AbcYxjigDKvdTgntmgti0sko2gBSMZpLmNrH7FcFSywLskx2yK044IYiTHEiE9SqgVX1
+A3ahHtQHUH54yB8wpAU9S1S3ms3it2Ls45+UjArStP8Aj0h/3F/lWU32i7ja3h08Woc/O5GOPyFb
+MaCONUHRQAKYiDULb7VZvEPvdV+tVLbVo0Tyr0NFKnDZUnP5VqUySGKXHmxo+P7yg0DMq7vP7RH2
+SyVmDEb5CMACn6vGIrG3jXosigflWmiJGu2NFVfRRgUkkaSACRFcA5AYZ5oER33/AB4z/wDXNv5U
+zTP+QdB/uVZZQylWAIPBB70KqooVFCqOgAwBQMWiiigQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA
+UUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFMWZHleNWy8eNwx0z0oAf
+RTIpUmj3xtuXJGcYp9ABRRTWcLjIPJxwpP8AKgB1FNSRHLBGBKnDY7GkllSFQ0jYBIUcdzQA+iii
+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKyxFPJql35Fx5OAmfkDZ4961KKBmEmwWlt9rLG23PvIzjdnjO
+Ke6o2mHzJGSASkxb1Yhl7A45xW1RSAwmeJrK18yMpCJSDsLEEYOSM84pU2+VH5O77P8Aa18rOenf
+Ge2a15YFleNmJBjbcMVLTEYObW3N3HJGSTKAwywwnqcdqWLC2jIp+RblCowRwcdjzW7RSGFFFFMQ
+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
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBn8R+tLSfxH60t
+dMdkIKKKKYgooooAKF+7+JopAcDGDUTTa0GK6LIjI6hlYYIPcVCllboxbYWYqUJdyxKnscnkVNu/
+2TRu/wBk1lyyGQCwtgG+RjuXYSzsSR6ZJqVoY2Lkrkuuxueo5/xNO3f7Jo3f7Jo5ZCGG2hLbtnOV
+PU9ulOSNEZ2UYLnLc9TjH9KXd/smjd/smjlkA6im7v8AZNG7/ZNHKxjqKbu/2TRu/wBk0crAdRTd
+3+yaN3+yaOVgOopu7/ZNG7/ZNHKwHUU3d/smjd/smjlYDqKbu/2TRu/2TRysB1FN3f7Jo3f7Jo5W
+A6im7v8AZNG7/ZNHKwHUU3d/smjd/smjlYDqKbu/2TRu/wBk0crAdRTd3+yaN3+yaOVgOopu7/ZN
+G7/ZNHKwHUU3d/smjd/smjlYDqKbu/2TRu/2TRysB1FN3f7Jo3f7Jo5WA6im7v8AZNG7/ZNHKwHU
+U3d/smjd/smjlYCfxH60tIOpOKWt1sIKKKKYgooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKx7u8kjvpoze/Z1UDaPK354rYqCK38u6mm3Z83bxjpgUDKzXtxDZxTPbhi
+Vy5LhAPzol1La0QjhDeYgf5pAnXtz1NS3Nk084lWdo8psYBQcj2z0qOXT5JLeOAXICIu0gxBgfcZ
+6UAOur9oJkiWAMzLu+aQJ+HPU0s9/wCQZQ0Ryiqyjdy2TjH50lzYPLEkSXG2NVxteMPn3570smno
+8tswcgQDGCM7h2oAY2pqBlYy2UUgA8lm6LS/b2SGYzW5jliUMULA5B96RNMVLeSMSHcz71cDlcdP
+ypfsDPDMJrgySyqFLlQMAe1IBPt8xZEFmxkYbtm8cL6//WqbT5Xns0kkOWJPUY7mmz2bPJHJDOYZ
+FXYWCg5FS2lv9mtlh3l9ufmI65OaYiaiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqPzl5wHODjIRj/SpKS2/
+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
+wxx5fTnG3rU3ZVkVZbVokZt6Ptba20ng1BVl7hGjuFAbMkm4fTNU5yRBIQcEKefwqlfqS7dCeL/W
+Wv8A18H/ANkroawLgQ2moJGNyRR3I+ZiSBlUP3j+Pet5WV1DKQykZBByCK5/tNnfK3s4L1/MWiii
+mYhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU
+AFFFFABRRRQAUUUUAFFFFAGRr4J+zgDJO7+lUa2NQtJrh4XgZFaMk5b14x29qqnTr0nJa1JP/TMf
+/E0oy5W9DedNVYR95K1/zKNFXf7OvPW0/wC/a/8AxNH9nXnraf8Aftf/AImr9r5GP1X++vx/yKVF
+Xf7OvPW0/wC/a/8AxNH9nXnraf8Aftf/AImj2vkH1X++vx/yKVNEP2l3g8x0d0/dYAKswySD35FX
+/wCzrz1tP+/a/wDxNNk0y9ZRte2VlIZWVACCDkc7aTq36DWGUdeZGs1tH5vmEtnzPMx2zs2fliqe
+nW6WlxLBGcqsUZOOAW+YE47ZwKkW/DxIzwzo5UFl8hzg+nSm6bE2bi5kTa88hxkEHYvC5B6dz+NI
+ReooooEFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/9k=
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="0e897a8c-761f-43a7-8560-5a95da3077db"
+	name="SAFERsleep_ClinicManagementRepository"
+	relativepath="..\SAFERsleep_ClinicManagementRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleep_ClinicManagementRepository"
+		namespace="SAFERsleep_ClinicManagement">
+		</codegen>
+		<rootfolder
+		id="8ac50317-db92-43ad-bd4e-e2bddb6fc229"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Login.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

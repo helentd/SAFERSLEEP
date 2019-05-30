@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a1833e31-e727-46f7-99d3-85c22411ef47"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ChooseProcedure
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ChooseProcedure"
+	namespace="SAFERsleep_MedRec.Recordings.ChooseProcedure">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="194a5fd9-b7f5-449b-ae4b-fefb555ac739"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6d852d5f-3be0-4e5b-a8a4-ba79f48f715f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/table[@automationid='DataGridMeds']/?/?/cell[@classname='DataGridCell' and @text='' and @columnindex='2']/text[@name=$ProcedureName]
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="bad03f26-9b07-44ad-a607-3361af55be1a"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="51c1f951-4980-4be8-abe6-36acc5fcc5df"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/element[@name~'^SaferSleep\.MedRec\.Client\.']/?/?/button[@name='Start']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="3ba3b792-db8b-4342-8208-146c83bb83b4"
+	name="SAFERsleep_MedRecRepository"
+	relativepath="..\..\SAFERsleep_MedRecRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleep_MedRecRepository"
+		namespace="SAFERsleep_MedRec">
+		</codegen>
+		<rootfolder
+		id="543445dd-0470-4c58-a59a-2c2d06fa4b16"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ChooseProcedure.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

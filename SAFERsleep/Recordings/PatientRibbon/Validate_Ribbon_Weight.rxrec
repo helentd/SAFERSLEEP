@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8d871037-70b3-47ff-ac93-462e82cf3c71"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Validate_Ribbon_Weight
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Validate_Ribbon_Weight"
+	namespace="SAFERsleep.Recordings.PatientRibbon">
+	</codegen>
+	<variables>
+		<var
+		id="74348f38-abe1-4053-8286-4b8a50ac5a14"
+		name="Weight">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Validate_Ribbon_Weight"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Validate_Weight"
+		namespace="SAFERsleep.Recordings.PatientRibbon"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="543a0011-5170-493f-ba07-a943135e545b">
+				<argument
+				argname="textInfo"
+				id="479bbbd5-90a8-4405-ab92-50c144c1a31a">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="4fb749b8-38e3-4583-afc1-ed2479e68bd1"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@controlname='frmMain']/?/?/container[@name='pnlLogoPatient']/text[@name='lblWeight']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Validate_Ribbon_Weight.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

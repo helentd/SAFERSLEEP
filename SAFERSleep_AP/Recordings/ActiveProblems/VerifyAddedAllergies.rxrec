@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="77f08d41-f2e5-4d3d-98ae-566365794339"
+mode="Global"
+rxversion="8.2">
+	<name>
+		VerifyAddedAllergies
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="VerifyAddedAllergies"
+	namespace="SAFERSleep_AP.Recordings.ActiveProblems">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="VerifyAddedAllergies"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="ValidateAllergyExisted"
+		namespace="SAFERSleep_AP.Recordings.ActiveProblems"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="ac4ca6d3-1547-4ffc-a8af-6e26a077deb8">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="74af8252-1843-4d76-9a8c-e91bc2e3aebe"
+	name="SAFERSleep_APRepository"
+	relativepath="..\..\SAFERSleep_APRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERSleep_APRepository"
+		namespace="SAFERSleep_AP">
+		</codegen>
+		<rootfolder
+		id="c3c47bee-94a9-426b-a8de-43196bca6868"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		VerifyAddedAllergies.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,590 @@
+﻿<repository
+id="0e897a8c-761f-43a7-8560-5a95da3077db"
+name="SAFERsleep_ClinicManagementRepository"
+rxversion="8.2">
+	<codegen
+	classname="SAFERsleep_ClinicManagementRepository"
+	namespace="SAFERsleep_ClinicManagement">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="8ac50317-db92-43ad-bd4e-e2bddb6fc229"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="5133b514-9fb9-46e0-a225-161df767a490"
+		isrooted="True"
+		name="SAFERsleepClinicManagement"
+		refpath="/dom[@domain='testlab.safersleep.net' and @caption='SAFERsleep Clinic Management' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			capname="unknown"
+			id="e19eb5d7-9572-4673-a5fe-216e8a7a8fa2"
+			isrooted="False"
+			name="Roles"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,h1tag"
+				capname="h1tag"
+				id="ab9d20f6-8c69-4a3e-b7ec-4a4bf63ae852"
+				name="CLINICIAN"
+				refimgid="f3360793-e5c6-4ca4-84ce-fde5bab7fc7c"
+				refpath="/dom[@domain='testlab.safersleep.net' and @caption='SAFERsleep Clinic Management' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div/div/div/div[2]/div[2]/div/div[2]/h1[@innertext='CLINICIAN']"
+				searchtimeout="30000ms">
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div/div/div/div[2]//h1[@innertext='CLINICIAN']
+				</item>
+				<item
+				addcaps="unknown,webelement,h1tag"
+				capname="h1tag"
+				id="15475865-e2d7-45d2-8c4a-40760ae9c4a7"
+				name="PATIENT"
+				refimgid="e70e50ee-1efc-43a7-9db9-bab4112e7dd2"
+				refpath="/dom[@domain='testlab.safersleep.net']/body/div[1]/div[1]/div/div[2]/div[2]/div/div[1]/h1[@innertext='PATIENT']"
+				searchtimeout="30000ms">
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div/div[1]/div/div[2]//h1[@innertext='PATIENT']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="83dc368a-08d6-4397-90c5-bf10d027b16b"
+			isrooted="False"
+			name="LoginDetail"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="cf73f268-fba1-4cac-ae33-694b19433dc3"
+				name="Password"
+				refimgid="319be76f-4306-4faf-b54e-0b205f124d08"
+				refpath="/dom[@domain='testlab.safersleep.net' and @caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//input[#'password']"
+				searchtimeout="30000ms">
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//input[#'password']
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="selecttag"
+				id="27028b21-5fe5-474b-9e9b-671972bdcc20"
+				name="Hospitals"
+				refimgid="596a030b-4360-47b1-8cbd-17cb26138ab5"
+				refpath="/dom[@domain='testlab.safersleep.net']//select[#'hospitals']"
+				searchtimeout="30000ms">
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//select[#'hospitals']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="23add561-a0f1-4dc7-985d-53f47b16eb27"
+				name="Username"
+				refimgid="46712a69-af3c-4ca5-a1e0-ad9c64371d93"
+				refpath="/dom[@domain='testlab.safersleep.net']//input[#'username']"
+				searchtimeout="30000ms">
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//input[#'username']
+				</item>
+			</folder>
+			<folder
+			capname="divtag"
+			id="6eb44bea-18d2-4646-a64e-18d85e4a9d03"
+			isrooted="True"
+			name="MainBody"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="266542aa-f648-4d58-8721-e8366a13f736"
+				name="LOG_BtnLogin"
+				refimgid="62431b58-adfe-4e55-b77c-cfc9a3ed1b08"
+				refpath="/dom[@domain='testlab.safersleep.net' and @caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div/div/div/form/div[6]/button[@innertext='Login']"
+				searchtimeout="30000ms">
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div//form[@name='form']/div[6]/button[@innertext='Login']
+				</item>
+				<item
+				addcaps="unknown,webelement,h2tag"
+				capname="h2tag"
+				id="c1f2c492-951d-4d08-a90c-f4e87b8bc860"
+				name="PREOPCLINIC"
+				refimgid="38fef36a-cbb6-4c99-ba44-f5b537a5cfb9"
+				refpath="/dom[@domain='testlab.safersleep.net' and @caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div/div/div/div[4]/div[2]/div[2]/div/h2[@innertext='PREOP CLINIC']"
+				searchtimeout="30000ms">
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div/div/div/div[4]//h2[@innertext='PREOP CLINIC']
+				</item>
+				<basepath>
+					/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div
+				</basepath>
+			</folder>
+			<folder
+			capname="unknown"
+			id="0e9aceb2-ea9b-4f6f-9e2c-4859b9558251"
+			isrooted="False"
+			name="PATIENT"
+			searchtimeout="0ms">
+				<folder
+				capname="unknown"
+				id="1eb1440f-a80a-4d17-929a-fbde5c8a8cb8"
+				isrooted="False"
+				name="SearchPatient"
+				searchtimeout="0ms">
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="2431e7de-529c-42e2-9d1d-283f33743002"
+					name="InputNHI"
+					refimgid="5dfbbf1c-ed36-4259-b702-be156c339c98"
+					refpath="/dom[@domain='testlab.safersleep.net']//input[#'nhi']"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//input[#'nhi']
+					</item>
+				</folder>
+				<folder
+				capname="divtag"
+				id="fb65ec35-aa2f-406a-a7ee-697d5a7779aa"
+				isrooted="True"
+				name="Patient_Body"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="unknown,webelement,buttontag"
+					capname="buttontag"
+					id="a21ebaa3-d689-4c27-93ec-209dded1f323"
+					name="APAT_btnSearchBooking"
+					refimgid="ec003e8d-ee1b-4a83-b303-10085f2df844"
+					refpath="/dom[2]/body/div[1]/div/div[3]/div/div[2]/div[1]/div/button[@innertext~'^  Search\ /\ Add\ Booking\ \ ']"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div/div/div[3]//button[@innertext~'^&#160;&#160;Search\ /\ Add\ Booking\ \ ']
+					</item>
+					<item
+					addcaps="unknown,webelement,buttontag"
+					capname="buttontag"
+					id="78f1b35b-f4ee-4195-92c1-79fb96ffac39"
+					name="APAT_btnAddPatient"
+					refimgid="683ad686-27db-43da-b50a-e822a0d3f6b5"
+					refpath="/dom[2]/body/div[4]/div/div/div[1]/div[2]/div[2]/button[@innertext~'^\ Add\ Patient\ \ \ \ \ \ \ \ \ \ \ \ ']"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div/div/div/div[1]//button[@innertext~'^\ Add\ Patient\ \ \ \ \ \ \ \ \ \ \ \ ']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="e421b0db-8475-40c1-b062-49539ebef4bc"
+					name="APAT_DOB"
+					refimgid="bfcf914f-813b-47cf-8e70-e2b8017802fd"
+					refpath="/dom[@domain='testlab.safersleep.net' and @caption='SAFERsleep Clinic Management' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div[6]/div/div/div/div/div[2]/form[@name='patientForm']/div[4]/div[1]/div/div/p/input[@type='text']"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div/div/div/div/div/div[2]/form[@name='patientForm']/div[4]/div[1]//input[@type='text']
+					</item>
+					<item
+					addcaps="unknown,webelement,buttontag"
+					capname="buttontag"
+					id="7a6dd33c-cbc8-411e-9e69-fed677b52db0"
+					name="APAT_BtnSearch"
+					refimgid="7b4617e4-9f35-409e-bf96-b45fc8a7769b"
+					refpath="/dom[@domain='testlab.safersleep.net']/body/div[4]/div/div/div[2]/div[1]/div[2]/form[@action='http://testlab.safersleep.net/ClinicManagement/#/preop/appointment']/div/div[2]/div/button[@innertext='  Search                                        ']"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div/div/div/div[2]/div[1]/?/?/form[@action='http://testlab.safersleep.net/ClinicManagement/#/preop/appointment']//button[@innertext~'^&#160;&#160;Search\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="49ab73a0-a533-485c-809c-4a3ebf257b43"
+					name="SEAC_NHIColumn"
+					refimgid="cd8e29bf-d28b-46fc-802a-46bad96a5ef8"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div/div/div/div[2]/div[2]//table/tbody/tr[1]/td[2]/span
+					</item>
+					<item
+					addcaps="unknown,webelement,itag"
+					capname="itag"
+					id="24d06c9b-6395-4975-8cea-dc8628108223"
+					name="APOIT_CreateAppointment"
+					refimgid="d08fedb1-874b-480a-95f5-73f7c2abb2e4"
+					refpath="/dom[@domain='testlab.safersleep.net']/body/div[4]/div/div/div[2]/div[2]/div[2]/tag[@tagname='patient-search-result']/table/tbody/tr[1]/td[1]/div/i[@title='Create Appointment']"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div/div/div/div[2]/div[2]//table/tbody/tr[1]/td[1]/?/?/i[@title='Create Appointment']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="3d95c0c3-8654-43d7-8e29-1511c0ffca38"
+					name="APOIT_SendPQ"
+					refimgid="8d23b68a-10ca-4943-86a5-e1e0bd7016bc"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div//form[@name='appointmentForm']/div/div[3]/div/div[1]/div[5]/label[@innertext~'^\ Send\ Patient\ Questionnai']/input[@type='checkbox']
+					</item>
+					<item
+					addcaps="unknown,webelement,buttontag"
+					capname="buttontag"
+					id="e8d9b3cb-09c0-4746-ac31-e3a7e30410a8"
+					name="APOT_BtnSave"
+					refimgid="ada5a780-1e82-4ca4-86da-e3c50919e819"
+					refpath="/dom[@domain='testlab.safersleep.net']/body/div[5]/div/div/div/form[@name='appointmentForm']/div/div[5]/div[2]/button[@innertext=' Save                                ']"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div//form[@name='appointmentForm']/div/div[5]/?/?/button[@innertext~'^\ Save\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ']
+					</item>
+					<item
+					addcaps="unknown,webelement,buttontag"
+					capname="buttontag"
+					id="9285df7c-3f4f-4377-8c34-acd014dd6106"
+					name="APOT_BtnCancel"
+					refimgid="82b07e30-241f-47ad-b20d-ba9a47812c3f"
+					refpath="/dom[@domain='testlab.safersleep.net']/body/div[5]/div/div/div/form[@name='appointmentForm']/div/div[5]/div[2]/button[@innertext=' Cancel                                ']"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div//form[@name='appointmentForm']/div/div[5]/?/?/button[@innertext~'^\ Cancel\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ']
+					</item>
+					<item
+					addcaps="unknown,webelement,buttontag"
+					capname="buttontag"
+					id="f4a75f3f-adbd-434b-9cb4-8992197d7cdc"
+					name="APOIT_BtnEditPatient"
+					refimgid="8692bcc5-74f7-48b8-8ee5-b152f5d28855"
+					refpath="/dom[@domain='testlab.safersleep.net']/body/div[5]/div/div/div/form[@name='appointmentForm']/div/div[5]/div[1]/button[@innertext=' Edit Patient                                ']"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div//form[@name='appointmentForm']/div/div[5]/?/?/button[@innertext~'^\ Edit\ Patient\ \ \ \ \ \ \ \ \ \ \ ']
+					</item>
+					<item
+					addcaps="unknown,webelement,buttontag"
+					capname="buttontag"
+					id="84f5d9bc-a676-4cf9-a665-f858f77abd99"
+					name="APOIT_CarlenDate"
+					refimgid="8db78aca-42b8-4445-8423-6de029bf2023"
+					refpath="/dom[@domain='testlab.safersleep.net']//div[#'appointmentDate']/p/div/ul/li[1]/div/table/tbody/tr[4]/td[5]/button"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div//ul//table/tbody/tr[4]/td[5]/button
+					</item>
+					<basepath>
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']/body/div
+					</basepath>
+				</folder>
+				<folder
+				capname="unknown"
+				id="5cb450b5-db97-4149-807d-7e6bbcb95311"
+				isrooted="False"
+				name="PatietnDetail"
+				searchtimeout="0ms">
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="92ed29e9-655c-4438-bac9-12a6725c805c"
+					name="NHI"
+					refimgid="6aea7cf2-e163-4584-8c69-b87faa1fce7b"
+					refpath="/dom[2]//input[#'NHI']"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//input[#'NHI']
+					</item>
+					<item
+					addcaps="unknown,webelement,selecttag"
+					capname="selecttag"
+					id="998c283a-dcc4-4795-b16b-af3bfc170444"
+					name="Title"
+					refimgid="beade983-0a69-4978-91f8-a97f968c3e52"
+					refpath="/dom[2]//select[#'title']"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//select[#'title']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="5928a975-3c54-43c2-9892-272286455fae"
+					name="FirstName"
+					refimgid="567b93a8-21b2-45b8-9f51-1f0052f2be40"
+					refpath="/dom[2]//input[#'firstName']"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//input[#'firstName']
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="7e650bbd-c90e-4662-86da-c8cfd3b108fe"
+					name="SpanTag23"
+					refimgid="9f6540f6-7758-42c1-a758-0af75b2f7685"
+					refpath="/dom[2]//td[#'datepicker-395-4656-24']/button/span[@innertext='23']"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//td[#'datepicker-395-4656-24']/?/?/span[@innertext='23']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="5ac09419-2783-4ce0-b483-433742f4e66c"
+					name="PreferredName"
+					refimgid="71819647-2ffc-42a7-be6f-7b461ba9a35a"
+					refpath="/dom[2]//input[#'preferredName']"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//input[#'preferredName']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="7f12273d-a8c2-4f53-ad93-e823b0e608a9"
+					name="LastName"
+					refimgid="d6e450b0-b674-4df7-9e01-f088d2af841f"
+					refpath="/dom[2]//input[#'lastName']"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//input[#'lastName']
+					</item>
+					<item
+					addcaps="unknown,webelement,selecttag"
+					capname="selecttag"
+					id="5693f842-d46c-4a9c-9c5a-47b4a262b45f"
+					name="Sex"
+					refimgid="d23d0262-e56f-4e1d-ab01-5e6694ad0375"
+					refpath="/dom[2]//select[#'sex']"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//select[#'sex']
+					</item>
+					<item
+					addcaps="unknown,webelement,buttontag"
+					capname="buttontag"
+					id="8ea12436-6db1-4a2a-8024-6382f05ab403"
+					name="BtnSave"
+					refimgid="a4fbd603-e791-497d-9aa1-57f6f1eaf447"
+					refpath="/dom[2]//button[#'btnSave']"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//button[#'btnSave']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="93754468-caac-42d9-9eb1-c5af08996c5f"
+					name="Email"
+					refimgid="943ce97e-b640-45c3-a5ff-ae8e4f19c643"
+					refpath="/dom[@domain='testlab.safersleep.net']//input[#'email']"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//input[#'email']
+					</item>
+				</folder>
+				<folder
+				capname="unknown"
+				id="71e13846-99b4-44e4-a6ef-be9be1d31411"
+				isrooted="False"
+				name="CreateAppoinment"
+				searchtimeout="0ms">
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="686c48c8-39b5-4381-8b82-7da2e3dd9cad"
+					name="OperationName"
+					refimgid="1c9283e8-5915-459f-ad74-afdfd14ebfb8"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//input[#'operationName']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="731ac4e1-2237-4534-9f12-c6ce7b68322f"
+					name="ApoinmentDate"
+					refimgid="cd83fa53-9def-4675-a369-81e45a9b2482"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//div[#'appointmentDate']/?/?/input[@type='text']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="85d80f2f-de64-4f7a-966e-bac83d766a29"
+					name="Rdo_AM"
+					refimgid="dec7381c-71e2-44a8-929e-1d7fbf854a09"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//input[#'inlineRadio1']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="603779c1-3d6b-44e8-9bac-6f4f42cf9d4d"
+					name="Rdo_PM"
+					refimgid="a7149f60-5aaf-4dba-92cd-5f7398a239c0"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//input[#'inlineRadio2']
+					</item>
+					<item
+					addcaps="unknown,webelement,itag"
+					capname="itag"
+					id="195daca9-faab-48dc-8fd6-7f254728b3ae"
+					name="AppDate_Calendar"
+					refimgid="3d9f3704-be96-4c49-a3b7-f845d5304373"
+					refpath="/dom[@domain='testlab.safersleep.net']//div[#'appointmentDate']/p/span/button/i"
+					searchtimeout="30000ms">
+						/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']//div[#'appointmentDate']/?/?/span/?/?/i
+					</item>
+				</folder>
+			</folder>
+			<basepath>
+				/dom[@caption~'^SAFERsleep\ Clinic\ Managem' and @page='' and @path='/ClinicManagement/' and @browsername='Chrome']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43T3UvTURjAcS/6G4Kgyy6KKKjwJogIDBJjIBWZ7MIh
+5cDKzDILZ0bmhduYaWq+kS4xo990aC/24qwkJUjmS7nV1JYoynRuvk739s3fr7zyLDrw8Ls45/mc
+5zwPv7i4v6uh9SO1LV1UNHVS+qiDkupW7pa3oDM8Jre4nqzCKjbPCr9y8r9WvsGsYDER+eZQOBrT
+kAHn+HRsxLRR9npQDIQjUWTgSPJFJeIT07dWIr95dW0rEI6gwCuBCAvLYdyekBiQG7YJeFfmqOpo
+p9zahs6SSamlEdfUAt6FEI6JgBiQGyTfICcbbHqGow7s0X6K7Nc4nCdxofIVQ24fA6PLYkAelX8p
+Qk27jfyvyTTMa6mxt6AxTnO8zMOexhOY2uv4PLIkBuQ5z/nD3HvQTZo1CfUbFVkmN9llcLC6kO2t
+OzlZcIWeIb8Y0N68z/R8iDsPXejKPpHWnILKVkSK0c+pzBvsuL2NoznpvOufFwOaHD2Ts0GqpBG0
+BlAbJA507CLemEzS+RfsVV1GX1PHyz6vGEi9VIx7Zh3nmI/rJYPsz6tld8E+EjKucijFymntU173
+zmDtmRUDZzIKcU2uKaOyO72Ympo5dq6AhNRyKsxvleS+b0tI7z1iQKW5hXNibaMPQSY864xNBXD8
+WlXG9uX78kbyIh8GF2MDiepceod9tHWP86zrJ086RzE//0G91Um1xUGl9CcqJJe4goSz2crG/8bm
+X/kbNG0rDiYbOAsAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="24af0f09-452b-4623-b963-35a9041fbd47"
+		isrooted="True"
+		name="CloseGoogleChrome"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="7762ed48-9cd3-49af-b467-23f714626707"
+			name="Btn_CloseBrowser"
+			refimgid="ef2ad133-a6ad-4961-b651-25cb843b9e51"
+			searchtimeout="30000ms">
+				/form[@title='SAFERsleep Clinic Management - Google Chrome']/?/?/button[@accessiblename='Restore']
+			</item>
+			<basepath>
+				/form[@title='SAFERsleep Clinic Management - Google Chrome']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKFSURBVDhPrZNdSFNxGMaXQUFEBaZTZiV1EUQX
+FkRJ6Y7T6dy3uilsS3TpXRQJSnTRCELIvm66WE07m1tiu7GPmyBtaouac2pNLKfnWEgRCMHyDNSN
+8/Q/U1eLjC468HCufr/n5eX9i0T/+4NNlDFnUFUxdcp7rEExwFbJh9nqci/5n5vSl2b+tW/aKC9g
+zbpJAoKtqQCBwOjLwOhKwWhLwOplUUZfbv2jZFBReCRcI/8+YyDguqC6PE3AaCjMqkswq6XOp0ts
+towLFw3zQY0UU0LjBhMwaiJQSTGjKk7MKaUFKcmBnmbtUXtDoldbhLek5QNp/tTtwMuRef5ZcIFn
+xp9jzqPDF9cJfOs9Dq6vELHHRYM/BZ4m+/4HTai7VI2hypNgXQ5c9nLQ3YxBS2K+E8P76QjiPhkS
+vmIkhoqQ8BcvwWvcnJTke5r68z1ncJBuxK1aCr7RrylYfSMG9fUY2h9xWAq3gQ/IwI/IgCDJqHpb
+UpDnavDvdVuxz2OF5poFT4KL0AjgGqwigrYeDsuRq8CYnKSMpBT8G8WOpEDirO/b426EEEH0emJq
+uer2arMAKzs4eP1RJMKNa3AZ+BCZJKLYmhTk0pY2SXcD1qN4asNAeAEtbg7NjkW4fFGMT9xPa48H
+SmZSS5S4zXm5TstKrqse6zncexatw1244veg+WEr4qHK1OgYI8sMUC1pt5DdabLlEIHYefqXWCC+
+a0L4hToNjgeoECaNW9KPCaJN4i6TXUxbkO1cTRZthpXWgh+rSC5NaCajv+PHZZIN30RWp8mY7TBF
+dtMmZNpr8fmVckkAV0ao6HKAasekdPs/PeCdtG7XsQ55wcf+U4e4gDQndTS/0T8AM43KIIB4fC0A
+AAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="menubar,nativewindow"
+		capname="menubar"
+		id="22d388d5-98e8-4ecd-b44f-f8a5cdabac2c"
+		isrooted="True"
+		name="Explorer"
+		refpath="/menubar[@processname='explorer']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="e3d5993d-150c-43fb-bf2d-a094b31e01fd"
+			name="SAFERsleepClinicManagementRanorexSt"
+			refimgid="63238d95-16b1-4c7b-b4e6-3d5661ca5446"
+			refpath="/menubar[@processname='explorer']/container[@controlid='40965']/container[@caption='Running applications']/element[@class='MSTaskListWClass']/toolbar[@accessiblename='Running applications']/button[@accessiblename='SAFERsleep_ClinicManagement - Ranorex Studio (Administrator)']"
+			searchtimeout="30000ms">
+				/menubar[@processname='explorer']/container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename~'^SAFERsleep_ClinicManageme']
+			</item>
+			<basepath>
+				/menubar[@processname='explorer']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGOfPtRkwAAACBjSFJN
+AACHDwAAjA8AAP1SAACBQAAAfXkAAOmLAAA85QAAGcxzPIV3AAAKOWlDQ1BQaG90b3Nob3AgSUND
+IHByb2ZpbGUAAEjHnZZ3VFTXFofPvXd6oc0wAlKG3rvAANJ7k15FYZgZYCgDDjM0sSGiAhFFRJoi
+SFDEgNFQJFZEsRAUVLAHJAgoMRhFVCxvRtaLrqy89/Ly++Osb+2z97n77L3PWhcAkqcvl5cGSwGQ
+yhPwgzyc6RGRUXTsAIABHmCAKQBMVka6X7B7CBDJy82FniFyAl8EAfB6WLwCcNPQM4BOB/+fpFnp
+fIHomAARm7M5GSwRF4g4JUuQLrbPipgalyxmGCVmvihBEcuJOWGRDT77LLKjmNmpPLaIxTmns1PZ
+Yu4V8bZMIUfEiK+ICzO5nCwR3xKxRoowlSviN+LYVA4zAwAUSWwXcFiJIjYRMYkfEuQi4uUA4EgJ
+X3HcVyzgZAvEl3JJS8/hcxMSBXQdli7d1NqaQffkZKVwBALDACYrmcln013SUtOZvBwAFu/8WTLi
+2tJFRbY0tba0NDQzMv2qUP91829K3NtFehn4uWcQrf+L7a/80hoAYMyJarPziy2uCoDOLQDI3fti
+0zgAgKSobx3Xv7oPTTwviQJBuo2xcVZWlhGXwzISF/QP/U+Hv6GvvmckPu6P8tBdOfFMYYqALq4b
+Ky0lTcinZ6QzWRy64Z+H+B8H/nUeBkGceA6fwxNFhImmjMtLELWbx+YKuGk8Opf3n5r4D8P+pMW5
+FonS+BFQY4yA1HUqQH7tBygKESDR+8Vd/6NvvvgwIH554SqTi3P/7zf9Z8Gl4iWDm/A5ziUohM4S
+8jMX98TPEqABAUgCKpAHykAd6ABDYAasgC1wBG7AG/iDEBAJVgMWSASpgA+yQB7YBApBMdgJ9oBq
+UAcaQTNoBcdBJzgFzoNL4Bq4AW6D+2AUTIBnYBa8BgsQBGEhMkSB5CEVSBPSh8wgBmQPuUG+UBAU
+CcVCCRAPEkJ50GaoGCqDqqF6qBn6HjoJnYeuQIPQXWgMmoZ+h97BCEyCqbASrAUbwwzYCfaBQ+BV
+cAK8Bs6FC+AdcCXcAB+FO+Dz8DX4NjwKP4PnEIAQERqiihgiDMQF8UeikHiEj6xHipAKpAFpRbqR
+PuQmMorMIG9RGBQFRUcZomxRnqhQFAu1BrUeVYKqRh1GdaB6UTdRY6hZ1Ec0Ga2I1kfboL3QEegE
+dBa6EF2BbkK3oy+ib6Mn0K8xGAwNo42xwnhiIjFJmLWYEsw+TBvmHGYQM46Zw2Kx8lh9rB3WH8vE
+CrCF2CrsUexZ7BB2AvsGR8Sp4Mxw7rgoHA+Xj6vAHcGdwQ3hJnELeCm8Jt4G749n43PwpfhGfDf+
+On4Cv0CQJmgT7AghhCTCJkIloZVwkfCA8JJIJKoRrYmBRC5xI7GSeIx4mThGfEuSIemRXEjRJCFp
+B+kQ6RzpLuklmUzWIjuSo8gC8g5yM/kC+RH5jQRFwkjCS4ItsUGiRqJDYkjiuSReUlPSSXK1ZK5k
+heQJyeuSM1J4KS0pFymm1HqpGqmTUiNSc9IUaVNpf+lU6RLpI9JXpKdksDJaMm4ybJkCmYMyF2TG
+KQhFneJCYVE2UxopFykTVAxVm+pFTaIWU7+jDlBnZWVkl8mGyWbL1sielh2lITQtmhcthVZKO04b
+pr1borTEaQlnyfYlrUuGlszLLZVzlOPIFcm1yd2WeydPl3eTT5bfJd8p/1ABpaCnEKiQpbBf4aLC
+zFLqUtulrKVFS48vvacIK+opBimuVTyo2K84p6Ss5KGUrlSldEFpRpmm7KicpFyufEZ5WoWiYq/C
+VSlXOavylC5Ld6Kn0CvpvfRZVUVVT1Whar3qgOqCmrZaqFq+WpvaQ3WCOkM9Xr1cvUd9VkNFw08j
+T6NF454mXpOhmai5V7NPc15LWytca6tWp9aUtpy2l3audov2Ax2yjoPOGp0GnVu6GF2GbrLuPt0b
+erCehV6iXo3edX1Y31Kfq79Pf9AAbWBtwDNoMBgxJBk6GWYathiOGdGMfI3yjTqNnhtrGEcZ7zLu
+M/5oYmGSYtJoct9UxtTbNN+02/R3Mz0zllmN2S1zsrm7+QbzLvMXy/SXcZbtX3bHgmLhZ7HVosfi
+g6WVJd+y1XLaSsMq1qrWaoRBZQQwShiXrdHWztYbrE9Zv7WxtBHYHLf5zdbQNtn2iO3Ucu3lnOWN
+y8ft1OyYdvV2o/Z0+1j7A/ajDqoOTIcGh8eO6o5sxybHSSddpySno07PnU2c+c7tzvMuNi7rXM65
+Iq4erkWuA24ybqFu1W6P3NXcE9xb3Gc9LDzWepzzRHv6eO7yHPFS8mJ5NXvNelt5r/Pu9SH5BPtU
++zz21fPl+3b7wX7efrv9HqzQXMFb0ekP/L38d/s/DNAOWBPwYyAmMCCwJvBJkGlQXlBfMCU4JvhI
+8OsQ55DSkPuhOqHC0J4wybDosOaw+XDX8LLw0QjjiHUR1yIVIrmRXVHYqLCopqi5lW4r96yciLaI
+LoweXqW9KnvVldUKq1NWn46RjGHGnIhFx4bHHol9z/RnNjDn4rziauNmWS6svaxnbEd2OXuaY8cp
+40zG28WXxU8l2CXsTphOdEisSJzhunCruS+SPJPqkuaT/ZMPJX9KCU9pS8Wlxqae5Mnwknm9acpp
+2WmD6frphemja2zW7Fkzy/fhN2VAGasyugRU0c9Uv1BHuEU4lmmfWZP5Jiss60S2dDYvuz9HL2d7
+zmSue+63a1FrWWt78lTzNuWNrXNaV78eWh+3vmeD+oaCDRMbPTYe3kTYlLzpp3yT/LL8V5vDN3cX
+KBVsLBjf4rGlpVCikF84stV2a9021DbutoHt5turtn8sYhddLTYprih+X8IqufqN6TeV33zaEb9j
+oNSydP9OzE7ezuFdDrsOl0mX5ZaN7/bb3VFOLy8qf7UnZs+VimUVdXsJe4V7Ryt9K7uqNKp2Vr2v
+Tqy+XeNc01arWLu9dn4fe9/Qfsf9rXVKdcV17w5wD9yp96jvaNBqqDiIOZh58EljWGPft4xvm5sU
+moqbPhziHRo9HHS4t9mqufmI4pHSFrhF2DJ9NProje9cv+tqNWytb6O1FR8Dx4THnn4f+/3wcZ/j
+PScYJ1p/0Pyhtp3SXtQBdeR0zHYmdo52RXYNnvQ+2dNt293+o9GPh06pnqo5LXu69AzhTMGZT2dz
+z86dSz83cz7h/HhPTM/9CxEXbvUG9g5c9Ll4+ZL7pQt9Tn1nL9tdPnXF5srJq4yrndcsr3X0W/S3
+/2TxU/uA5UDHdavrXTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriX
+eW/h/sYH6AdFD6UeVjxSfNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2d
+mnafvvF05dOJZ+nPFmYKf5X+tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/M
+F72Rf3P4LeNt37vwd5MLWe+x7ys/6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOxAAA
+DsQBlSsOGwAAAK9JREFUOE9j+P//PwMlmCLNIIspN2D96rn/KcEMJ45u/f/l0zOC+M3LG//RMUgf
+A8j2uqpsDEmQ4qePr2AVhxn0+uX9/2AXwASmTmgAGwbGldn/ezoqscsB5VcsmQKWQ3FBS0MRwgCg
+oobqnP8vn0FcgS4HM5zhzMmdeJ2Jze/IYnAXfHz/4D8Io2t4+/oOTgvAYQByATGxgEsN3AXwwIMF
+IpE05SmRkoxEnbxAqQsAPJkjeW5vrXcAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="host,nativewindow"
+		capname="host"
+		id="17d40e53-bae4-4612-abeb-ef137905b454"
+		isrooted="True"
+		name="WIN7VMPC"
+		refimgid="b8b1471c-fbff-4758-91fc-52014d573aea"
+		refpath=""
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="host,nativewindow"
+			capname="host"
+			id="e4419668-9008-4be4-907c-998104e3a5c4"
+			name="WIN7VMPC"
+			refimgid="10490814-6bb2-4003-8889-e5d29da3c823"
+			refpath=""
+			searchtimeout="30000ms">
+			</item>
+			<basepath>
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACsklEQVQ4T62S+TPUYRzH/UH92EzNMBM1JlOj0ziSUkrHIrGI0Crk
+PhaNKzZrbdOyrm2WUNKuthzJOTSOpKSLjGuxXj2rKdN8f+2ZeX555nm/Pu/35/NxcPhfZ3B0ht7B
+KSx943S8HqXVPIyxvZ+G1jfUGLvRNlhQ15op03VQrG1HUre7f5LohyDXwLUKuFoGgcVw/h74KW2c
+yrbilb6Ex915lKomKcDUNUZ4JZQ+hfxmSG8EhR4itRCsgguFdtAmXmlLZJcZpYBW0xDB5aAU4lQh
+vlUNEVUgE28BQnw6dwPP1EWO3p4lo7hRCjC09XGpBFIaIF4H4SKKTMQ4JyL45qzjkbrAEcVH3KJG
+SSmslwKqjV3bn2MfQZgarpT+Ftuz23O73/qAW+QILiGvSCrQSwGaus7tjNdFAy8LsX8++GStcTL5
+B+5x0xyMGMIl2ILTxRYSlDopoFyMxztzlUAR42zeFt4ZK5xI+sbh2Clc5QM4yzpxvPCEvWfqiM96
+KAUUVT3FI+Unfnk2vDKWOX7nK4duTuAa/laITTgGNLHHT89uHy0x6ZVSgFLVzMwXK5Oza7ybWWXk
+/QoDE8u8GVuireszdc/GKdZZCOwORJ6s+heQmHn/gNbwclOlf05hVYuYcyPJBTriMtXIE0uQxeVz
+Xp6BT1AixwJiOegr3wyKLwr9u43axxb+nE3bFqtWGwtLG8x+tzIhHNnd9Agn5sFF2noXqG2fZr9n
+6I4LTUPntj7KHMWadYtPxl3Mza/zfs5K04tBKutNwpWB6DQ1UalqSvQD7DsZsgOoqDNhE5WrBwwM
+j88xPVRBR88UzeZ31LaNoHncT0lND0rNKzIfdJJWbsLpuGwHUKRtUYhLrsogtqwGRU4VN1LKCU0o
+5EpMLv5haXjL7mznd/ONwNkjxA5Q2HvwC6m1M19+6/dHAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

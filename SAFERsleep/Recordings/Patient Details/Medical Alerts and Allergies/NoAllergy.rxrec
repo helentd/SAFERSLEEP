@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="837d7754-42ac-41e5-b5e3-f9f017cbda2b"
+mode="Global"
+rxversion="8.2">
+	<name>
+		NoAllergy
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="NoAllergy"
+	namespace="SAFERsleep.Recordings.Patient_Details.Medical_Alerts_and_Allergies">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="NoAllergy"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Mouse_Click_AllergiesNo"
+		namespace="SAFERsleep.Recordings.Patient_Details.Medical_Alerts_and_Allergies"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="ad8920de-410f-4f89-be6e-e68a2dc90fc1">
+				<argument
+				argname="rawtextInfo"
+				id="7126d42f-2b5c-459c-8e45-b5d5f5335d27">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="86972611-c8e6-4b30-a59e-5b2694d57ee3"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@controlname='frmMain']/element[@controlname='pnlMain']//container[@controlname='pnlClinicallySignificantDrugAllergies']/rawtext[@rawtext='No']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		NoAllergy.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

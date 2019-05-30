@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="00ae87a5-2ce0-4c89-b9d0-3d5875efbf99"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ValidateLockout2
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ValidateLockout2"
+	namespace="SAFERsleep.Recordings.PainPrescriptions.Infusion2Validation">
+	</codegen>
+	<variables>
+		<var
+		id="5734ddec-d618-4d35-be50-0ad009692423"
+		name="PrescriptionType">
+			Epidural Analgesia
+		</var>
+		<var
+		id="25195357-631a-4631-bc83-ab76464ef99a"
+		name="PrescriptionDetails">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="ValidateLockout2"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="CheckBolusDose"
+		namespace="SAFERsleep.Recordings.PainPrescriptions.Infusion2Validation"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="af2aa7d7-c913-40b0-898c-eb62e55e7905">
+				<argument
+				argname="lo"
+				id="dfd59237-050d-45ed-91c2-529ebc04c810"
+				variable="PrescriptionDetails">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ValidateLockout2.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

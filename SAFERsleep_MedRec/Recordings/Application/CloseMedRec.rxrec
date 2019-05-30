@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="2a0bceb3-0681-498b-8150-f7f1be46f01c"
+mode="Global"
+rxversion="8.2">
+	<name>
+		CloseMedRec
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseMedRec"
+	namespace="SAFERsleep_MedRec.Recordings.Application">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="64864238-eddb-4cf6-8aaf-80ea2c5a8102"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1f4e6dd8-cc89-4539-a29b-658f1048cb61"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@classname='Window' and @orientation='None' and @automationid='13926B09-FFD9-40C5-A9FA-DAD316950316']/?/?/element[@classname='LoginView']//button[@name='Exit']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="3ba3b792-db8b-4342-8208-146c83bb83b4"
+	name="SAFERsleep_MedRecRepository"
+	relativepath="..\..\SAFERsleep_MedRecRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleep_MedRecRepository"
+		namespace="SAFERsleep_MedRec">
+		</codegen>
+		<rootfolder
+		id="543445dd-0470-4c58-a59a-2c2d06fa4b16"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseMedRec.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

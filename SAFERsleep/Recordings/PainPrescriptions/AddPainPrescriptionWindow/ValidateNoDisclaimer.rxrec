@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d98ce20e-922e-4acf-b11d-11f1209520b7"
+mode="Global"
+rxversion="8.2">
+	<name>
+		ValidateNoDisclaimer
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ValidateNoDisclaimer"
+	namespace="SAFERsleep.Recordings.PainPrescriptions.AddPainPrescriptionWindow">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d867cf5c-5a0a-4636-9148-a8eed8c6bf0a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="538a95bc-9dd6-4838-9562-5922400f2469"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@name='frmEditPainPrescription']/container[@name=$FormName]/container[@name='pnlDisclaim']/container[@name='fmDisclaim']//text[@type='TcxCustomInnerMemo']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="1fe53315-712d-46f6-9a01-cf8e5740d230"
+	name="SAFERsleepORRepository"
+	relativepath="..\..\..\SAFERsleepORRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SAFERsleepORRepository"
+		namespace="SAFERsleep">
+		</codegen>
+		<rootfolder
+		id="18a42f2b-7169-45ab-8b1f-148bb9f60f9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ValidateNoDisclaimer.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
